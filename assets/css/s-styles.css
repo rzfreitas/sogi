@@ -162,9 +162,25 @@ h6 {
 	color: #fff;
 
 }
-table tr img{
+.vantagens-home h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.vantagens-home table tr img{
     min-width: 47px;
     min-height: 47px;
+}
+.vantagens-home table tr td:first-child{
+    vertical-align: middle;
+    padding-right: 20px;
+    border-right: 1px solid #000000;
+}
+.vantagens-home table tr td:nth-child(2n){
+    padding: 20px;
+}
+.vantagens-home ul li{
+    list-style: disc;
+    margin-left: 20px;
 }
 /* / */
 
