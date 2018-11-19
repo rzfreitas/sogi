@@ -4,13 +4,33 @@ get_header(); ?>
 
 <section>
 <div class="bg-home">
+	<div class="container v-center text-banner">
+		<div class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-7">
+				<h1>O que é o soGi?</h1>
+				<p>Desenvolvido pela Verde Ghaia, o soGi é uma plataforma de Soluções para Gestão Integrada. Seus módulos foram desenvolvidos de acordo com a metodologia Verde Ghaia e orientados pelas normas internacionais de certificação como as ISOs. O objetivo é oferecer ferramentas úteis que para promover, acelerar e facilitar sua gestão.</p>
+			</div>
+		</div>
+	</div>
 </div>
 </section>
 
 <section>
 	<div class="bg-blue p-t-50 p-b-50">
-		<div class="container">
-			
+		<div class="container text-center">
+			<h2>Soluções para gestão integrada com foco em compliance <br> e prevenção riscos. Encontre a ideal para sua empresa.</h2>
+			<ul class="inline-list">
+				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/lira.png" alt="lira"></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/auditoria.png" alt="auditoria"></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/gaia.png" alt="gaia"></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/prsst.png" alt="prsst"></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/tnc.png" alt="tnc"></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/risco-legal.png" alt="risco legal"></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/gestao-riscos.png" alt="gestão riscos"></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/licencas.png" alt="licanças"></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/administativo.png" alt="administativo"></li>
+			</ul>
 		</div>
 	</div>
 </section>
@@ -69,8 +89,8 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="container p-b-50">
-		<div class="row p-b-50 vantagens-home">
-			<div class="col-md-4">
+		<div class="row p-b-50 vantagens-home d-flex">
+			<div class="col-md-4 d-flex">
 				<table>
 					<tr>
 						<td>
@@ -122,13 +142,27 @@ get_header(); ?>
 <section>
 	<div class="faxia-conv-azul">
 		<div class="container">
-			<div class="row">
+			<div class="row d-flex">
 				<div class="col-md-9">
-					
+					<h2>Várias funcionalidades em uma plataforma*</h2>
 				</div>
-				<d>
+				<div class="col-md-3">
+					<a class="btn-def btn-yellow v-center">Contrate o sogi</a>
+				</div>
 			</div>
 		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container p-t-50 p-b-50 text-center">
+		<ul class="inline-list">
+			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/vivo.png" alt="vivo"></li>
+			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/syngenta.png" alt="syngenta"></li>
+			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/sotreq.png" alt="sotreq"></li>
+			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/embare-camponesa.png" alt="embare-camponesa"></li>
+			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/schneider-motobombas.png" alt="schneider motobombas"></li>
+		</ul>
 	</div>
 </section>
 

@@ -69,6 +69,64 @@ table {
 	padding-top: 10px;
 	cursor: pointer;
 }
+.icon-tools i{
+    font-size: 28px;
+    color: #fff;
+    margin-top: 3px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.border-l-w{
+    border-left: 1px solid #fff;
+}
+.s-menu a{
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+}
+/* Solucoes menu */
+.solucoes-vg{
+    position: absolute;
+    background-color: #fff;
+    width: 780px;
+    margin-left: -388px;
+    margin-top: 25px;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
+}
+.solucoes-vg:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12.5px 20px 12.5px;
+    border-color: transparent transparent #fcfdff transparent;
+    position: absolute;
+    top: -19px;
+    left: 50%;
+}
+.solucoes-vg img{margin-bottom: 20px;}
+.solucoes-vg h3{
+    color: #0079BA;
+    font-size: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #E0E0E0;
+    text-align: center;
+    font-weight: bold;
+}
+.solucoes-vg a{width: 100%;}
+.solucoes-vg ul{
+    display: flex;
+    margin: 10px 0;
+}
+.solucoes-vg ul li{
+    flex-basis: 100%;
+    text-align: center;
+    border-right: 1px solid #E0E0E0;
+    padding: 20px 10px;
+}
+.solucoes-vg ul li:last-child{border-right: 0;}
+.invisible{display: none;}
+/* / */
 /* / /*
 
 /* MISC */
@@ -84,6 +142,7 @@ table {
 .p-b-25{padding-bottom: 25px;}
 .p-t-50{padding-top: 50px;}
 .p-b-50{padding-bottom: 50px;}
+.p-relative{position: relative;}
 /* / */
 
 /* TEXTING */
@@ -166,6 +225,7 @@ h6 {
     margin-top: 0;
     margin-bottom: 5px;
 }
+.vantagens-home table{height: 100%;}
 .vantagens-home table tr img{
     min-width: 47px;
     min-height: 47px;
@@ -182,6 +242,62 @@ h6 {
     list-style: disc;
     margin-left: 20px;
 }
+.faxia-conv-azul{
+    background: #0079BA;
+    color: #fff;
+    padding: 15px 0;
+}
+ul.inline-list{
+    display: inline-flex;
+    padding-top: 40px;
+    margin-top: 15px;
+    border-top: 1px solid #fff;  
+}
+ul.inline-list li{margin-right: 25px}
+ul.inline-list li:last-child{margin-right: 0px}
+.text-banner{
+    color: #fff;
+    line-height: 1.4;
+}
+.black-header {
+    background-color:#333333;
+    transition:1s;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
+}
+.black-header a{
+    color: #fff;
+}
+/* / */
+
+/* LIRA */
+.bg-lira{
+    background:#2092BF;
+    color: #fff; 
+}
+/* / */
+
+/* Buttons */
+.btn-def{
+    display: inline-block;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: .3s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-yellow{
+    background: #F2C94C;
+}
+.btn-pink{
+    border-radius: 30px;
+    background: #FE214C;
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+a.btn-pink{color: #fff;}
+a.btn-yellow{color: #000;}
 /* / */
 
 /* FOOTER */
