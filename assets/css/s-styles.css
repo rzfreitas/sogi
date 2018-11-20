@@ -84,6 +84,9 @@ table {
     color: #fff;
     font-size: 16px;
 }
+.s-menu ul{display: inline-flex;}
+.s-menu li{margin-right: 30px;}
+.s-menu li:last-child{margin-right: 0}
 /* Solucoes menu */
 .solucoes-vg{
     position: absolute;
@@ -143,6 +146,13 @@ table {
 .p-t-50{padding-top: 50px;}
 .p-b-50{padding-bottom: 50px;}
 .p-relative{position: relative;}
+.full-width{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10
+}
+.m-t-145{margin-top: 145px;}
 /* / */
 
 /* TEXTING */
@@ -203,6 +213,9 @@ h6 {
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
+}
+p{
+    line-height: 1.5;
 }
 /* / */
 
@@ -272,7 +285,38 @@ ul.inline-list li:last-child{margin-right: 0px}
 /* LIRA */
 .bg-lira{
     background:#2092BF;
-    color: #fff; 
+    color: #fff;
+}
+.bg-banner-lira{
+    background:#2092BF;
+    color: #fff;
+    height: 80vh; 
+}
+.w-img{
+    width: 24%;
+    position: relative;
+    top: 60px;
+}
+.w-text{width: 76%}
+/* / */
+
+/* CONVERSION ROW */
+.conversion-row{
+    padding: 80px 0 40px 0;
+    position: absolute;
+    width: 100%;
+    bottom: -145px;
+    z-index: 1;
+
+}
+.border-yllw{
+    border-left: 1px solid #F2C94C;
+}
+.conversion-row span{
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 /* / */
 
