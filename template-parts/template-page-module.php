@@ -1,27 +1,36 @@
-<?php /* Template Name: Lira */ 
+<?php /* Template Name: Página dos módulos */ 
 
 get_header(); ?>
 
 <section>
+	<?php if( get_field('modulo') == 'lira' ): ?>
 	<div class="bg-banner-lira">
+	<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
+	<div class="bg-banner-aud">
+	<?php elseif ( get_field('modulo') == 'gaia' ): ?>
+	<div class="bg-banner-gaia">
+	<?php elseif ( get_field('modulo') == 'prsst' ): ?>
+	<div class="bg-banner-prsst">
+	<?php elseif ( get_field('modulo') == 'tnc' ): ?>
+	<div class="bg-banner-tnc">
+	<?php endif ?>
 		<div class="container v-center">
 			<div class="row">
-				<div class="col-md-8">
-					
+				<?php					
+				$cbanner = get_field('content_banner');
+				if( $cbanner ): ?>
+				<div class="col-md-8 align-vid">
+					<?php echo $cbanner['video_youtube']; ?>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 float-right">
 					<div class="d-flex">
 						<div class="w-img">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/lira.png" alt="lira">
+							<img src="<?php echo $cbanner['img_modulo']['url']; ?>" alt="<?php echo $cbanner['img_modulo']['alt']; ?>" />
 						</div>
 						<div class="w-text">
-							<?php
-					
-							$textb = get_field('texto_do_banner');	
-
-							if( $textb ): ?>			
-								<h1><?php echo $textb['titulo_banner']; ?></h1>
-								<p><?php echo $textb['descricao_banner']; ?></p>
+							
+								<h1><?php echo $cbanner['titulo_banner']; ?></h1>
+								<p><?php echo $cbanner['descricao_banner']; ?></p>
 							<?php endif; ?>
 						</div>
 					</div>					
@@ -52,8 +61,6 @@ get_header(); ?>
 		<?php get_template_part('template-parts/content' , 'conversion-row'); ?>
 	</div>
 </section>
-
-
 
 <?php get_template_part('template-parts/content' , 'modulos'); ?>
 

@@ -282,15 +282,96 @@ ul.inline-list li:last-child{margin-right: 0px}
 }
 /* / */
 
-/* LIRA */
+/* PAGINA MODULOS */
 .bg-lira{
     background:#2092BF;
+    color: #fff;
+}
+.bg-aud{
+    background:#39AF75;
+    color: #fff; 
+}
+.bg-gaia{
+    background:#107A49;
+    color: #fff;
+}
+.bg-prsst{
+    background:#3A3AAF;
+    color: #fff;
+}
+.bg-tnc{
+    background: #B03966;
+    color: #fff;
+}
+.bg-rl{
+    background: #881D0C;
+    color: #fff;
+}
+.bg-gr{
+    background: #EDAE49;
+    color: #fff;
+}
+.bg-doc{
+    background: #58467E;
+    color: #fff;
+}
+.bg-licencas{
+    background: #C34210;
+    color: #fff;
+}
+.bg-corp{
+    background: #2092BF;
     color: #fff;
 }
 .bg-banner-lira{
     background:#2092BF;
     color: #fff;
+    height: 80vh;
+}
+.bg-banner-aud{
+    background:#39AF75;
+    color: #fff;
     height: 80vh; 
+}
+.bg-banner-gaia{
+    background:#107A49;
+    color: #fff;
+    height: 80vh;
+}
+.bg-banner-prsst{
+    background: #3A3AAF;
+    color: #fff;
+    height: 80vh;
+}
+.bg-banner-tnc{
+    background: #B03966;
+    color: #fff;
+    height: 80vh;
+}
+.bg-banner-rl{
+    background: #881D0C;
+    color: #fff;
+    height: 80vh;
+}
+.bg-banner-gr{
+    background: #EDAE49;
+    color: #fff;
+    height: 80vh;
+}
+.bg-banner-licencas{
+    background: #C34210;
+    color: #fff;
+    height: 80vh;
+}
+.bg-banner-doc{
+    background: #58467E;
+    color: #fff;
+    height: 80vh;
+}
+.bg-banner-corp{
+    background: #2092BF;
+    color: #fff;
+    height: 80vh;
 }
 .w-img{
     width: 24%;
@@ -298,6 +379,10 @@ ul.inline-list li:last-child{margin-right: 0px}
     top: 60px;
 }
 .w-text{width: 76%}
+.align-vid{
+    position: absolute;
+    left: 0;
+}
 /* / */
 
 /* CONVERSION ROW */
