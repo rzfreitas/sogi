@@ -145,6 +145,10 @@ table {
 .p-b-25{padding-bottom: 25px;}
 .p-t-50{padding-top: 50px;}
 .p-b-50{padding-bottom: 50px;}
+.p-t-75{padding-top: 75px;}
+.p-b-75{padding-bottom: 75px;}
+.p-t-100{padding-top: 100px;}
+.p-b-100{padding-bottom: 100px;}
 .p-relative{position: relative;}
 .full-width{
     width: 100%;
@@ -280,6 +284,45 @@ ul.inline-list li:last-child{margin-right: 0px}
 .black-header a{
     color: #fff;
 }
+#diagonal-border{
+    position: relative;
+}
+#diagonal-border .container{
+    z-index: 4;
+    position: relative;
+}
+#diagonal-border::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(2deg);
+    z-index: 3;
+}
+#diagonal-border2::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(2deg);
+    z-index: 1;
+}
+.bg-royal{
+    background: #045581;
+    color: #fff;
+}
 /* / */
 
 /* PAGINA MODULOS */
@@ -307,7 +350,7 @@ ul.inline-list li:last-child{margin-right: 0px}
     background: #881D0C;
     color: #fff;
 }
-.bg-gr{
+.bg-rn{
     background: #EDAE49;
     color: #fff;
 }
@@ -319,7 +362,7 @@ ul.inline-list li:last-child{margin-right: 0px}
     background: #C34210;
     color: #fff;
 }
-.bg-corp{
+.bg-liracorp{
     background: #2092BF;
     color: #fff;
 }
@@ -353,7 +396,7 @@ ul.inline-list li:last-child{margin-right: 0px}
     color: #fff;
     height: 80vh;
 }
-.bg-banner-gr{
+.bg-banner-rn{
     background: #EDAE49;
     color: #fff;
     height: 80vh;
@@ -368,7 +411,7 @@ ul.inline-list li:last-child{margin-right: 0px}
     color: #fff;
     height: 80vh;
 }
-.bg-banner-corp{
+.bg-banner-liracorp{
     background: #2092BF;
     color: #fff;
     height: 80vh;
@@ -413,9 +456,11 @@ ul.inline-list li:last-child{margin-right: 0px}
     transition: .3s;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
 }
 .btn-yellow{
-    background: #F2C94C;
+    background: #FFAB00;
 }
 .btn-pink{
     border-radius: 30px;

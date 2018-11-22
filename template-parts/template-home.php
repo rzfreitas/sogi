@@ -17,7 +17,7 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="bg-blue p-t-50 p-b-50">
+	<div class="bg-blue p-t-75 p-b-75" id="diagonal-border">
 		<div class="container text-center">
 			<h2>Soluções para gestão integrada com foco em compliance <br> e prevenção riscos. Encontre a ideal para sua empresa.</h2>
 			<ul class="inline-list">
@@ -36,110 +36,148 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="container p-t-50 p-b-50">
-		<div class="row p-b-50 vantagens-home">
-			<div class="col-md-4">
-				<table>
-					<tr>
-						<td>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/analytics.png" alt="monitoramento">
-						</td>
-						<td>
-							<h3>Monitoramento</h3>
-							<ul>
-								<li>Alertas</li>
-								<li>Avisos de ações vencidas </li>
-								<li>Cartas mensais de atualização</li>
-								<li>Acompanhamento de pendências.</li>
-							</ul>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="col-md-4">
-				<table>
-					<tr>
-						<td>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/relatorios.png" alt="relatorios">
-						</td>
-						<td>
-							<h3>Relatórios</h3>
-							<ul>
-								<li>Geração de relatórios em PDF com posicionamento sobre auditorias, tratamento de não conformidade e de pendênciaertas</li>
-							</ul>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="col-md-4">
-				<table>
-					<tr>
-						<td>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/indicadores.png" alt="indicadores">
-						</td>
-						<td>
-							<h3>Monitoramento</h3>
-							<ul>
-								<li>Acompanhe as estatísticas da sua conformidade legal através de gráficos gerados automaticamente pelo módulo soGi Indicadores</li>
-							</ul>
-						</td>
-					</tr>
-				</table>
+	<div class="p-t-100 p-b-75" id="diagonal-border">
+		<div class="container">
+			<div class="row p-b-50 vantagens-home">
+				<div class="col-md-4">
+					<table>
+						<tr>
+							<td>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/analytics.png" alt="monitoramento">
+							</td>
+							<td>
+								<h3>Monitoramento</h3>
+								<ul>
+									<li>Alertas</li>
+									<li>Avisos de ações vencidas </li>
+									<li>Cartas mensais de atualização</li>
+									<li>Acompanhamento de pendências.</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-4">
+					<table>
+						<tr>
+							<td>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/relatorios.png" alt="relatorios">
+							</td>
+							<td>
+								<h3>Relatórios</h3>
+								<ul>
+									<li>Geração de relatórios em PDF com posicionamento sobre auditorias, tratamento de não conformidade e de pendênciaertas</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-4">
+					<table>
+						<tr>
+							<td>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/indicadores.png" alt="indicadores">
+							</td>
+							<td>
+								<h3>Monitoramento</h3>
+								<ul>
+									<li>Acompanhe as estatísticas da sua conformidade legal através de gráficos gerados automaticamente pelo módulo soGi Indicadores</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container p-b-50">
-		<div class="row p-b-50 vantagens-home d-flex">
-			<div class="col-md-4 d-flex">
-				<table>
-					<tr>
-						<td>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/graficos.png" alt="monitoramento">
-						</td>
-						<td>
-							<h3>Gráficos</h3>
-							<ul>
-								<li>Gráficos de tratamento de não conformidade, auditoria de conformidade legal, estatística de atendimento à conformidade legal </li>
-							</ul>
-						</td>
-					</tr>
-				</table>
+		<div class="container p-b-50">
+			<div class="row p-b-50 vantagens-home d-flex">
+				<div class="col-md-4 d-flex">
+					<table>
+						<tr>
+							<td>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/graficos.png" alt="monitoramento">
+							</td>
+							<td>
+								<h3>Gráficos</h3>
+								<ul>
+									<li>Gráficos de tratamento de não conformidade, auditoria de conformidade legal, estatística de atendimento à conformidade legal </li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-4">
+					<table>
+						<tr>
+							<td>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/seguranca.png" alt="segurança">
+							</td>
+							<td>
+								<h3>Segurança</h3>
+								<ul>
+									<li>Controle de acesso dos usuários, controle de visualização e impressão dos relatórios, permissões dos grupos de usuário</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-4">
+					<table>
+						<tr>
+							<td>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/filtros.png" alt="Filtros">
+							</td>
+							<td>
+								<h3>Filtros</h3>
+								<ul>
+									<li>Disponibilização de auto-filtros em todo o soGi, facilitando e tornando sua busca ainda mais personalizada</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<table>
-					<tr>
-						<td>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/seguranca.png" alt="segurança">
-						</td>
-						<td>
-							<h3>Segurança</h3>
-							<ul>
-								<li>Controle de acesso dos usuários, controle de visualização e impressão dos relatórios, permissões dos grupos de usuário</li>
-							</ul>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="col-md-4">
-				<table>
-					<tr>
-						<td>
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/filtros.png" alt="Filtros">
-						</td>
-						<td>
-							<h3>Filtros</h3>
-							<ul>
-								<li>Disponibilização de auto-filtros em todo o soGi, facilitando e tornando sua busca ainda mais personalizada</li>
-							</ul>
-						</td>
-					</tr>
-				</table>
+		</div>
+	</div> <!-- diagonal -->
+</section>
+
+<section>
+	<div class="bg-royal p-t-100 p-b-75" id="diagonal-border">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Várias funcionalidades em uma plataforma*</h2>
+					<div class="p-t-50">
+						<a class="btn-def btn-yellow v-center">Contrate o sogi</a>
+					</div>
+				</div>
+				<div class="col-md-8">
+					
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
 <section>
+	<div class="bg-blue p-t-100 p-b-75">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					
+				</div>
+				<div class="col-md-4">
+					<h2>Assista um case de sucesso*</h2>
+					<div class="p-t-50">
+						<a class="btn-def btn-yellow v-center">Torne-se um case de sucesso também!</a>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- <section>
 	<div class="faxia-conv-azul">
 		<div class="container">
 			<div class="row d-flex">
@@ -152,7 +190,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section>
 	<div class="container p-t-50 p-b-50 text-center">

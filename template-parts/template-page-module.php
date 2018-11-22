@@ -13,6 +13,16 @@ get_header(); ?>
 	<div class="bg-banner-prsst">
 	<?php elseif ( get_field('modulo') == 'tnc' ): ?>
 	<div class="bg-banner-tnc">
+	<?php elseif ( get_field('modulo') == 'rl' ): ?>
+	<div class="bg-banner-rl">
+	<?php elseif ( get_field('modulo') == 'rn' ): ?>
+	<div class="bg-banner-rn">
+	<?php elseif ( get_field('modulo') == 'licencas' ): ?>
+	<div class="bg-banner-licencas">
+	<?php elseif ( get_field('modulo') == 'doc' ): ?>
+	<div class="bg-banner-doc">
+	<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
+	<div class="bg-banner-liracorp">
 	<?php endif ?>
 		<div class="container v-center">
 			<div class="row">
