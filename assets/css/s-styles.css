@@ -141,6 +141,7 @@ table {
 .d-flex{display: flex;}
 .d-inline-flex{display: inline-flex;}
 
+.p-t-15{padding-top: 15px;}
 .p-t-25{padding-top: 25px;}
 .p-b-25{padding-bottom: 25px;}
 .p-t-50{padding-top: 50px;}
@@ -164,6 +165,9 @@ body{
 	font-family: 'Niramit', sans-serif;
 }
 strong{font-weight: bold;}
+small {
+    font-size: 80%;
+}
 h1 { 
     display: block;
     font-size: 2em;
@@ -236,7 +240,6 @@ p{
 .bg-blue{
 	background-color: #0079BA;
 	color: #fff;
-
 }
 .vantagens-home h3{
     margin-top: 0;
@@ -266,7 +269,6 @@ p{
 }
 ul.inline-list{
     display: inline-flex;
-    padding-top: 40px;
     margin-top: 15px;
     border-top: 1px solid #fff;  
 }
@@ -322,6 +324,14 @@ ul.inline-list li:last-child{margin-right: 0px}
 .bg-royal{
     background: #045581;
     color: #fff;
+}
+.box-depoimento{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+}
+.b-top{
+    border-top: 1px solid #000;
 }
 /* / */
 
@@ -470,8 +480,52 @@ ul.inline-list li:last-child{margin-right: 0px}
     padding: 8px 16px;
     font-weight: bold;
 }
+.btn-leia-mais{
+    padding: 15px 40px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #2F80ED;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 30px;
+}
+a.btn-leia-mais{color: #2F80ED;}
 a.btn-pink{color: #fff;}
 a.btn-yellow{color: #000;}
+/* / */
+
+/* NOTICIAS */
+.title-blog-vg{
+    text-align: center;
+    font-size: 36px;
+    background-color: #C4C4C4;
+    padding: 15px 0;
+}
+.title-blog-vg h2{
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+}
+.blog-box{
+    padding: 15px;
+}
+.blog-box p{
+    margin-top: 10px;
+}
+.border-left{
+    border-left: 4px solid #2D9CDB;
+}
+.titulo-noticia h2, .titulo-noticia a {
+    font-size: 20px;
+    color: #000000;
+}
+.img-noticia img{
+    border-radius: 100%;
+}
+.border-bot{
+    border-bottom: 1px solid #E0E0E0
+}
 /* / */
 
 /* FOOTER */

@@ -201,7 +201,40 @@ get_header(); ?>
 			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/embare-camponesa.png" alt="embare-camponesa"></li>
 			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/schneider-motobombas.png" alt="schneider motobombas"></li>
 		</ul>
+	</div>		
+	<div class="container p-b-50">
+		<?php if( have_rows('depoimentos') ): ?>
+		<ul class="depoimentos b-top">
+		<?php while( have_rows('depoimentos') ): the_row(); 
+			// vars
+			$img_cliente = get_sub_field('img_cliente');
+			?>
+
+			<li class="row">
+				<div class="d-flex box-depoimento">
+					<div class="col-xs-12 col-sm-12 col-md-4 text-center">
+						<img src="<?php echo $img_cliente['url']; ?>" alt="<?php echo $img_cliente['alt'] ?>" />
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-8">
+						<p class="v-center text-depoimento"><?php the_sub_field('depoimento'); ?></p>
+					</div>
+				</div>		
+			</li>
+		<?php endwhile; ?>
+		</ul>
+		<?php endif; ?>
 	</div>
+	<script>
+	$(document).ready(function(){
+	  $('.depoimentos').slick({
+	   	autoplay: true,
+	    infinite: true,
+	    speed: 300,
+	  	slidesToShow: 1,
+	  	arrows: true,
+	  });
+	});
+	</script>
 </section>
 
 <?php get_footer(); ?>
