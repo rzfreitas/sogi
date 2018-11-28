@@ -231,7 +231,7 @@ get_header(); ?>
 	    infinite: true,
 	    speed: 300,
 	  	slidesToShow: 1,
-	  	arrows: true,
+	  	dots: true
 	  });
 	});
 	</script>
