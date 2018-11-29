@@ -110,9 +110,27 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/content' , 'modulos'); ?>
 
-<?php if( get_field('modulo') == 'lira' ){ ?> 
-<div class="lira-count">
-<?php } ?>
+<?php if( get_field('modulo') == 'lira' ): ?>
+	<div class="lira-count">
+	<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
+	<div class="aud-gaia-count">
+	<?php elseif ( get_field('modulo') == 'gaia' ): ?>
+	<div class="aud-gaia-count">
+	<?php elseif ( get_field('modulo') == 'prsst' ): ?>
+	<div class="prsst-count">
+	<?php elseif ( get_field('modulo') == 'tnc' ): ?>
+	<div class="tnc-count">
+	<?php elseif ( get_field('modulo') == 'rl' ): ?>
+	<div class="rl-count">
+	<?php elseif ( get_field('modulo') == 'rn' ): ?>
+	<div class="rn-count">
+	<?php elseif ( get_field('modulo') == 'licencas' ): ?>
+	<div class="licencas-count">
+	<?php elseif ( get_field('modulo') == 'doc' ): ?>
+	<div class="doc-count">
+	<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
+	<div class="liracorp-count">
+<?php endif ?>
 	<div class="container p-t-50 p-b-50 p-a-p">
 		<h2 class="text-center">Passo a passo para Implantação da <?php echo the_field('p_modulo') ?> na sua empresa</h2>
 		<div class="p-t-50">
