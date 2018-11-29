@@ -52,21 +52,24 @@ get_header(); ?>
 
 <section>
 	<div class="p-relative">
-		<div class="container p-t-50">
-			<p>
-				<?php echo get_field('infos_modulo'); ?>
-			</p>
-			<div class="text-center p-t-50">
-				<?php 
-
-				$image = get_field('img_tela');
-
-				if( !empty($image) ): ?>
-
-					<img class="full-width" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
+		<div class="container">
+			<div class="row">
+				<?php $content_m = get_field('infos_modulo');
+				if( $content_m ): ?>
+					<div class="col-md-6">
+						<p><?php echo $content_m['coluna_1']; ?></p>
+					</div>
+					<div class="col-md-6">
+						<p><?php echo $content_m['coluna_2']; ?></p>
+					</div>
 				<?php endif; ?>
 			</div>
+		</div>
+		<div class="container p-t-50 text-center">
+			<?php $image = get_field('img_tela');
+			if( !empty($image) ): ?>
+				<img class="full-width" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			<?php endif; ?>			
 		</div>
 		<?php get_template_part('template-parts/content' , 'conversion-row'); ?>
 	</div>
