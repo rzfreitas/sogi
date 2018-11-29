@@ -32,7 +32,7 @@ get_header(); ?>
 				<div class="col-md-8 align-vid">
 					<?php echo $cbanner['video_youtube']; ?>
 				</div>
-				<div class="col-md-4 float-right">
+				<div class="col-md-4">
 					<div class="d-flex">
 						<div class="w-img">
 							<img src="<?php echo $cbanner['img_modulo']['url']; ?>" alt="<?php echo $cbanner['img_modulo']['alt']; ?>" />
