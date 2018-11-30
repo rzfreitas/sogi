@@ -148,4 +148,60 @@ get_header(); ?>
 	</div>
 </div>
 
+<?php if( get_field('modulo') == 'lira' ){ ?>
+<section>
+	<div class="container p-t-50 p-b-50 box-gray">
+		<div class="d-flex">
+			<div class="l-h3">
+				<h3>Como será o seu <br> trabalho no LIRA?</h3>
+			</div>
+			<div class="bar-grad"></div>
+		</div>
+		<div class="d-flex p-t-50">
+			<div class="grid-flip">
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<div class="flip-number">1</div>
+						</div>
+						<div class="back">
+							<div class="flip-number">1</div>
+							<p>Descrições de evidências de atendimento ou não atendimento das obrigações.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-flip">
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<div class="flip-number">2</div>
+						</div>
+						<div class="back">
+							<div class="flip-number">2</div>
+							<p>Criação de planos de ação corretivos com responsáveis e prazos para as obrigações identificadas como não conformes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-flip">
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<div class="flip-number">3</div>
+						</div>
+						<div class="back">
+							<div class="flip-number">3</div>
+							<p>Análise mensal de relatório de estatística de atendimento do monitoramento legal.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<?php } ?>
+
+<?php get_template_part('template-parts/content' , 'integracao'); ?>
+
 <?php get_footer(); ?>

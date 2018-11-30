@@ -3,7 +3,7 @@
 	<h2>Blog soGi</h2>
 </div>
 <div class="container p-t-50 p-b-50 noticias-artigos">
- 	<div class="row">      
+ 	<div class="row d-inline">      
         <?php $aRecentPosts = new WP_Query("showposts=4");
         while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();?>
 
@@ -26,7 +26,7 @@
 
 		<?php endwhile; wp_reset_query(); ?>		
   	</div>
-  	<div class="row text-center">  		
+  	<div class="row text-center p-t-50">  		
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog" class="btn-leia-mais">Leia mais</a>
   	</div>
 </div>

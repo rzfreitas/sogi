@@ -20,7 +20,7 @@ get_header(); ?>
 	<div class="bg-blue p-t-75 p-b-75" id="diagonal-border">
 		<div class="container text-center">
 			<h2>Soluções para gestão integrada com foco em compliance <br> e prevenção riscos. Encontre a ideal para sua empresa.</h2>
-			<ul class="inline-list">
+			<ul class="inline-list p-t-25">
 				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/lira.png" alt="lira"></li>
 				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/auditoria.png" alt="auditoria"></li>
 				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/gaia.png" alt="gaia"></li>
@@ -36,7 +36,7 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="p-t-100 p-b-75" id="diagonal-border">
+	<div class="bg-white p-t-100 p-b-75" id="diagonal-border">
 		<div class="container">
 			<div class="row p-b-50 vantagens-home">
 				<div class="col-md-4">
@@ -89,8 +89,8 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div class="container p-b-50">
-			<div class="row p-b-50 vantagens-home d-flex">
+		<div class="container">
+			<div class="row vantagens-home d-flex">
 				<div class="col-md-4 d-flex">
 					<table>
 						<tr>
