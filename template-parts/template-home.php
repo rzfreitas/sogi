@@ -30,8 +30,8 @@ get_header(); ?>
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>tnc"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/tnc.png" alt="tnc"></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>risco-legal"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/risco-legal.png" alt="risco legal"></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>risco-do-negocio"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/gestao-riscos.png" alt="gestão riscos"></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>licencas"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/licencas.png" alt="licanças"></a></li>
-				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/administativo.png" alt="administativo"></li>
+				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>licencas"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/licencas.png" alt="licenças"></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>administrativo"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/administativo.png" alt="administativo"></a></li>
 			</ul>
 		</div>
 	</div>
