@@ -4,7 +4,7 @@
 		<div class="p-t-50">
 			<div class="d-flex">
 				<div class="block-licencas">
-					Quantidade de Licenças de uso<div class="NomeModulo"></div>
+					Quantidade de Licenças de uso <div class="NomeModulo"></div>
 					<input type="number" id="anuidades" name="anuidades" min="1" max="100" value="1">
 				</div>
 				<?php if( get_field('modulo') == 'lira' ): ?>

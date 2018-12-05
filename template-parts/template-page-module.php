@@ -25,20 +25,19 @@ get_header(); ?>
 	<div class="bg-banner-liracorp">
 	<?php endif ?>
 		<div class="container v-center">
-			<div class="row">
+			<div class="d-flex">
 				<?php					
 				$cbanner = get_field('content_banner');
 				if( $cbanner ): ?>
-				<div class="col-md-8 align-vid">
+				<div class="col-md-7 align-vid">
 					<?php echo $cbanner['video_youtube']; ?>
 				</div>
-				<div class="col-md-4">
-					<div class="d-flex">
+				<div class="col-md-5">
+					<div class="d-flex v-center">
 						<div class="w-img">
 							<img src="<?php echo $cbanner['img_modulo']['url']; ?>" alt="<?php echo $cbanner['img_modulo']['alt']; ?>" />
 						</div>
-						<div class="w-text">
-							
+						<div class="w-text">							
 								<h1><?php echo $cbanner['titulo_banner']; ?></h1>
 								<p><?php echo $cbanner['descricao_banner']; ?></p>
 							<?php endif; ?>
