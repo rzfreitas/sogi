@@ -24,7 +24,7 @@ get_header(); ?>
 	<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
 	<div class="bg-banner-liracorp">
 	<?php endif ?>
-		<div class="container v-center">
+		<div class="container v-center p-t-50">
 			<div class="d-flex">
 				<?php					
 				$cbanner = get_field('content_banner');

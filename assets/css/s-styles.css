@@ -47,7 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-
 /* HEADER */
 .site-header{
 	position: fixed;;
@@ -92,7 +91,7 @@ table {
     position: absolute;
     background-color: #fff;
     width: 780px;
-    margin-left: -388px;
+    right: 0;
     margin-top: 25px;
     box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
 }
@@ -105,7 +104,7 @@ table {
     border-color: transparent transparent #fcfdff transparent;
     position: absolute;
     top: -19px;
-    left: 50%;
+    left: 94%;
 }
 .solucoes-vg img{margin-bottom: 20px;}
 .solucoes-vg h3{
@@ -293,6 +292,7 @@ ul.inline-list li:last-child{margin-right: 0px}
 .black-header a{
     color: #fff;
 }
+.black-header .solucoes-vg a{color: #337ab7;}
 #diagonal-border{
     position: relative;
 }
