@@ -138,8 +138,16 @@ table {
 	top: 50%;
 	transform: translateY(-50%);
 }
-.d-flex{display: flex;}
-.d-inline-flex{display: inline-flex;}
+.d-flex{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+.d-inline-flex{
+    display: inline-flex;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+}
 .d-inline{display: inline;}
 .p-t-15{padding-top: 15px;}
 .p-t-25{padding-top: 25px;}
@@ -151,12 +159,6 @@ table {
 .p-t-100{padding-top: 100px;}
 .p-b-100{padding-bottom: 100px;}
 .p-relative{position: relative;}
-.full-width{
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 10
-}
 .m-t-15{margin-top: 15px;}
 .m-t-50{margin-top: 50px;}
 .m-t-145{margin-top: 145px;}
@@ -441,6 +443,11 @@ ul.inline-list li:last-child{margin-right: 0px}
     position: absolute;
     left: 0;
 }*/
+.img-floating{
+    position: relative;
+    z-index: 10;
+    top:50px;
+}
 /* / */
 
 /* BOX MODULOS */
@@ -950,5 +957,42 @@ background-color:#fff
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px
+}
+/* / */
+
+/* Integraçao outros moduluos */
+.block-licencas{
+    width: 70%;
+    margin-right: 10px;
+    padding: 25px;
+    background: #fff;
+}
+.block-precos-licencas{
+    width: 30%;
+    padding: 25px;
+    text-align: center;
+}
+.block-precos-licencas .PrecoModulo{
+    font-weight: bold;
+    font-size: 18px;    
+}
+.block-licencas .NomeModulo{
+    width: auto;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.block-licencas input{
+    float: right;
+    margin-top: 10px;
+    border: 0;
+    border-left: 1px solid;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0;
+}
+.block-licencas input[type=number]::-webkit-inner-spin-button, 
+.block-licencas input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
 }
 /* / */

@@ -65,10 +65,10 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>
 		</div>
-		<div class="container p-t-50 text-center">
+		<div class="container text-center">
 			<?php $image = get_field('img_tela');
 			if( !empty($image) ): ?>
-				<img class="full-width" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+				<img class="img-floating" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 			<?php endif; ?>			
 		</div>
 		<?php get_template_part('template-parts/content' , 'conversion-row'); ?>
@@ -202,6 +202,10 @@ get_header(); ?>
 </section>
 <?php } ?>
 
-<?php get_template_part('template-parts/content' , 'integracao'); ?>
+<?php if( get_field('modulo') == 'lira' ) {
+	get_template_part('template-parts/content' , 'integracao-lira');
+} else {
+	get_template_part('template-parts/content' , 'integracao');
+} ?>
 
 <?php get_footer(); ?>
