@@ -146,7 +146,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-
+<!--
 <?php if( get_field('modulo') == 'lira' ){ ?>
 <section>
 	<div class="container p-t-50 p-b-50 box-gray">
@@ -200,7 +200,7 @@ get_header(); ?>
 	</div>
 </section>
 <?php } ?>
-
+-->
 <?php if( get_field('modulo') == 'lira' ) {
 	get_template_part('template-parts/content' , 'integracao-lira');
 } else {

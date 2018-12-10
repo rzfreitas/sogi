@@ -19,7 +19,7 @@ get_header(); ?>
 <section>
 	<div class="bg-blue p-t-75 p-b-75" id="diagonal-border">
 		<div class="container text-center">
-			<h2>Soluções para gestão integrada com foco em compliance <br> e prevenção riscos. Encontre a ideal para sua empresa.</h2>
+			<h2 class="f-normal">Soluções para gestão integrada com foco em compliance <br> e prevenção riscos. Encontre a ideal para sua empresa.</h2>
 			<ul class="inline-list p-t-25">
 				<li>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>lira"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/lira.png" alt="lira"></a></li>
@@ -29,7 +29,7 @@ get_header(); ?>
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>prsst"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/prsst.png" alt="prsst"></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>tnc"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/tnc.png" alt="tnc"></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>risco-legal"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/risco-legal.png" alt="risco legal"></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>risco-do-negocio"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/gestao-riscos.png" alt="gestão riscos"></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>risco-do-negocio"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/risco-negocio.png" alt="gestão riscos"></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>licencas"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/licencas.png" alt="licenças"></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>administrativo"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/administativo.png" alt="administativo"></a></li>
 			</ul>

@@ -164,7 +164,7 @@ function add_theme_styles_scripts() {
 	wp_register_script( 'jQuery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', null, null, false );
 	wp_enqueue_script('jQuery');
  
-	wp_register_style( 'font', 'https://fonts.googleapis.com/css?family=Ubuntu', all );
+	wp_register_style( 'font', 'https://fonts.googleapis.com/css?family=Montserrat', all );
 	wp_enqueue_style('font');
 
 	wp_enqueue_style( 'bootstrap3', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '', 'all');

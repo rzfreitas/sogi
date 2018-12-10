@@ -22,8 +22,6 @@
 	<footer class="n-footer">
 		<div class="container text-center p-b-25">
 			<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/imagens/logos/logo-vg-footer.svg" alt="logo Verde Ghaia"></a>
-			<p class="p-t-25 p-b-15">Av. Raja Gabaglia, nº 555, Cidade Jardim, <br> Belo Horizonte / MG – CEP: 30380-103</p>
-			<h3>(31) 2127-9137</h3>
 		</div>
 
 		<div class="container block-links">

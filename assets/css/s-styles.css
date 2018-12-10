@@ -79,13 +79,35 @@ table {
     border-left: 1px solid #fff;
 }
 .s-menu a{
-    font-weight: bold;
     color: #fff;
     font-size: 16px;
 }
 .s-menu ul{display: inline-flex;}
-.s-menu li{margin-right: 30px;}
-.s-menu li:last-child{margin-right: 0}
+.s-menu li{
+    position: relative;
+    padding: 20px;
+}
+.s-menu ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 45px;
+    left: 0;    
+    z-index: 99999;
+    background-color: #fff;
+    width: 300px;
+    display: none; /* Added */
+    margin-left: 0;
+}
+.s-menu ul ul a{
+    color: #333;
+}
+.s-menu ul li:hover>ul, .s-menu ul li.focus>ul {
+    /* left: auto; */
+    display: block; /* Added */
+}
+.sub-menu li{
+    padding: 15px 10px;
+}
 /* Solucoes menu */
 .solucoes-vg{
     position: absolute;
@@ -164,9 +186,7 @@ table {
 /* / */
 
 /* TEXTING */
-body{
-	font-family: 'Ubuntu', sans-serif;
-}
+body{font-family: 'Montserrat', sans-serif;}
 strong{font-weight: bold;}
 small {
     font-size: 80%;
@@ -228,6 +248,7 @@ h6 {
 p{
     line-height: 1.5;
 }
+.f-normal{font-weight: normal}
 /* / */
 
 /* HOME */

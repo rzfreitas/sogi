@@ -3,9 +3,9 @@
 		<h2 class="text-center">ESCOLHA O MELHOR PLANO PARA SUA EMPRESA</h2>
 		<div class="p-t-50">
 			<div class="d-flex">
-				<div class="block-licencas">
-					Quantidade de Licenças de uso <div class="NomeModulo"></div>
-					<input type="number" id="anuidades" name="anuidades" min="1" max="100" value="1">
+				<div class="block-licencas d-flex">
+					<div>Quantidade de Licenças de uso <div class="NomeModulo"></div></div>
+					<div><input type="number" id="anuidades" name="anuidades" min="1" max="100" value="1"></div>
 				</div>
 				<?php if( get_field('modulo') == 'lira' ): ?>
 				<div class="block-precos-licencas bg-lira">
