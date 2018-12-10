@@ -23,3 +23,7 @@ jQuery(window).scroll(function() {
     jQuery(".idHeader").removeClass("black-header");
   }
 });
+
+function handleSelect(elm){
+  window.location = elm.value;
+}

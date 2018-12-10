@@ -80,8 +80,14 @@
 								</ul>									
 							</div>
 						</div>
-						<div>
-							<a class="btn-pink">Help Desk</a>
+						<div class="langs hidden-xs">
+							<select onchange="javascript:handleSelect(this)">
+							  <option value="https://www.verdeghaia.com.br/">PT-BR</option>
+							  <option value="https://www.verdeghaia.com/es/">ES</option>
+							</select>
+						</div>
+						<div class="hidden-xs">
+							<?php get_template_part('search-form'); ?>
 						</div>
 					</div>
 				</div>
