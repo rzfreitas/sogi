@@ -3,13 +3,20 @@
 get_header(); ?>
 
 <section>
-<div class="bg-home">
+<?php $image = get_field('img_banner'); if( !empty($image) ): ?>
+<div style="background: url(<?php echo $image['url']; ?>) no-repeat center center fixed;   
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: calc(100vh);">
+<?php endif; ?>
 	<div class="container v-center text-banner">
-		<div class="row">
-			<div class="col-md-5"></div>
-			<div class="col-md-7">
-				<h1>O que é o soGi?</h1>
-				<p>Desenvolvido pela Verde Ghaia, o soGi é uma plataforma de Soluções para Gestão Integrada. Seus módulos foram desenvolvidos de acordo com a metodologia Verde Ghaia e orientados pelas normas internacionais de certificação como as ISOs. O objetivo é oferecer ferramentas úteis que para promover, acelerar e facilitar sua gestão.</p>
+		<div class="d-flex">
+			<div class="col-7"></div>
+			<div class="col-5">
+				<h1><?php the_field('titulo_banner'); ?></h1>
+				<p><?php the_field('texto_banner'); ?></p>
 			</div>
 		</div>
 	</div>
@@ -204,7 +211,7 @@ get_header(); ?>
 			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/schneider-motobombas.png" alt="schneider motobombas"></li>
 		</ul>
 	</div>		
-	<div class="container p-b-50">
+	<!-- <div class="container p-b-50">
 		<?php if( have_rows('depoimentos') ): ?>
 		<ul class="depoimentos b-top">
 		<?php while( have_rows('depoimentos') ): the_row(); 
@@ -225,8 +232,8 @@ get_header(); ?>
 		<?php endwhile; ?>
 		</ul>
 		<?php endif; ?>
-	</div>
-	<script>
+	</div> -->
+	<!-- <script>
 	$(document).ready(function(){
 	  $('.depoimentos').slick({
 	   	autoplay: true,
@@ -236,7 +243,7 @@ get_header(); ?>
 	  	dots: true
 	  });
 	});
-	</script>
+	</script> -->
 </section>
 
 <?php get_footer(); ?>

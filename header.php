@@ -31,7 +31,7 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/logos/logo-sogi.png" alt="logo sogi"></a>
 				</div>		
 				<div class="col-md-6">
-					<nav id="site-navigation" class="s-menu v-center">
+					<nav id="site-navigation" class="s-menu text-center v-center">
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',

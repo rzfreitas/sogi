@@ -173,9 +173,10 @@ table {
     position: relative;
 }
 .icon-search {
-    margin-left: -30px;
+    padding-right: 9px;
     position: absolute;
     top: 9px;
+    right: 0;
     z-index: 2;
     color: rgba(238,238,238,.4);
 }
@@ -214,6 +215,7 @@ table {
 .m-t-15{margin-top: 15px;}
 .m-t-50{margin-top: 50px;}
 .m-t-145{margin-top: 145px;}
+.text-center{text-align: center;}
 /* / */
 
 /* TEXTING */
@@ -283,7 +285,7 @@ p{
 /* / */
 
 /* HOME */
-.bg-home{
+/*.bg-home{
 	background: url(../imagens/home/sogi.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -291,7 +293,7 @@ p{
     background-size: cover;
     height: calc(100vh - 63px);
     position: relative;
-}
+}*/
 .bg-blue{
 	background-color: #0079BA;
 	color: #fff;
@@ -737,6 +739,7 @@ ul.inline-list li:last-child{margin-right: 0px}
 }
 .btn-yellow{
     background: #FFAB00;
+    border-radius: 50px;
 }
 .btn-pink{
     border-radius: 30px;
