@@ -28,9 +28,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -81,6 +78,7 @@ table {
 .s-menu a{
     color: #fff;
     font-size: 16px;
+    text-decoration: none;
 }
 .s-menu ul{display: inline-flex;}
 .s-menu li{
@@ -97,6 +95,7 @@ table {
     width: 300px;
     display: none; /* Added */
     margin-left: 0;
+    transition: .2s;
 }
 .s-menu ul ul a{
     color: #333;
@@ -104,9 +103,14 @@ table {
 .s-menu ul li:hover>ul, .s-menu ul li.focus>ul {
     /* left: auto; */
     display: block; /* Added */
+    text-align: left;
+    transition: .2s;
 }
 .sub-menu li{
     padding: 15px 10px;
+}
+.sub-menu li:hover, .s-menu a:hover{
+    text-decoration: underline;
 }
 /* Solucoes menu */
 .solucoes-vg{
@@ -216,6 +220,9 @@ table {
 .m-t-50{margin-top: 50px;}
 .m-t-145{margin-top: 145px;}
 .text-center{text-align: center;}
+.text-right{text-align: right;}
+.float-right{float: right;}
+.float-left{float: left;}
 /* / */
 
 /* TEXTING */
@@ -386,6 +393,7 @@ ul.inline-list li:last-child{margin-right: 0px}
     background: #045581;
     color: #fff;
 }
+.bg-royal h2{line-height: 1.3}
 .box-depoimento{
     max-width: 800px;
     margin: auto;
@@ -764,6 +772,36 @@ a.btn-pink{color: #fff;}
 a.btn-yellow{color: #000;}
 /* / */
 
+/* TABS */
+.bg-tabs{
+    background: url('../imagens/bg-tabs.png') no-repeat center center fixed;   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: calc(50vh);
+    color: #fff;
+}
+.s-tabs .nav-tabs{
+    display: block;
+    border-bottom: 0;
+}
+.s-tabs .nav-tabs .nav-link{
+    border-radius: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+.s-tabs .nav-tabs .nav-link:last-child{
+    margin-bottom: 0
+}
+.s-tabs .nav-link.active{
+    color: #2089C2;
+}
+/* / */
+
 /* NOTICIAS */
 .title-blog-vg{
     text-align: center;
@@ -811,17 +849,14 @@ background-color:#0079BA;
 color:#fff;
 padding: 50px 0;
 }
-
-.footer-column {
-margin:1.5%
-}
-
 .block-links {
 border-top:1px solid #fff;
 border-bottom:1px solid #fff;
 margin-bottom:30px;
-margin-top:30px
+margin-top:30px;
+padding: 15px;
 }
+.block-links h3{margin-top: 0px;}
 
 .n-footer .links ul {
 list-style:none;

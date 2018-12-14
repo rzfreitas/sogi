@@ -23,6 +23,8 @@ get_header(); ?>
 </div>
 </section>
 
+<?php get_template_part('template-parts/content' , 'tabs'); ?>
+
 <section>
 	<div class="bg-blue p-t-75 p-b-75" id="diagonal-border">
 		<div class="container text-center">
