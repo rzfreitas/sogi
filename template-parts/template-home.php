@@ -47,6 +47,88 @@ get_header(); ?>
 </section>
 
 <section>
+	<div class="container p-t-50 p-b-50">
+		<div class="row d-flex">
+			<div class="col-4 b-r-g text-center">
+				<h2 class="v-center no-m title-blue">Facilidades</h2>
+			</div>
+			<div class="col-8">
+				<ul class="facilidades">
+					<li class="col-md-4 d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/balance.png" alt="leis aplicáveis negócio">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Identifica e interpreta leis aplicáveis ao seu negócio.</p>
+						</div>
+					</li>
+					<li class="col-md-4 d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/alertas.png" alt="Monitora alertas">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Monitora e dá alertas para seu cumprimento</p>
+						</div>
+					</li>
+					<li class="col-md-4 d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/guia.png" alt="guia Compliance">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Cria um guia específico para Compliance em sustentabilidade</p>
+						</div>
+					</li>
+					<li class="col-md-4 d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/multas.png" alt="Reduz multas">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Reduz riscos com multas</p>
+						</div>
+					</li>
+					<li class="col-md-4 d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/balance.png" alt="reduz custos auditorias">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Reduz 90% dos custos com Auditorias anuais de Due Delligence Ambiental</p>
+						</div>
+					</li>
+					<li class="col-md-4 d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/leis.png" alt="banco dados leis">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Banco de dados com + de 110 mil leis</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="bg-marinho p-t-50 p-b-50">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-4 p-relative">
+					<div class="box-blue">
+						<h2>Várias funcionalidades <br> em uma plataforma*</h2>
+						<div class="text-right p-t-15">
+							<a class="btn-def btn-yellow" href="">Contrate o SOGI</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-8">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
 	<div class="bg-white p-t-100 p-b-100">
 		<div class="container">
 			<div class="row p-b-50 vantagens-home">
@@ -151,63 +233,6 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/content' , 'tabs'); ?>
 
-<!-- <section>
-	<div class="bg-blue p-t-75 p-b-75" id="diagonal-border">
-		<div class="container text-center">
-			<h2 class="f-normal">Soluções para gestão integrada com foco em compliance <br> e prevenção riscos. Encontre a ideal para sua empresa.</h2>
-			<ul class="inline-list p-t-25">
-				<li>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>lira"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/lira.png" alt="lira"></a></li>
-				<li>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>\auditoria"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/auditoria.png" alt="auditoria"></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>gaia"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/gaia.png" alt="gaia"></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>prsst"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/prsst.png" alt="prsst"></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>tnc"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/tnc.png" alt="tnc"></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>risco-legal"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/risco-legal.png" alt="risco legal"></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>risco-do-negocio"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/risco-negocio.png" alt="gestão riscos"></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>licencas"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/licencas.png" alt="licenças"></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>administrativo"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/administativo.png" alt="administativo"></a></li>
-			</ul>
-		</div>
-	</div>
-</section> -->
-
-<section>
-	<div class="bg-royal p-t-100 p-b-75" id="diagonal-border">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h2>Várias funcionalidades em uma plataforma*</h2>
-					<div class="p-t-50">
-						<a class="btn-def btn-yellow v-center">Contrate o sogi</a>
-					</div>
-				</div>
-				<div class="col-md-8">
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="bg-blue p-t-100 p-b-75">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					
-				</div>
-				<div class="col-md-4">
-					<h2>Assista um case de sucesso*</h2>
-					<div class="p-t-50">
-						<a class="btn-def btn-yellow v-center">Torne-se um case de sucesso também!</a>
-					</div>
-				</div>				
-			</div>
-		</div>
-	</div>
-</section>
-
 <!-- <section>	
 	<div class="container p-b-50">
 		<?php if( have_rows('depoimentos') ): ?>
@@ -241,7 +266,7 @@ get_header(); ?>
 	  	dots: true
 	  });
 	});
-	</script> -->
-</section>
+	</script> 
+</section>-->
 
 <?php get_footer(); ?>

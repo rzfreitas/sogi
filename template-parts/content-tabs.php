@@ -28,6 +28,8 @@
 				</div>
 				<div class="tab-content col-8" id="nav-tabContent">
 				  <div class="tab-pane fade show active" id="nav-lira" role="tabpanel" aria-labelledby="nav-lira-tab">
+				  	<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/LIRA.png" alt="LIRA">
+				  	<p>Inteligência para controle de leis com funcionalidades que trazem a facilidade da interpretação e do que é aplicável ao seu negócio. Alertas para planos de ação e evidências de atendimento.</p>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate o LIRA</a>
 					</div>
