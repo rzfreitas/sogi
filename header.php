@@ -27,10 +27,10 @@
 	<header id="masthead" class="site-header idHeader">
 		<div class="container">
 			<div class="row d-flex">
-				<div class="col-md-3">
+				<div class="col-md-3 col">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/logos/logo-sogi.png" alt="logo sogi"></a>
 				</div>		
-				<div class="col-md-6">
+				<div class="col-md-6 d-none d-sm-block">
 					<nav id="site-navigation" class="s-menu text-center v-center">
 						<?php
 						wp_nav_menu( array(
@@ -40,9 +40,9 @@
 						?>
 					</nav><!-- #site-navigation -->
 				</div>
-				<div class="col-md-3 text-right border-l-w">
+				<div class="col-md-3 text-right border-l-w d-none d-sm-block">
 					<div class="d-inline-flex v-center">
-						<div class="icon-tools hidden-xs p-relative">
+						<div class="icon-tools p-relative">
 							<i id="solucoes-vg" class="fa fa-th"></i>
 							<div class="solucoes-vg invisible">
 								<h3>Soluções Verde Ghaia</h3>									
@@ -80,19 +80,34 @@
 								</ul>									
 							</div>
 						</div>
-						<div class="langs hidden-xs">
+						<div class="langs">
 							<select onchange="javascript:handleSelect(this)">
-							  <option value="https://www.verdeghaia.com.br/">PT-BR</option>
+							  <option value="https://www.verdeghaia.com.br/">PT</option>
 							  <option value="https://www.verdeghaia.com/es/">ES</option>
 							</select>
 						</div>
-						<div class="hidden-xs">
+						<div>
 							<?php get_template_part('search-form'); ?>
 						</div>
 					</div>
 				</div>
+				<div class="d-block d-sm-none col text-right">
+					<span class="menu-mob" id="openNav"><i class="fa fa-bars"></i></span>
+				</div>
 			</div>
 		</div>
 	</header><!-- #masthead -->
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+		<nav>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			) );
+			?>
+		</nav>
+	</div>
 
 	<div id="content" class="site-content">

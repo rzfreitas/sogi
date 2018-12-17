@@ -1,33 +1,65 @@
 <section>
-<div class="title-blog-vg p-t-50">
-	<h2>Blog soGi</h2>
-</div>
-<div class="container p-t-50 p-b-50 noticias-artigos">
- 	<div class="row d-inline">      
-        <?php $aRecentPosts = new WP_Query("showposts=4");
-        while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();?>
+<div class="container p-b-100 p-t-100" id="noticias">
+	<h2 class="t-noticias">Blog SOGI</h2>
 
-        <article class="col-md-6 blog-box">
-			<div class="row">
-				<div class="col-md-3 text-center img-noticia">
-					<span class="color-rand"></span>
-					<a href="<?php the_permalink();?>"><?php the_post_thumbnail('', array('class' => 'img-responsive', 'alt' => get_the_title(), 'title' => get_the_title() ) ); ?></a>
+	<?php $args = array(
+	'post_type' => 'post',
+	'posts_per_page' => 1
+	);
+	$query = new WP_query ( $args );
+	if ( $query->have_posts() ) { ?>
+
+	<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+		<article class="first-post"" id="post-<?php the_ID(); ?>" <?php post_class( 'book' ); ?>>		<div class="row">
+				<div class="col-md-5 text-center">			
+					<?php if ( has_post_thumbnail() ) { ?>				
+						<a href="<?php the_permalink(); ?>">				
+							<?php the_post_thumbnail();	?>			
+						</a>				
+					<?php }?>				
 				</div>
-				<div class="col-md-9 border-left">
-					<div class="titulo-noticia">
-						<h2><strong><a href="<?php the_permalink();?>"><?php the_title(); ?></a></strong></h2>
-						<small><?php the_time('j \d\e F \d\e Y') ?></small>
-					</div>
-					<?php the_excerpt(); ?>
-					<a href="<?php the_permalink();?>"><div class="text-left p-t-15">Continuar lendo</a>
+				
+				<div class="col-md-7">
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>			
+					<div class="date-post p-b-25"><?php $post_date = get_the_date( 'F j, Y' ); echo $post_date; ?></div>
+					<p><?php the_excerpt(); ?></p>
 				</div>
 			</div>
-		</article>
+  		</article>  
+  	<?php endwhile; ?>  
+  	<?php wp_reset_postdata(); ?>  
+	<?php } ?>
 
-		<?php endwhile; wp_reset_query(); ?>		
-  	</div>
-  	<div class="row text-center p-t-50">  		
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog" class="btn-leia-mais">Leia mais</a>
-  	</div>
+	<div class="m-t-50">
+		<?php $args = array(
+		'post_type' => 'post',
+		'posts_per_page' => 4,
+		'offset' => 1
+		);
+		$query = new WP_query ( $args );
+		if ( $query->have_posts() ) { ?>
+
+		<div class="row">
+			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+				<div class="col text-center old-posts">
+					<article id="post-<?php the_ID(); ?>" <?php post_class( 'book' ); ?>>
+						<?php if ( has_post_thumbnail() ) { ?>
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail();	?>
+							</a>
+						<?php }?>
+						
+						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<!-- <div class="date-post"><i class="fa fa-clock-o"></i><?php $post_date = get_the_date( 'F j, Y' ); echo $post_date; ?></div> -->
+			  		</article>
+			  	</div>
+		  	<?php endwhile; ?>
+		  	<?php wp_reset_postdata(); ?>  
+			<?php } ?>
+		</div>
+	</div>
+	<div class="p-t-50 text-center">
+		<a class="btn-def btn-white" href="">Leia mais...</a>
+	</div>
 </div>
 </section>

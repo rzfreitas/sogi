@@ -1,26 +1,26 @@
-/*jQuery("#openNav").click(function(){
+$("#openNav").click(function(){
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("masthead").style.marginLeft = "250px";
 });
 
-jQuery("#closeNav").click(function(){
+$("#closeNav").click(function(){
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("masthead").style.marginLeft= "0";
-});*/
+});
 
-jQuery(document).ready(function(){
-  jQuery("#solucoes-vg").click(function(){
-    jQuery(".solucoes-vg").toggleClass("invisible");
+$(document).ready(function(){
+  $("#solucoes-vg").click(function(){
+    $(".solucoes-vg").toggleClass("invisible");
   });
 });
 
-jQuery(window).scroll(function() {    
-  var scroll = jQuery(window).scrollTop();
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
 
   if (scroll >= 1) {
-    jQuery(".idHeader").addClass("black-header");
+    $(".idHeader").addClass("black-header");
   } else {
-    jQuery(".idHeader").removeClass("black-header");
+    $(".idHeader").removeClass("black-header");
   }
 });
 
