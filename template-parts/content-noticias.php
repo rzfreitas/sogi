@@ -21,8 +21,11 @@
 				
 				<div class="col-md-7">
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>			
-					<div class="date-post p-b-25"><?php $post_date = get_the_date( 'F j, Y' ); echo $post_date; ?></div>
+					<div class="date-post p-b-15"><?php $post_date = get_the_date( 'F j, Y' ); echo $post_date; ?></div>
 					<p><?php the_excerpt(); ?></p>
+					<div class="p-t-15">
+						<a class="cont-lendo" href="<?php the_permalink(); ?>">Continuar lendo...</a>
+					</div>
 				</div>
 			</div>
   		</article>  

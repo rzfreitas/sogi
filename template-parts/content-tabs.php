@@ -26,50 +26,80 @@
 					  </div>
 					</nav>
 				</div>
-				<div class="tab-content col-8" id="nav-tabContent">
+				<div class="tab-content col-9" id="nav-tabContent">
 				  <div class="tab-pane fade show active" id="nav-lira" role="tabpanel" aria-labelledby="nav-lira-tab">
-				  	<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/LIRA.png" alt="LIRA">
+				  	<div class="text-center">
+				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/LIRA.png" alt="LIRA">
+				  	</div>
 				  	<p>Inteligência para controle de leis com funcionalidades que trazem a facilidade da interpretação e do que é aplicável ao seu negócio. Alertas para planos de ação e evidências de atendimento.</p>
+
+				  	<div class="listin-tabs">
+				  		<span>Atualizações • Indicadores • Personalização • Alertas • Relatórios • Versão corporativa</span>
+				  	</div>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate o LIRA</a>
 					</div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-auditoria" role="tabpanel" aria-labelledby="nav-auditoria-tab">
+				  	<div class="text-center">
+				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/auditoria.png" alt="módulo auditoria">
+				  	</div>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate a Auditoria</a>
 					</div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-gaia" role="tabpanel" aria-labelledby="nav-gaia-tab">
+				  	<div class="text-center">
+				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/gaia.png" alt="módulo gaia">
+				  	</div>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate o GAIA</a>
 					</div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-prsso" role="tabpanel" aria-labelledby="nav-prsso">
+				  	<div class="text-center">
+				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/prsso.png" alt="módulo gaia">
+				  	</div>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate o PRSSO</a>
 					</div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-tnc" role="tabpanel" aria-labelledby="nav-tnc">
+				  	<div class="text-center">
+				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/tnc.png" alt="módulo tratamento nao conformidade">
+				  	</div>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate o TNC</a>
 					</div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-rl" role="tabpanel" aria-labelledby="nav-rl">
+				  	<div class="text-center">
+				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/risco-legal.png" alt="módulo risco legal">
+				  	</div>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate o Risco Legal</a>
 					</div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-rn" role="tabpanel" aria-labelledby="nav-rn">
+				  	<div class="text-center">
+				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/risco-negocio.png" alt="módulo risco negócio">
+				  	</div>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate o Risco do Negócio</a>
 					</div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-lic" role="tabpanel" aria-labelledby="nav-lic">
+				  	<div class="text-center">
+				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/licencas.png" alt="módulo licenças">
+				  	</div>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate o Licenças</a>
 					</div>
 				  </div>
 				  <div class="tab-pane fade" id="nav-adm" role="tabpanel" aria-labelledby="nav-adm">
+				  	<div class="text-center">
+				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/licencas.png" alt="módulo licenças">
+				  	</div>
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow">Contrate o Administrativo</a>
 					</div>
