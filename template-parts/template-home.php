@@ -233,6 +233,8 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/content' , 'tabs'); ?>
 
+<?php get_template_part('template-parts/content' , 'app'); ?>
+
 <!-- <section>	
 	<div class="container p-b-50">
 		<?php if( have_rows('depoimentos') ): ?>

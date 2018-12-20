@@ -812,6 +812,23 @@ ul.facilidades li{
 }
 /* / */
 
+/* APPS */
+.bg-app{
+    background: url(../imagens/bg-app.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 50vh;
+    background-attachment: fixed;
+}
+.bg-app h2{
+    color: #FFAB00;
+    font-size: 48px;
+}
+.bg-app p{color: #fff;}
+/* / */
+
 /* Buttons */
 .btn-def{
     display: inline-block;
