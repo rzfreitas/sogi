@@ -77,33 +77,65 @@ get_header(); ?>
 <?php if( get_field('modulo') == 'lira' ){ ?>
 <section>
 	<div class="container p-t-50 vantagens-lira">
-		<h2 class="text-center">As Vantagens:</h2>
-		<div class="row d-flex p-t-50 text-center">
-			<div class="col-md-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/update.png" alt="Informação atualizada">
-				<p>Informação clara, atualizada constantemente e adaptada ao ramo de negócio da organização.</p>
+		<div class="row d-flex p-t-50">
+			<div class="col-md-3 b-r-g">
+				<h2 class="text-center v-center title-blue">Vantagens</h2>
 			</div>
-			<div class="col-md-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/check.png" alt="Informação atualizada">
-				<p>Possibilidade de criação e personalização do perfil do usuário, como controle de acesso, visualização e impressão de relatórios, permissões de grupos e distribuição de tarefas para os usuários.</p>
-			</div>
-			<div class="col-md-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/alertas.png" alt="Informação atualizada">
-				<p>Alertas para validação de novos requisitos legais, planos de ações vencidos, cartas mensais de atualização, acompanhamento de pendências, entre outros.</p>
-			</div>
-		</div>
-		<div class="row d-flex p-t-50 text-center">
-			<div class="col-md-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/relatorios.png" alt="Informação atualizada">
-				<p>Relatórios com posicionamento sobre auditorias, tratamento de não conformidades e de pendências.</p>
-			</div>
-			<div class="col-md-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/indicadores.png" alt="Informação atualizada">
-				<p> Indicadores de tratamento de não conformidade, auditoria de conformidade legal, estatística de atendimento à conformidade legal.</p>
-			</div>
-			<div class="col-md-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/versoes.png" alt="Informação atualizada">
-				<p>Versão corporativa para visualização da informação de forma integrada de cada uma das unidades de negócio (saiba mais).</p>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/update.png" alt="Informação atualizada">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Informação clara, atualizada constantemente e adaptada ao ramo de negócio da organização.</p>
+						</div>
+					</div>
+					<div class="col d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/check.png" alt="Informação atualizada">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Possibilidade de criação e personalização do perfil do usuário, como controle de acesso, visualização e impressão de relatórios, permissões de grupos e distribuição de tarefas para os usuários.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row p-t-50">
+					<div class="col d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/alertas.png" alt="Informação atualizada">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Alertas para validação de novos requisitos legais, planos de ações vencidos, cartas mensais de atualização, acompanhamento de pendências, entre outros.</p>
+						</div>
+					</div>
+					<div class="col d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/relatorios.png" alt="Informação atualizada">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Relatórios com posicionamento sobre auditorias, tratamento de não conformidades e de pendências.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row p-t-50">				
+					<div class="col d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/indicadores.png" alt="Informação atualizada">
+						</div>
+						<div class="w-80 p-l-10">
+							<p> Indicadores de tratamento de não conformidade, auditoria de conformidade legal, estatística de atendimento à conformidade legal.</p>
+						</div>
+					</div>
+					<div class="col d-flex">
+						<div class="w-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/lira/versoes.png" alt="Informação atualizada">
+						</div>
+						<div class="w-80 p-l-10">
+							<p>Versão corporativa para visualização da informação de forma integrada de cada uma das unidades de negócio (saiba mais).</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

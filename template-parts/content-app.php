@@ -16,7 +16,7 @@
 					</div>
 				</div>
 				<div class="col-4">
-					<img class="v-center" src="<?php echo get_template_directory_uri(); ?>/assets/imagens/app-vg.png" alt="app leis">
+					<img class="p-t-50" src="<?php echo get_template_directory_uri(); ?>/assets/imagens/app-vg.png" alt="app leis">
 				</div>
 			</div>
 		</div>
