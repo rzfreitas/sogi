@@ -4,8 +4,13 @@
 		<div class="p-t-50">
 			<div class="d-flex">
 				<div class="block-licencas d-flex">
-					<div>Quantidade de Licenças de uso <div class="NomeModulo"></div></div>
-					<div><input type="number" id="anuidades" name="anuidades" min="1" max="100" value="1"></div>
+					<div class="w-90">
+						<span>Quantidade de Licenças de uso </span>
+						<br><div class="NomeModulo"></div>
+					</div>
+					<div class="w-10">
+						<input type="number" id="anuidades" name="anuidades" min="1" max="100" value="1">
+					</div>
 				</div>
 				<?php if( get_field('modulo') == 'lira' ): ?>
 				<div class="block-precos-licencas bg-lira">
@@ -41,21 +46,21 @@
 				</div>
 				<div class="btn-red">	
 					<?php if ( get_field('modulo') == 'auditoria' ): ?>
-						<a onclick="javascript:redirect_loja(115);">Contratar</a>
+						<a onclick="javascript:redirect_loja(115);">Comprar</a>
 					<?php elseif ( get_field('modulo') == 'gaia' ): ?>
-						<a onclick="javascript:redirect_loja(50);">Contratar</a>
+						<a onclick="javascript:redirect_loja(50);">Comprar</a>
 					<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-						<a onclick="javascript:redirect_loja();">Contratar</a>
+						<a onclick="javascript:redirect_loja();">Comprar</a>
 					<?php elseif ( get_field('modulo') == 'tnc' ): ?>
-						<a onclick="javascript:redirect_loja(116);">Contratar</a>
+						<a onclick="javascript:redirect_loja(116);">Comprar</a>
 					<?php elseif ( get_field('modulo') == 'rl' ): ?>
-						<a onclick="javascript:redirect_loja();">Contratar</a>
+						<a onclick="javascript:redirect_loja();">Comprar</a>
 					<?php elseif ( get_field('modulo') == 'rn' ): ?>
-						<a onclick="javascript:redirect_loja();">Contratar</a>
+						<a onclick="javascript:redirect_loja();">Comprar</a>
 					<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-						<a onclick="javascript:redirect_loja();">Contratar</a>
+						<a onclick="javascript:redirect_loja();">Comprar</a>
 					<?php elseif ( get_field('modulo') == 'doc' ): ?>
-						<a onclick="javascript:redirect_loja();">Contratar</a>
+						<a onclick="javascript:redirect_loja();">Comprar</a>
 					<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
 					<?php endif ?>
 				</div>
