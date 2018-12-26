@@ -3,26 +3,6 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -48,7 +28,7 @@ table {
 .site-header{
 	position: fixed;;
 	width: 100%;
-	z-index: 9999;
+	z-index: 999;
 	padding: 15px;
 }
 .fix-header{
@@ -80,7 +60,13 @@ table {
     font-size: 16px;
     text-decoration: none;
 }
-.s-menu ul{display: inline-flex;}
+.s-menu ul{
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
 .s-menu li{
     position: relative;
     padding: 20px;
@@ -231,6 +217,7 @@ table {
 .w-80{width: 80%;}
 .w-90{width: 90%;}
 .no-m{margin: 0;}
+.pointer{cursor: pointer;}
 /* / */
 
 /* TEXTING */
@@ -239,7 +226,7 @@ strong{font-weight: bold;}
 small {
     font-size: 80%;
 }
-h1 { 
+/*h1 { 
     display: block;
     font-size: 2em;
     margin-top: 0.67em;
@@ -292,7 +279,7 @@ h6 {
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
-}
+}*/
 p{
     line-height: 1.5;
 }
@@ -332,6 +319,7 @@ p{
 .vantagens-home table tr td:nth-child(2n){
     padding: 10px;
 }
+.vantagens-home ul{margin: 0; padding: 0;}
 .vantagens-home ul li{
     list-style: disc;
     margin-left: 20px;
@@ -425,15 +413,8 @@ ul.clientes li{margin: 0 15px;}
     color: #0079BA;
     font-weight: bold;
 }
-.b-r-g{border-right: 1px solid #dcdcdc;}
 ul.facilidades{
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    margin: 0
 }
 ul.facilidades li{
     padding: 15px;
@@ -606,9 +587,31 @@ ul.facilidades li{
 /* / */
 
 /* BOX MODULOS */
-.bg-modulos{
-    background-color: #EEEEEE;
-    padding: 20px;
+.bg-modulos{background-color: #F2F2F2;}
+ul.mod-list li{
+    padding: 10px 0;
+    text-align: center;
+    width: 20%;
+}
+ul.mod-list li:last-child{margin-right: 0px}
+.b-r-g{
+    border-right: 1px solid #a1a1a1;
+    background: #f2f2f2;
+}
+.b-r-w{
+    border-right: 1px solid #a1a1a1;
+    background: #fff;
+}
+.b-r-g:after, .b-r-w:after{
+    content: '\f105';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+    font-size: 40px;
+    background: inherit;
+    color: #FFAB00;
 }
 /* / */
 
@@ -1233,6 +1236,13 @@ background-color:#fff
     width: 90%;
     height: 41px;
     text-indent: 15px;
+}
+/* / */
+
+/* MODAL */
+.modal-title {
+    margin-top: 0;
+    color: #171717;
 }
 /* / */
 

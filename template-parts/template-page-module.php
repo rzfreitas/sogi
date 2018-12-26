@@ -142,8 +142,6 @@ get_header(); ?>
 </section>
 <?php } ?>
 
-<?php get_template_part('template-parts/content' , 'modulos'); ?>
-
 <?php if( get_field('modulo') == 'lira' ): ?>
 	<div class="lira-count">
 	<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
@@ -238,5 +236,7 @@ get_header(); ?>
 } else {
 	get_template_part('template-parts/content' , 'integracao');
 } ?>
+
+<?php get_template_part('template-parts/content' , 'modulos'); ?>
 
 <?php get_footer(); ?>

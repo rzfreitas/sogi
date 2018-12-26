@@ -49,11 +49,11 @@ get_header(); ?>
 <section>
 	<div class="container p-t-50 p-b-50">
 		<div class="row d-flex">
-			<div class="col-4 b-r-g text-center">
+			<div class="col-4 b-r-w text-center">
 				<h2 class="v-center no-m title-blue">Facilidades</h2>
 			</div>
 			<div class="col-8">
-				<ul class="facilidades">
+				<ul class="facilidades d-flex flex-wrap">
 					<li class="col-md-4 d-flex">
 						<div class="w-20">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/balance.png" alt="leis aplicáveis negócio">

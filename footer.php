@@ -101,6 +101,7 @@
 			<p>© Copyright 2018 - <a href="https://www.verdeghaia.com.br" target="_blank">Grupo Verde Ghaia</a> - Todos os direitos reservados.</p>
 		</div>			
 
+		<?php get_template_part('template-parts/content' , 'forms'); ?>
 	</footer> <!-- end .footer -->
 
 </div><!-- #page -->

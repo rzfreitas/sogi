@@ -1,5 +1,4 @@
-
-<div class="container p-t-50 p-b-50">
+<div class="container p-t-50 p-b-50" id="conversionRow">
 	<div class="text-center p-b-50 t-integration">
 		<h2>ESCOLHA O MELHOR PLANO PARA SUA EMPRESA:</h2>
 	</div>
@@ -87,7 +86,7 @@
 				<p>Esse valor refere-se às mensalidades para monitoramento de três normas (Meio Ambiente, Saúde e Segurança e Responsabilidade Social). No ato da contratação será acrescentada taxa única de Adesão ao Sistema de R$ 2.800,00.</p>
 			</div>
 			<div class="text-center">
-				<a class="btn-def btn-azul">Falar com o comercial</a>
+				<a class="btn-def btn-azul" data-toggle="modal" data-target="#SogiContato">Falar com o comercial</a>
 				<a class="btn-def btn-azul">Imprimir proposta</a>
 				<a class="btn-def btn-yellow">Comprar</a>
 			</div>

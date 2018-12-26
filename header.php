@@ -90,7 +90,7 @@
 							<a class="btn-def btn-azul-h">Sou cliente</a>
 						</div>
 						<div>
-							<a class="btn-def btn-yellow-h">Contato</a>
+							<a class="btn-def btn-yellow-h" data-toggle="modal" data-target="#SogiContato">Contato</a>
 						</div>
 					</div>
 				</div>

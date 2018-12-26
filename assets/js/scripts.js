@@ -27,3 +27,9 @@ $(window).scroll(function() {
 function handleSelect(elm){
   window.location = elm.value;
 }
+
+function scrollToElement(selector, offset){
+  jQuery("html, body").animate({
+    scrollTop: jQuery(selector).offset().top + offset + 'px'
+  }, 'slow');
+}
