@@ -3,28 +3,30 @@
 get_header(); ?>
 
 <section>
-	<?php if( get_field('modulo') == 'lira' ): ?>
-	<div class="bg-banner-lira">
-	<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
-	<div class="bg-banner-aud">
-	<?php elseif ( get_field('modulo') == 'gaia' ): ?>
-	<div class="bg-banner-gaia">
-	<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-	<div class="bg-banner-prsst">
-	<?php elseif ( get_field('modulo') == 'tnc' ): ?>
-	<div class="bg-banner-tnc">
-	<?php elseif ( get_field('modulo') == 'rl' ): ?>
-	<div class="bg-banner-rl">
-	<?php elseif ( get_field('modulo') == 'rn' ): ?>
-	<div class="bg-banner-rn">
-	<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-	<div class="bg-banner-licencas">
-	<?php elseif ( get_field('modulo') == 'doc' ): ?>
-	<div class="bg-banner-doc">
-	<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-	<div class="bg-banner-liracorp">
-	<?php endif ?>
-		<div class="container v-center p-t-50">
+<div class="bg-mod p-relative">
+	<div class="container-fluid">
+		<?php if( get_field('modulo') == 'lira' ): ?>
+		<div class="bg-banner-lira align-box-bot">
+		<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
+		<div class="bg-banner-aud align-box-bot">
+		<?php elseif ( get_field('modulo') == 'gaia' ): ?>
+		<div class="bg-banner-gaia align-box-bot">
+		<?php elseif ( get_field('modulo') == 'prsst' ): ?>
+		<div class="bg-banner-prsst align-box-bot">
+		<?php elseif ( get_field('modulo') == 'tnc' ): ?>
+		<div class="bg-banner-tnc align-box-bot">
+		<?php elseif ( get_field('modulo') == 'rl' ): ?>
+		<div class="bg-banner-rl align-box-bot">
+		<?php elseif ( get_field('modulo') == 'rn' ): ?>
+		<div class="bg-banner-rn align-box-bot">
+		<?php elseif ( get_field('modulo') == 'licencas' ): ?>
+		<div class="bg-banner-licencas align-box-bot">
+		<?php elseif ( get_field('modulo') == 'doc' ): ?>
+		<div class="bg-banner-doc align-box-bot">
+		<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
+		<div class="bg-banner-liracorp align-box-bot">
+		<?php endif ?>
+			
 			<div class="d-flex">
 				<?php					
 				$cbanner = get_field('content_banner');
@@ -45,8 +47,10 @@ get_header(); ?>
 					</div>					
 				</div>
 			</div>
-		</div>		
+				
+		</div>
 	</div>
+</div>
 </section>
 
 <section>
@@ -76,12 +80,12 @@ get_header(); ?>
 
 <?php if( get_field('modulo') == 'lira' ){ ?>
 <section>
-	<div class="container p-t-50 vantagens-lira">
+	<div class="container p-t-50 p-b-50 vantagens-lira">
 		<div class="row d-flex p-t-50">
-			<div class="col-md-3 b-r-g">
+			<div class="col-3 b-r-w">
 				<h2 class="text-center v-center title-blue">Vantagens</h2>
 			</div>
-			<div class="col-md-9">
+			<div class="col-9">
 				<div class="row">
 					<div class="col d-flex">
 						<div class="w-20">
@@ -140,6 +144,9 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+
+<?php get_template_part('template-parts/content' , 'app'); ?>
+
 <?php } ?>
 
 <?php if( get_field('modulo') == 'lira' ): ?>

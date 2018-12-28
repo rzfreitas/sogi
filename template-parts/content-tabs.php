@@ -1,7 +1,7 @@
 <section>
 	<div class="bg-tabs s-tabs">
 		<div class="container p-t-100 p-b-100">
-			<h2 class="text-center f-normal">Conheça os <strong>módulos</strong> e as principais funcionalidades da <br> plataforma de Soluções para Gestão Integrada, soGi</h2>
+			<h2 class="text-center f-normal p-b-50">Conheça os <strong>módulos</strong> e as principais funcionalidades da <br> plataforma de Soluções para Gestão Integrada, soGi</h2>
 			<div class="d-flex p-t-50 b-top-w">
 				<div class="col-3">
 					<nav>

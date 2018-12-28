@@ -29,8 +29,6 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php sogi_post_thumbnail(); ?>
-
 	<div class="entry-content">
 		<?php
 		the_content( sprintf(
