@@ -1,9 +1,7 @@
 <div class="container p-t-100 p-b-100" id="conversionRow">
-
 	<div class="text-center p-b-50 t-integration">
 		<h2>ESCOLHA O MELHOR PLANO PARA SUA EMPRESA:</h2>
 	</div>
-
 	<div class="block-integration">
 		<div class="block-integration-header">
 			<p>1 - Cadastro</p>
@@ -13,7 +11,8 @@
 		</div>
 		<div class="block-integration-body">
 			<h3>Digite seus dados para continuar</h3>
-			<form class="p-t-25" action="">
+			<?php echo do_shortcode('[contact-form-7 id="473" title="Formulario cadastro"]'); ?>
+			<!-- <form class="p-t-25" action="">
 				<div class="form-field">
 					<label class="w-10">Nome:</label>
 					<input class="w-90" type="text" name="nome">	
@@ -30,58 +29,37 @@
 					<label class="w-10">CNPJ:</label>
 					<input class="w-90" type="text" name="" id="maskCnpj">
 				</div>
-			</form>
+			</form> -->
 		</div>
 	</div>
 
-	<div class="block-integration">
+	<div class="block-integration m-t-15 d-none" id="block-2">		
 		<div class="block-integration-header">
 			<p>2 - Comprar</p>
 			<div class="float-right">
 				<i class="fa fa-caret-down"></i>
 			</div>
 		</div>
-		<div class="block-integration-body">
-			<div class="d-flex">
-				<div class="block-licencas d-flex">
-					<div class="w-90">
-						<span>Quantidade de Licenças de uso </span>
-						<br><div class="NomeModulo"></div>
+		<div class="block-integration-body">			
+			<div class="dp-flex">
+				<div class="block-licencas">					
+					<div class="v-center dp-flex">
+						<div class="w-10">
+							<input type="number" id="anuidades" name="anuidades" min="1" max="100" value="1">
+						</div>
+						<div class="w-90 dp-flex">
+							<div><p>Quantidade de Licenças de uso</p></div>
+							<div class="NomeModulo"></div>
+						</div>
 					</div>
-					<div class="w-10">
-						<input type="number" id="anuidades" name="anuidades" min="1" max="100" value="1">
-					</div>
-				</div>
-
-				<?php if( get_field('modulo') == 'lira' ): ?>
-				<div class="block-precos-licencas bg-lira">
-				<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
-				<div class="block-precos-licencas bg-aud">
-				<?php elseif ( get_field('modulo') == 'gaia' ): ?>
-				<div class="block-precos-licencas bg-gaia">
-				<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-				<div class="block-precos-licencas bg-prsst">
-				<?php elseif ( get_field('modulo') == 'tnc' ): ?>
-				<div class="block-precos-licencas bg-tnc">
-				<?php elseif ( get_field('modulo') == 'rl' ): ?>
-				<div class="block-precos-licencas bg-rl">
-				<?php elseif ( get_field('modulo') == 'rn' ): ?>
-				<div class="block-precos-licencas bg-rn">
-				<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-				<div class="block-precos-licencas bg-licencas">
-				<?php elseif ( get_field('modulo') == 'doc' ): ?>
-				<div class="block-precos-licencas bg-doc">
-				<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-				<div class="block-precos-licencas bg-liracorp">
-				<?php endif ?>
-				
+					
+				</div>				
+				<div class="block-precos-licencas">
 					<div class="PrecoModulo"></div>
 					<p>dividido em <span class="NumeroParcelas"></span> de <span class="ParcelasModulo"></span></p>
 				</div>
-			</div>
-		
-		<div class="m-t-15">
-			<div class="text-center">
+			</div>			
+			<div class="text-center p-t-50">
 				<a class="btn-def btn-azul" data-toggle="modal" data-target="#SogiContato">Falar com o comercial</a>
 				<a class="btn-def btn-azul">Imprimir proposta</a>
 				
@@ -103,11 +81,11 @@
 					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(52);">Comprar</a>
 				<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
 				<?php endif ?>				
-			</div>		
+			</div>
+			
 		</div>
 	</div>
 </div>
-
 	
 	<?php if ( get_field('modulo') == 'auditoria' ): ?>
 		<script>
@@ -190,4 +168,9 @@ function redirect_loja(p_ProductID){
 	var url  = 'http://loja.sgionline.com.br/produto/'+ idProduct;
 	window.location.replace(url);
 }
+
+document.addEventListener( 'wpcf7submit', function( event ) {
+    $('#block-2').removeClass('d-none');
+}, false );
+
 </script>

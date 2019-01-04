@@ -445,7 +445,6 @@ a.link-vid{
     color: #fff;
     position: absolute;
     bottom: 30px;
-    right: 15px;
 }
 .bg-lira{
     background:#2092BF;
@@ -608,6 +607,8 @@ ul.vantagens li img{padding-right: 15px;}
     font-weight: bold;
     text-align: center;
     line-height: 1.2;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 .btn-yellow, .btn-yellow-h{
     background-color: #FFAB00;
@@ -660,7 +661,6 @@ ul.vantagens li img{padding-right: 15px;}
 a.btn-white{color: #2089C2;}
 a.btn-leia-mais{color: #2F80ED;}
 a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow-h, .btn-red a{color: #fff!important;}
-a.btn-yellow{color: #000;}
 /* / */
 
 /* TABS */
@@ -983,7 +983,6 @@ background-color:#fff
 /* Integraçao outros moduluos */
 .block-licencas{
     width: 70%;
-    margin-right: 10px;
     padding: 25px;
     background: #fff;
 }
@@ -991,6 +990,8 @@ background-color:#fff
     width: 30%;
     padding: 25px;
     text-align: center;
+    background-color: #fff;
+    border-left: 1px solid #C4C4C4;
 }
 .block-precos-licencas .PrecoModulo{
     font-weight: bold;
@@ -999,21 +1000,22 @@ background-color:#fff
 .block-licencas .NomeModulo{
     width: auto;
     display: inline-block;
-    margin-top: 10px;
+    margin-left: 10px;
     font-weight: bold;
 }
 .block-licencas input{
     float: right;
     border: 0;
-    border-left: 1px solid;
     font-weight: bold;
     text-align: center;
     border-radius: 0;
+    margin-right: 10px
 }
 .block-licencas input[type=number]::-webkit-inner-spin-button, 
 .block-licencas input[type=number]::-webkit-outer-spin-button {
    opacity: 1;
 }
+.block-licencas p, .block-precos-licencas p{margin-bottom: 0;}
 /* / */
 
 /* Integracao lira */
