@@ -169,7 +169,7 @@ function redirect_loja(p_ProductID){
 	window.location.replace(url);
 }
 
-document.addEventListener( 'wpcf7submit', function( event ) {
+document.addEventListener( 'wpcf7mailsent', function( event ) {
     $('#block-2').removeClass('d-none');
 }, false );
 
