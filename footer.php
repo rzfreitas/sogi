@@ -64,7 +64,7 @@
 
 				<div class="col links">
 					<ul>
-						<h3 class="p-b-15"><strong>Franquias</strong></h3>
+						<h3 class="p-b-15"><strong>Regionais</strong></h3>
 						<li>Norte Fluminense - RJ</li>
 						<li>Porto Alegre - RS</li>
 						<li>Guarulhos - SP</li>
@@ -102,6 +102,9 @@
 		</div>			
 
 		<?php get_template_part('template-parts/content' , 'forms'); ?>
+
+		<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/9e7b6fda-6e27-4a26-9955-5e1183632a88-loader.js" ></script>
+		
 	</footer> <!-- end .footer -->
 
 </div><!-- #page -->

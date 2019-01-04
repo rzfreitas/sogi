@@ -33,3 +33,10 @@ function scrollToElement(selector, offset){
     scrollTop: jQuery(selector).offset().top + offset + 'px'
   }, 'slow');
 }
+
+$('.app-slideshow').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  infinite: true,
+  fade: true,
+});

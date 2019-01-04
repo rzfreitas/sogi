@@ -159,6 +159,16 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/* slick assets */
+function slick_assets() {
+	if( is_page_template( 'template-parts/template-page-module.php' ) ) {
+		wp_enqueue_style( 'slick-def-css', get_template_directory_uri() . '/assets/css/slick.css', array(), '', 'all');
+		wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/assets/css/slick-theme.css', array(), '', 'all');
+
+		wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.min.js', array(), '', true );
+	}
+}add_action( 'wp_enqueue_scripts', 'slick_assets' );
+
 function add_theme_styles_scripts() {
  
 	wp_register_style( 'font', 'https://fonts.googleapis.com/css?family=Montserrat', all );

@@ -14,7 +14,7 @@
 						?>
 					</nav><!-- #site-navigation -->
 				</div>
-				<div class="col-md-4 text-center border-l-w d-none d-sm-block">
+				<div class="col-md-4 text-right border-l-w d-none d-sm-block">
 					<div class="d-inline-flex v-center">
 						<div class="langs">
 							<select onchange="javascript:handleSelect(this)">

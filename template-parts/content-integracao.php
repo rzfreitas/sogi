@@ -1,7 +1,47 @@
-<div class="p-t-50 p-b-50" id="conversionRow">
-	<div class="container box-gray">
-		<h2 class="text-center">ESCOLHA O MELHOR PLANO PARA SUA EMPRESA</h2>
-		<div class="p-t-50">
+<div class="container p-t-100 p-b-100" id="conversionRow">
+
+	<div class="text-center p-b-50 t-integration">
+		<h2>ESCOLHA O MELHOR PLANO PARA SUA EMPRESA:</h2>
+	</div>
+
+	<div class="block-integration">
+		<div class="block-integration-header">
+			<p>1 - Cadastro</p>
+			<div class="float-right">
+				<i class="fa fa-caret-down"></i>
+			</div>
+		</div>
+		<div class="block-integration-body">
+			<h3>Digite seus dados para continuar</h3>
+			<form class="p-t-25" action="">
+				<div class="form-field">
+					<label class="w-10">Nome:</label>
+					<input class="w-90" type="text" name="nome">	
+				</div>
+				<div class="form-field">
+					<label class="w-10">E-mail:</label>
+					<input class="w-90" type="text" name="email">
+				</div>
+				<div class="form-field">
+					<label class="w-10">Empresa:</label>
+					<input class="w-90" type="text" name="empresa">
+				</div>
+				<div class="form-field">
+					<label class="w-10">CNPJ:</label>
+					<input class="w-90" type="text" name="" id="maskCnpj">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="block-integration">
+		<div class="block-integration-header">
+			<p>2 - Comprar</p>
+			<div class="float-right">
+				<i class="fa fa-caret-down"></i>
+			</div>
+		</div>
+		<div class="block-integration-body">
 			<div class="d-flex">
 				<div class="block-licencas d-flex">
 					<div class="w-90">
@@ -12,6 +52,7 @@
 						<input type="number" id="anuidades" name="anuidades" min="1" max="100" value="1">
 					</div>
 				</div>
+
 				<?php if( get_field('modulo') == 'lira' ): ?>
 				<div class="block-precos-licencas bg-lira">
 				<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
@@ -35,40 +76,37 @@
 				<?php endif ?>
 				
 					<div class="PrecoModulo"></div>
-					<p>dividido em <span class="NumeroParcelas"></span> de <span class="ParcelasModulo"></span>
+					<p>dividido em <span class="NumeroParcelas"></span> de <span class="ParcelasModulo"></span></p>
 				</div>
 			</div>
-		</div>
+		
 		<div class="m-t-15">
-			<div class="d-flex">
-				<div class="btn-imprimir">
-					<a class=""><i class="fa fa-print"></i>  Imprimir proposta</a>
-				</div>
-				<div class="btn-red">	
-					<?php if ( get_field('modulo') == 'auditoria' ): ?>
-						<a onclick="javascript:redirect_loja(115);">Comprar</a>
-					<?php elseif ( get_field('modulo') == 'gaia' ): ?>
-						<a onclick="javascript:redirect_loja(50);">Comprar</a>
-					<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-						<a onclick="javascript:redirect_loja();">Comprar</a>
-					<?php elseif ( get_field('modulo') == 'tnc' ): ?>
-						<a onclick="javascript:redirect_loja(116);">Comprar</a>
-					<?php elseif ( get_field('modulo') == 'rl' ): ?>
-						<a onclick="javascript:redirect_loja();">Comprar</a>
-					<?php elseif ( get_field('modulo') == 'rn' ): ?>
-						<a onclick="javascript:redirect_loja();">Comprar</a>
-					<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-						<a onclick="javascript:redirect_loja();">Comprar</a>
-					<?php elseif ( get_field('modulo') == 'doc' ): ?>
-						<a onclick="javascript:redirect_loja();">Comprar</a>
-					<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-					<?php endif ?>
-				</div>
-			</div>
+			<div class="text-center">
+				<a class="btn-def btn-azul" data-toggle="modal" data-target="#SogiContato">Falar com o comercial</a>
+				<a class="btn-def btn-azul">Imprimir proposta</a>
+				
+				<?php if ( get_field('modulo') == 'auditoria' ): ?>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(115);">Comprar</a>
+				<?php elseif ( get_field('modulo') == 'gaia' ): ?>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(50);">Comprar</a>
+				<?php elseif ( get_field('modulo') == 'prsst' ): ?>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja();">Comprar</a>
+				<?php elseif ( get_field('modulo') == 'tnc' ): ?>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(116);">Comprar</a>
+				<?php elseif ( get_field('modulo') == 'rl' ): ?>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja();">Comprar</a>
+				<?php elseif ( get_field('modulo') == 'rn' ): ?>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja();">Comprar</a>
+				<?php elseif ( get_field('modulo') == 'licencas' ): ?>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja();">Comprar</a>
+				<?php elseif ( get_field('modulo') == 'doc' ): ?>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(52);">Comprar</a>
+				<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
+				<?php endif ?>				
+			</div>		
 		</div>
 	</div>
 </div>
-
 
 	
 	<?php if ( get_field('modulo') == 'auditoria' ): ?>
@@ -110,7 +148,15 @@
 	<?php elseif ( get_field('modulo') == 'licencas' ): ?>
 	
 	<?php elseif ( get_field('modulo') == 'doc' ): ?>
-	
+		<script>
+		$('#anuidades').bind('keyup mouseup', function(){
+			var valorAnuidade = $(this).val();			
+			getProductDetails(52, valorAnuidade);
+		});
+		document.addEventListener('DOMContentLoaded', function() {
+		    getProductDetails(52, 1);
+		}, false);
+		</script>
 	<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
 	
 <?php endif ?>
