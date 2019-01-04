@@ -14,9 +14,9 @@
 	</div><!-- #content -->
 
 	<section>
-		<?php if(!is_singular( 'post' ) && !is_page('Blog') && !is_page_template('template-page-modules.php')){?>
+		<?php if ( !is_singular( 'post' ) && !is_page('Blog') ) { ?>
 			<?php get_template_part( 'template-parts/content', 'noticias' ); ?>
-		<?php }?>   
+		<?php } ?>   
 	</section>
 
 	<footer class="n-footer">

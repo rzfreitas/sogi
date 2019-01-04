@@ -11,24 +11,7 @@
 		</div>
 		<div class="block-integration-body">
 			<h3>Digite seus dados para continuar</h3>
-			<form class="p-t-25" action="">
-				<div class="form-field">
-					<label class="w-10">Nome:</label>
-					<input class="w-90" type="text" name="nome">	
-				</div>
-				<div class="form-field">
-					<label class="w-10">E-mail:</label>
-					<input class="w-90" type="text" name="email">
-				</div>
-				<div class="form-field">
-					<label class="w-10">Empresa:</label>
-					<input class="w-90" type="text" name="empresa">
-				</div>
-				<div class="form-field">
-					<label class="w-10">CNPJ:</label>
-					<input class="w-90" type="text" name="" id="maskCnpj">
-				</div>
-			</form>
+			<?php echo do_shortcode('[contact-form-7 id="473" title="Formulario cadastro"]'); ?>
 		</div>
 	</div>
 	<div class="block-integration">
@@ -38,14 +21,14 @@
 				<i class="fa fa-caret-down"></i>
 			</div>
 		</div>
-		<div class="block-integration-body">
+		<div class="block-integration-body " id="block-2">
 			<form action ="" class="dp-flex p-t-50">
 				<div class="col-pacote">
 					<h3>EXPRESS</h3>
 					<p>Monitoramento legal + LIRA (até 05 usuários, sem jurídico e com 10 suporte técnico)</p>
 					<div class="pacote-preco">R$ 280,00</div>
 					<div class="pacote-radio">
-						<input type="radio" name="pacoteCheck" value="express">
+						<input type="radio" name="pacoteCheck" id="pacoteChecked" value="151">
 					</div>
 				</div>
 				<div class="col-pacote">
@@ -56,7 +39,7 @@
 						<span>Cortesia: GAIA e PRSSO</span>
 					</div>
 					<div class="pacote-radio">
-						<input type="radio" name="pacoteCheck" value="light">
+						<input type="radio" name="pacoteCheck" id="pacoteChecked" value="155">
 					</div>
 				</div>
 				<div class="col-pacote mais-popular">
@@ -67,7 +50,7 @@
 						<span>Cortesia: GAIA e PRSSO, Auditoria</span>
 					</div>
 					<div class="pacote-radio">
-						<input type="radio" name="pacoteCheck" value="professional">
+						<input type="radio" name="pacoteCheck" id="pacoteChecked" value="158">
 					</div>
 				</div>
 				<div class="col-pacote">
@@ -78,7 +61,7 @@
 						<span>Cortesia: GAIA e PRSST, Auditoria e TNC</span>
 					</div>
 					<div class="pacote-radio">
-						<input type="radio" name="pacoteCheck" value="unlimited">
+						<input type="radio" name="pacoteCheck" id="pacoteChecked" value="163">
 					</div>					
 				</div>
 			</form>
@@ -88,7 +71,7 @@
 			<div class="text-center">
 				<a class="btn-def btn-azul" data-toggle="modal" data-target="#SogiContato">Falar com o comercial</a>
 				<a class="btn-def btn-azul">Imprimir proposta</a>
-				<a class="btn-def btn-yellow">Comprar</a>
+				<a class="btn-def btn-yellow" onclick="redirect_loja();">Comprar</a>
 			</div>
 		</div>
 	</div>
@@ -115,4 +98,17 @@ jQuery.ajax({
 		$('.PrecoModulo').html(result.content.priceOptionList.list.price);       
 	}
 });
+
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+    $('#block-2').removeClass('d-none');
+}, false );
+
+
+function redirect_loja(){
+	var planProd = $('input[name=pacoteCheck]:checked').val();
+
+	alert("Obrigado! Você está sendo direcionado para a loja da Verde Ghaia.");
+	var url  = 'http://loja.sgionline.com.br/produto/'+ planProd;
+	window.location.replace(url);
+}
 </script>
