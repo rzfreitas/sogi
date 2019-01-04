@@ -14,11 +14,11 @@ get_header(); ?>
 		background-color: #3c393f;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
 		<?php endif; ?>
-		<div class="container-fluid align-container-bot">
+		<div class="container align-container-bot">
 			<div class="row">
 				<?php $cbanner = get_field('content_banner');
 					if( $cbanner ): ?>
-				<div class="col-md-5">
+				<div class="col-md-6">
 					<?php if( get_field('modulo') == 'lira' ): ?>
 					<div class="bg-lira box-content-mod">
 					<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
@@ -53,9 +53,9 @@ get_header(); ?>
 						</div>
 
 					</div>
-				</div> <!-- col-5 -->
-				<div class="col-md-7 text-center p-relative">
-					<a class="link-vid" href="<?php echo $cbanner['video_youtube']; ?>" target="_blank"><i class="fa fa-play"></i>  Ver vídeo completo</a>
+				</div> <!-- col-6 -->
+				<div class="col-md-6 text-center p-relative">
+					<a class="link-vid" href="<?php echo $cbanner['video_youtube']; ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
 				</div>
 				<?php endif; ?>
 			</div><!-- row -->

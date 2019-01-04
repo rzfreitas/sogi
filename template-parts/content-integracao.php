@@ -33,14 +33,14 @@
 		</div>
 	</div>
 
-	<div class="block-integration m-t-15 d-none" id="block-2">		
+	<div class="block-integration m-t-15">
 		<div class="block-integration-header">
 			<p>2 - Comprar</p>
 			<div class="float-right">
 				<i class="fa fa-caret-down"></i>
 			</div>
 		</div>
-		<div class="block-integration-body">			
+		<div class="block-integration-body d-none" id="block-2">
 			<div class="dp-flex">
 				<div class="block-licencas">					
 					<div class="v-center dp-flex">
