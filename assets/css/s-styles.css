@@ -210,6 +210,12 @@ table {
 .no-m{margin: 0;}
 .pointer{cursor: pointer;}
 .img-circle{border-radius: 100%;}
+ul.list-disc{
+    list-style: disc;
+}
+ul.list-disc li{
+    margin-bottom: 10px;
+}
 /* / */
 
 /* TEXTING */
@@ -570,7 +576,7 @@ ul.mod-list li:last-child{margin-right: 0px}
 /* / */
 
 /* VANTAGENS */
-ul.vantagens{
+ul.vantagens, ul.out{
     padding: 0;
     margin: 0;
 }
@@ -658,9 +664,17 @@ ul.vantagens li img{padding-right: 15px;}
     background-color: rgba(0,0,0,.1);
     text-decoration: none;
 }
+.btn-roxo{
+    background: #9B51E0;
+    border-radius: 50px;
+}
+.btn-roxo:hover{
+    background: #713BA3;
+    text-decoration: none;
+}
 a.btn-white{color: #2089C2;}
 a.btn-leia-mais{color: #2F80ED;}
-a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow-h, .btn-red a{color: #fff!important;}
+a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow-h, .btn-red a, a.btn-roxo{color: #fff!important;}
 /* / */
 
 /* TABS */
@@ -1131,6 +1145,89 @@ background-color:#fff
 }
 /* / */
 
+/* OUTSOURCING */
+.bg-out{
+    background: url(../imagens/outsourcing/outsourcing.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: calc(100vh - 63px);
+    position: relative;
+}
+
+.bg-contratar{
+    background: url(../imagens/outsourcing/bg-contratar.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+.out img, .list-cursos img{
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+/* / */
+
+/* CURSOS */
+.bg-yellow{
+    background-color: #FFAA1C;
+}
+.box-cian{
+    background-color: #40A3C1;
+    padding: 50px;
+}
+ul.list-cursos, ul.list-cursos2{
+    margin: 0;
+    padding: 0;
+}
+ul.list-cursos li{
+    margin-right: 30px;
+    width: 20%;
+    text-align: center;
+    font-size: 10px
+}
+ul.list-cursos2 li{
+    margin-bottom: 30px;
+}
+ul.list-cursos2 li img{
+    margin-right: 20px;
+    float: left;
+}
+ul.list-cursos li:last-child{
+    margin-right: 0
+}
+.bg-cian{
+    background-color: #40A3C1;
+    color: #fff;
+}
+.bg-img-blue{
+    background: url('../imagens/bg-tabs.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: calc(50vh);
+    color: #fff;
+}
+.bg-cursos{
+    background: url('../imagens/cursos-outsourcing/bg-cursos.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: calc(50vh);
+    color: #fff;
+}
+.bg-cursos a{color: #fff;}
+.bg-opacity{
+    background: rgba(41, 46, 61, 0.7);
+    padding: 100px 50px;
+}
+/* / */
+
 @media only screen and (min-width:1025px) {
     .dp-flex{
         display: flex;
@@ -1160,6 +1257,12 @@ background-color:#fff
         display: -webkit-flex;
         float: left;
         padding: 20px 15px;
+    }
+    ul.out li{
+        width: 33.3%;        
+        float: left;
+        padding: 20px 15px;
+        text-align: center;
     }
     .v-center{
         position: relative;
