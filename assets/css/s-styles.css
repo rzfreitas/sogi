@@ -434,6 +434,10 @@ ul.facilidades li{
 /* / */
 
 /* PAGINA MODULOS */
+.empty-banner{
+    height: calc(100vh - 63px);
+    background-color: #3c393f;
+}
 .align-container-bot{
     position: absolute;
     bottom: 0px;

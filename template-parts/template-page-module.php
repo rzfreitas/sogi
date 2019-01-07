@@ -4,7 +4,8 @@ get_header(); ?>
 
 <section>
 <div class="p-relative">
-	<?php $gif = get_field('gif_banner'); if( !empty($gif) ): ?>
+	<?php $gif = get_field('gif_banner');
+	if( !empty($gif) ): ?>
 	<div style="background: url(<?php echo $gif['url']; ?>) no-repeat center center fixed;   
 		-webkit-background-size: 50%;
 		-moz-background-size: 50%;
@@ -13,6 +14,8 @@ get_header(); ?>
 		height: 96vh;
 		background-color: #3c393f;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+		<?php else : ?>
+		<div class="empty-banner">
 		<?php endif; ?>
 		<div class="container align-container-bot">
 			<div class="row">
