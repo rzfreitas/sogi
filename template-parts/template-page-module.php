@@ -154,8 +154,8 @@ get_header(); ?>
 				    	$image = get_sub_field('v_icone'); 
 				    	$content = get_sub_field('v_text'); ?>
 				     <li>
-				     	<div class="m-center"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" /></div>				     	
-				     	<div><p class="v-center"><?php echo $content; ?></p></div>
+				     	<div class="m-center w-15"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" /></div>				     	
+				     	<div class="w-85"><p><?php echo $content; ?></p></div>
 				     </li>
 				    <?php endwhile; ?>
 				</ul>
