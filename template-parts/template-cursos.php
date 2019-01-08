@@ -13,7 +13,7 @@ get_header(); ?>
 					<h1>Curso EAD LEAD SOGI</h1>
 					<p>O SOGI é considerado o mais completo Sistema Online focado em Gestão Integrada disponível no mercado. Através deste curso, os profissionais poderão conhecer a fundo todos os módulos da plataforma desenvolvida pela Verde Ghaia, sabendo exatamente como utilizá-la.</p>
 					<div class="p-t-50">
-						<a href="" class="btn-def btn-roxo">INSCREVA-SE AGORA!</a>
+						<a href="https://ead.verdeghaia.com.br/register" class="btn-def btn-roxo">INSCREVA-SE AGORA!</a>
 					</div>					
 				</div>
 				<div class="p-t-70">
@@ -33,7 +33,7 @@ get_header(); ?>
 					<p>Entenda como é importante para você conhecer o SOGI. Uma ferramenta totalmente pensada para simplificar o monitoramento da legislação aplicável e da gestão integrada dos processos nas empresas.</p>
 				</div>
 				<div class="col-md-6">
-					VIDEO*
+					
 				</div>
 			</div>
 		</div>
@@ -89,7 +89,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="p-t-70 text-center">
-			<a href="" class="btn-def btn-roxo">VEJA O CONTEÚDO</a>
+			<a href="https://ead.verdeghaia.com.br/register" class="btn-def btn-roxo">VEJA O CONTEÚDO</a>
 		</div>
 	</div>
 </section>
@@ -132,7 +132,7 @@ get_header(); ?>
 				</div>
 				<div class="col-md-6 text-center">
 					<div class="v-center">
-						<a href="" class="btn-def btn-roxo">INSCREVA-SE AGORA <br> <small>Investimento R$ 260,00</small></a>
+						<a href="https://ead.verdeghaia.com.br/register" class="btn-def btn-roxo btn-lg">INSCREVA-SE AGORA <br> <small>Investimento R$ 260,00</small></a>
 					</div>					
 				</div>
 			</div>

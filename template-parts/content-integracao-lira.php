@@ -1,4 +1,4 @@
-<div class="container p-t-50 p-b-50" id="conversionRow">
+<div class="container p-t-100 p-b-50" id="conversionRow">
 	<div class="text-center p-b-50 t-integration">
 		<h2>ESCOLHA O MELHOR PLANO PARA SUA EMPRESA:</h2>
 	</div>
@@ -14,7 +14,7 @@
 			<?php echo do_shortcode('[contact-form-7 id="473" title="Formulario cadastro"]'); ?>
 		</div>
 	</div>
-	<div class="block-integration">
+	<div class="block-integration m-t-15">
 		<div class="block-integration-header">
 			<p>2 - Pacotes</p>
 			<div class="float-right">
@@ -75,9 +75,6 @@
 			</div>
 		</div>
 	</div>
-	
-	<div class="NomeModulo"></div>
-	<div class="PrecoModulo"></div>	
 </div>
 
 <?php $idModulo = "116"; ?>

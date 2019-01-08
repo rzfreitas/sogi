@@ -93,7 +93,7 @@ table {
     transition: .2s;
 }
 .sub-menu li{
-    padding: 15px 10px;
+    padding: 10px;
 }
 .sub-menu li:hover, .s-menu a:hover{
     text-decoration: underline;
@@ -356,8 +356,12 @@ ul.clientes{
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
-ul.clientes li{margin: 0 15px;}
+ul.clientes li{
+    margin: 0 15px;
+}
 .bg-marinho{
     background: #292E3D;
     color: #fff;
@@ -377,10 +381,10 @@ ul.facilidades li{
 .box-blue{
     height: 260px;
     padding: 40px;
-    background: rgba(0, 121, 186, 0.9);
+    background: rgb(0, 121, 186);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
-    top: 85px;
+    position: absolute;
+    bottom: -30px;
 }
 /* / */
 
@@ -678,9 +682,12 @@ ul.vantagens li img{padding-right: 15px;}
     background: #713BA3;
     text-decoration: none;
 }
+.btn-lg{
+    padding: 18px 36px;
+}
 a.btn-white{color: #2089C2;}
 a.btn-leia-mais{color: #2F80ED;}
-a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow-h, .btn-red a, a.btn-roxo{color: #fff!important;}
+a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow, a.btn-yellow-h, .btn-red a, a.btn-roxo{color: #fff!important;}
 /* / */
 
 /* TABS */
@@ -1052,8 +1059,11 @@ background-color:#fff
     font-style: normal;
     font-weight: bold;
 }
-.block-integration-header p{display: inline-block;}
-.block-integration-header i{font-size: 35px;}
+.block-integration-header p{
+    display: inline-block;
+    margin-bottom: 0;
+}
+.block-integration-header i{font-size: 25px;}
 .block-integration-body{
     background-color: #F2F2F2;
     padding: 30px;
@@ -1234,6 +1244,10 @@ ul.list-cursos li:last-child{
 }
 /* / */
 
+/* SITE VIDEO */
+#site-video video{width: 100%;}
+/* / */
+
 @media only screen and (min-width:1025px) {
     .dp-flex{
         display: flex;
@@ -1285,10 +1299,16 @@ ul.list-cursos li:last-child{
         width: 582px;
         height: 307px;
     }
+    ul.clientes li{
+        margin: 0;
+        width: 20%;
+        text-align: center;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
     .m-center{text-align: center;}
     .p-t-c{padding-top: 50px;}
     .p-b-c{padding-bottom: 50px;}
+    .p-t-c-100{padding-top: 100px;}
 }

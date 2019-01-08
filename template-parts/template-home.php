@@ -12,9 +12,9 @@ get_header(); ?>
 	height: calc(100vh);">
 <?php endif; ?>
 	<div class="container v-center text-banner">
-		<div class="d-flex">
+		<div class="dp-flex">
 			<div class="col-7 d-none d-sm-block"></div>
-			<div class="col-md-5 col-12">
+			<div class="col-md-5 col-12 p-t-c-100">
 				<h1><?php the_field('titulo_banner'); ?></h1>
 				<p><?php the_field('texto_banner'); ?></p>
 				<div class="p-t-25">
@@ -30,7 +30,7 @@ get_header(); ?>
 	<div class="bg-cinza">
 		<div class="container">
 			<?php if( have_rows('clientes') ): ?>
-			<ul class="clientes d-flex">
+			<ul class="clientes dp-flex">
 			<?php while( have_rows('clientes') ): the_row(); 
 				// vars
 				$imagecliente = get_sub_field('logo_cliente');
@@ -109,7 +109,7 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="bg-marinho p-t-50 p-b-50">
+	<div class="bg-marinho p-t-50">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-4 p-relative">
@@ -120,8 +120,12 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<div class="col-8">
-					
+				<div class="col-8 p-b-50">
+					<div id="site-video">
+			            <video poster="" playsinline="" autoplay="" muted="" loop="">
+			                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI.mp4" type="video/mp4">
+			            </video>
+			        </div>
 				</div>
 			</div>
 		</div>
