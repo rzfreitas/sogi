@@ -109,26 +109,23 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="bg-marinho p-t-50">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-4 p-relative">
-					<div class="box-blue">
-						<h2>Várias funcionalidades <br> em uma plataforma*</h2>
-						<div class="text-right p-t-15">
-							<a class="btn-def btn-yellow" href="">Contrate o SOGI</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-8 p-b-50">
-					<div id="site-video">
-			            <video poster="" playsinline="" autoplay="" muted="" loop="">
-			                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI.mp4" type="video/mp4">
-			            </video>
-			        </div>
-				</div>
+	<div class="p-relative">		
+		<div id="site-video">
+            <video poster="" playsinline="" autoplay="" muted="" loop="">
+                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI.mp4" type="video/mp4">
+            </video>
+        </div>
+		<div class="box-blue">
+			<h2>Várias funcionalidades <br> em uma plataforma*</h2>
+			<div class="text-right p-t-15">
+				<a class="btn-def btn-yellow" href="">Contrate o SOGI</a>
 			</div>
-		</div>
+		</div>		
+	</div>
+	<div class="bg-marinho">
+		<div class="container text-right p-t-15 p-b-15 p-t-n">
+			<a class="f-w" href="<?php echo $cbanner['video_youtube']; ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
+		</div>		
 	</div>
 </section>
 
