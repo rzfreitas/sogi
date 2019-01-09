@@ -351,15 +351,13 @@ ul.inline-list li:last-child{margin-right: 0px}
 .b-top-w{border-top: 1px solid #fff;}
 .bg-cinza{background: #F2F2F2;}
 ul.clientes{
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     padding: 0;
     margin: 0;
+    padding-top: 25px 0;
 }
 ul.clientes li{
     margin: 0 15px;

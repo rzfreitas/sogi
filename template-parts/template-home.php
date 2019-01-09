@@ -26,27 +26,26 @@ get_header(); ?>
 </div>
 </section>
 
-<section>
-	<div class="bg-cinza">
-		<div class="container">
-			<?php if( have_rows('clientes') ): ?>
-			<ul class="clientes dp-flex">
-			<?php while( have_rows('clientes') ): the_row(); 
-				// vars
-				$imagecliente = get_sub_field('logo_cliente');
-				?>
+<section>	
+	<div class="container">
+		<?php if( have_rows('clientes') ): ?>
+		<ul class="clientes dp-flex">
+		<?php while( have_rows('clientes') ): the_row(); 
+			// vars
+			$imagecliente = get_sub_field('logo_cliente');
+			?>
 
-				<li class="cliente">
-					<img src="<?php echo $imagecliente['url']; ?>" alt="<?php echo $imagecliente['alt'] ?>" />
-				</li>
-			<?php endwhile; ?>
-			</ul>
-			<?php endif; ?>
-		</div>
-	</div>
+			<li class="cliente">
+				<img src="<?php echo $imagecliente['url']; ?>" alt="<?php echo $imagecliente['alt'] ?>" />
+			</li>
+		<?php endwhile; ?>
+		</ul>
+		<?php endif; ?>
+	</div>	
 </section>
 
 <section>
+<div class="bg-cinza">
 	<div class="container p-t-50 p-b-50">
 		<div class="row d-flex">
 			<div class="col-4 b-r-w text-center">
@@ -106,6 +105,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+</div>
 </section>
 
 <section>
