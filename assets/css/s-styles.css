@@ -512,11 +512,12 @@ a.link-vid{
     background: #C34210;
     color: #fff;
 }.t-licencas{color: #C34210;}
-
 .bg-liracorp{
     background: #2092BF;
     color: #fff;
-}
+}.t-liracorp{
+    color: #2092BF;}
+
 .img-floating{
     position: relative;
     z-index: 10;
