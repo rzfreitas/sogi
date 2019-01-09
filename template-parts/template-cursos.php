@@ -33,7 +33,11 @@ get_header(); ?>
 					<p>Entenda como é importante para você conhecer o SOGI. Uma ferramenta totalmente pensada para simplificar o monitoramento da legislação aplicável e da gestão integrada dos processos nas empresas.</p>
 				</div>
 				<div class="col-md-6">
-					
+					<div id="site-video">
+			            <video poster="" playsinline="" autoplay="" muted="" loop="">
+			                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/Plataforma-EAD-Verde-Ghaia.mp4" type="video/mp4">
+			            </video>
+			        </div>
 				</div>
 			</div>
 		</div>
