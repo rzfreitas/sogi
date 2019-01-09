@@ -20,7 +20,7 @@ get_header(); ?>
 
 		<?php $cbanner = get_field('content_banner');
 		if( $cbanner ): ?>
-		<div class="container">
+		<div class="container v-center">
 			<div id="site-video-modulos">
 	            <video poster="" playsinline="" autoplay="" muted="" loop="">	                
 	            	<?php if( get_field('modulo') == 'lira' ): ?>
@@ -46,7 +46,7 @@ get_header(); ?>
 					<?php endif ?>
 	            </video>
 	        </div>
-	        <div class="bg-marinho text-right p-t-15 p-b-15 p-t-n">
+	        <div class="bg-marinho text-right p-t-15 p-b-15">
 				<div class="container">
 					<a class="link-vid" href="<?php echo $cbanner['video_youtube']; ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
 				</div>

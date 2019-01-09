@@ -48,7 +48,7 @@ get_header(); ?>
 <div class="bg-cinza">
 	<div class="container p-t-50 p-b-50">
 		<div class="row d-flex">
-			<div class="col-4 b-r-w text-center">
+			<div class="col-4 b-r-c text-center">
 				<h2 class="v-center no-m title-blue">Facilidades</h2>
 			</div>
 			<div class="col-8">
@@ -109,24 +109,30 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="p-relative">		
-		<div id="site-video">
-            <video poster="" playsinline="" autoplay="" muted="" loop="">
-                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI.mp4" type="video/mp4">
-            </video>
-        </div>
-		<div class="box-blue">
-			<h2>Várias funcionalidades <br> em uma plataforma*</h2>
-			<div class="text-right p-t-15">
-				<a class="btn-def btn-yellow" href="">Contrate o SOGI</a>
+	<div class="dp-flex">
+		<div class="w-40">
+			<div class="box-blue">
+				<div class="v-center">
+					<h2>Várias funcionalidades <br> em uma plataforma*</h2>
+					<div class="text-right p-t-15">
+						<a class="btn-def btn-yellow" href="">Contrate o SOGI</a>
+					</div>
+				</div>				
 			</div>
-		</div>		
-	</div>
-	<div class="bg-marinho">
-		<div class="container text-right p-t-15 p-b-15 p-t-n">
-			<a class="f-w" href="<?php echo $cbanner['video_youtube']; ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
-		</div>		
-	</div>
+		</div>
+		<div class="w-60">
+			<div id="site-video">
+	            <video poster="" playsinline="" autoplay="" muted="" loop="">
+	                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI.mp4" type="video/mp4">
+	            </video>
+	        </div>
+	        <div class="bg-marinho">
+				<div class="container text-right p-t-15 p-b-15 p-t-n">
+					<a class="f-w" href="<?php echo $cbanner['video_youtube']; ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
+				</div>		
+			</div>
+		</div>
+	</div>	
 </section>
 
 <section>

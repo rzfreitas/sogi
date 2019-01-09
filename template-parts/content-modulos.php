@@ -1,5 +1,5 @@
 <section>
-	<div class="bg-modulos">
+	<div class="bg-cinza">
 		<div class="container p-t-50 p-b-50">
 			<div class="row d-flex">
 				<div class="col-4 b-r-g">
