@@ -3,8 +3,8 @@
 get_header(); ?>
 
 <section>
-<div class="p-relative">
-	<?php $gif = get_field('gif_banner');
+<div class="bg-modulos p-t-100">
+	<!-- <?php $gif = get_field('gif_banner');
 	if( !empty($gif) ): ?>
 	<div style="background: url(<?php echo $gif['url']; ?>) no-repeat center center fixed;   
 		-webkit-background-size: 50%;
@@ -16,60 +16,83 @@ get_header(); ?>
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
 		<?php else : ?>
 		<div class="empty-banner">
-		<?php endif; ?>
-		<div class="container align-container-bot">
-			<div class="row">
-				<?php $cbanner = get_field('content_banner');
-					if( $cbanner ): ?>
-				<div class="col-md-6">
-					<?php if( get_field('modulo') == 'lira' ): ?>
-					<div class="bg-lira box-content-mod">
-					<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
-					<div class="bg-aud box-content-mod">
-					<?php elseif ( get_field('modulo') == 'gaia' ): ?>
-					<div class="bg-gaia box-content-mod">
-					<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-					<div class="bg-prsst box-content-mod">
-					<?php elseif ( get_field('modulo') == 'tnc' ): ?>
-					<div class="bg-tnc box-content-mod">
-					<?php elseif ( get_field('modulo') == 'rl' ): ?>
-					<div class="bg-rl box-content-mod">
-					<?php elseif ( get_field('modulo') == 'rn' ): ?>
-					<div class="bg-rn box-content-mod">
-					<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-					<div class="bg-licencas box-content-mod">
-					<?php elseif ( get_field('modulo') == 'doc' ): ?>
-					<div class="bg-doc box-content-mod">
-					<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-					<div class="bg-liracorp box-content-mod">
-					<?php endif ?>
-			
-						<div class="d-flex">							
-							<div class="w-20">								
-								<img class="v-center" src="<?php echo $cbanner['img_modulo']['url']; ?>" alt="<?php echo $cbanner['img_modulo']['alt']; ?>" />
-							</div>
-							<div class="w-80">							
-								<h1><?php echo $cbanner['titulo_banner']; ?></h1>
-								<p><?php echo $cbanner['descricao_banner']; ?></p>
-								<a class="btn-def btn-yellow" onclick="scrollToElement('#conversionRow', -100)">Quero comprar</a>		
-							</div>							
-						</div>
+		<?php endif; ?> -->
 
-					</div>
-				</div> <!-- col-6 -->
-				<div class="col-md-6 text-center p-relative">
+		<?php $cbanner = get_field('content_banner');
+		if( $cbanner ): ?>
+		<div class="container">
+			<div id="site-video-modulos">
+	            <video poster="" playsinline="" autoplay="" muted="" loop="">	                
+	            	<?php if( get_field('modulo') == 'lira' ): ?>
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI-Lira.mp4" type="video/mp4">
+					<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI-Auditoria.mp4" type="video/mp4">
+					<?php elseif ( get_field('modulo') == 'gaia' ): ?>
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI-Gaia.mp4" type="video/mp4">
+					<?php elseif ( get_field('modulo') == 'prsst' ): ?>
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI-P.R.S.S.O.mp4" type="video/mp4">
+					<?php elseif ( get_field('modulo') == 'tnc' ): ?>
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI-TNC.mp4" type="video/mp4">
+					<?php elseif ( get_field('modulo') == 'rl' ): ?>
+					
+					<?php elseif ( get_field('modulo') == 'rn' ): ?>
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI-Riscos-Negocio.mp4" type="video/mp4">
+					<?php elseif ( get_field('modulo') == 'licencas' ): ?>
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI-Licencas.mp4" type="video/mp4">
+					<?php elseif ( get_field('modulo') == 'doc' ): ?>
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI-Documentos.mp4" type="video/mp4">
+					<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI-Administrativo.mp4" type="video/mp4">
+					<?php endif ?>
+	            </video>
+	        </div>
+	        <div class="bg-marinho text-right p-t-15 p-b-15 p-t-n">
+				<div class="container">
 					<a class="link-vid" href="<?php echo $cbanner['video_youtube']; ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
 				</div>
-				<?php endif; ?>
-			</div><!-- row -->
+			</div>			
+		</div>
+	
+		<?php if( get_field('modulo') == 'lira' ): ?>
+		<div class="bg-lira box-content-mod">
+		<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
+		<div class="bg-aud box-content-mod">
+		<?php elseif ( get_field('modulo') == 'gaia' ): ?>
+		<div class="bg-gaia box-content-mod">
+		<?php elseif ( get_field('modulo') == 'prsst' ): ?>
+		<div class="bg-prsst box-content-mod">
+		<?php elseif ( get_field('modulo') == 'tnc' ): ?>
+		<div class="bg-tnc box-content-mod">
+		<?php elseif ( get_field('modulo') == 'rl' ): ?>
+		<div class="bg-rl box-content-mod">
+		<?php elseif ( get_field('modulo') == 'rn' ): ?>
+		<div class="bg-rn box-content-mod">
+		<?php elseif ( get_field('modulo') == 'licencas' ): ?>
+		<div class="bg-licencas box-content-mod">
+		<?php elseif ( get_field('modulo') == 'doc' ): ?>
+		<div class="bg-doc box-content-mod">
+		<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
+		<div class="bg-liracorp box-content-mod">
+		<?php endif ?>		
+			<div class="d-flex">							
+				<div class="w-20">								
+					<img class="v-center" src="<?php echo $cbanner['img_modulo']['url']; ?>" alt="<?php echo $cbanner['img_modulo']['alt']; ?>" />
+				</div>
+				<div class="w-80">							
+					<h1><?php echo $cbanner['titulo_banner']; ?></h1>
+					<p><?php echo $cbanner['descricao_banner']; ?></p>
+					<a class="btn-def btn-yellow" onclick="scrollToElement('#conversionRow', -100)">Quero comprar</a>		
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
+<?php endif; ?>
 </section>
 
 <section>
 	<div class="p-relative">
-		<div class="container p-t-50">
+		<div class="container p-t-100">
 			<div class="row">
 				<?php $content_m = get_field('infos_modulo');
 				if( $content_m ): ?>
@@ -173,6 +196,49 @@ get_header(); ?>
 		if( !empty($imagepap) ): ?>
 			<img class="w-100" src="<?php echo $imagepap['url']; ?>" alt="<?php echo $imagepap['alt']; ?>" />
 		<?php endif; ?>
+	</div>
+</section>
+
+<section>
+	<div class="bg-royal" id="diagonal-border-w">
+		<?php $diferenciais = get_field('c_diferenciais');
+		if( $diferenciais ): ?>
+		<div class="container p-t-50 p-b-50">
+			<div class="row dp-flex">
+				<div class="col-12 col-md-6">
+					<div class="p-t-50 p-b-50 b-r-r v-center">
+						<h2><?php echo $diferenciais['t_dif']; ?></h2>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="box-lira-dif d-flex">
+						<div>
+							<span>1</span>
+						</div>
+						<div>
+							<p class="v-center"><?php echo $diferenciais['bloco_1']; ?></p>
+						</div>
+					</div>
+					<div class="box-lira-dif d-flex">
+						<div>
+							<span>2</span>
+						</div>
+						<div>
+							<p class="v-center"><?php echo $diferenciais['bloco_2']; ?></p>
+						</div>
+					</div>
+					<div class="box-lira-dif d-flex">
+						<div>
+							<span>3</span>
+						</div>
+						<div>
+							<p class="v-center"><?php echo $diferenciais['bloco_3']; ?></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
 	</div>
 </section>
 

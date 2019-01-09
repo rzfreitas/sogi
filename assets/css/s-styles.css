@@ -443,6 +443,14 @@ ul.facilidades li{
 /* / */
 
 /* PAGINA MODULOS */
+.bg-modulos{
+    background: url(../imagens/bg-modulos.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
 .empty-banner{
     height: calc(100vh - 63px);
     background-color: #3c393f;
@@ -454,7 +462,11 @@ ul.facilidades li{
     left: 0;
 }
 .box-content-mod{
-    padding: 30px 20px;
+    padding: 30px;
+    width: 582px;
+    position: absolute;
+    bottom: -50px;
+    left: 30px;
 }
 .box-content-mod h1{
     font-size: 36px;
@@ -462,8 +474,6 @@ ul.facilidades li{
 }
 a.link-vid{
     color: #fff;
-    position: absolute;
-    bottom: 30px;
 }
 .bg-lira{
     background:#2092BF;
@@ -522,14 +532,14 @@ ul.mod-list li{
     width: 20%;
 }
 ul.mod-list li:last-child{margin-right: 0px}
-.b-r-g{
+.b-r-g, .b-r-r{
     border-right: 1px solid #a1a1a1;
 }
 .b-r-w{
     border-right: 1px solid #a1a1a1;
     background: #fff;
 }
-.b-r-g:after, .b-r-w:after{
+.b-r-g:after, .b-r-w:after, .b-r-r:after{
     content: '\f105';
     font-family: FontAwesome;
     position: absolute;
@@ -541,6 +551,7 @@ ul.mod-list li:last-child{margin-right: 0px}
     color: #FFAB00;
 }
 .b-r-g:after{background: #f2f2f2;}
+.b-r-r:after{background: #045581;}
 /* / */
 
 /* SLICK MODULOS */
@@ -609,11 +620,20 @@ ul.vantagens li img{padding-right: 15px;}
     min-height: 50vh;
     background-attachment: fixed;
 }
-.bg-app h2{
+.bg-app-lira{
+    background: url(../imagens/bg-app-lira.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 50vh;
+    background-attachment: fixed;
+}
+.bg-app h2, .bg-app-lira h2{
     color: #FFAB00;
     font-weight: 900;
 }
-.bg-app p{color: #fff;}
+.bg-app p, .bg-app-lira p{color: #fff;}
 /* / */
 
 /* Buttons */
@@ -1251,7 +1271,10 @@ ul.list-cursos li:last-child{
 #site-video video{
     width: 100%;
 }
-.p-t-n{margin-top: -6px;}
+#site-video-modulos video{
+    width: 100%;
+}
+.p-t-n{margin-top: -7px;}
 /* / */
 
 @media only screen and (min-width:1025px) {
