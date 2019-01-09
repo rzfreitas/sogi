@@ -21,7 +21,7 @@
 				<i class="fa fa-caret-down"></i>
 			</div>
 		</div>
-		<div class="block-integration-body " id="block-2">
+		<div class="block-integration-body d-none" id="block-2">
 			<form action ="" class="dp-flex p-t-50">
 				<div class="col-pacote">
 					<h3>EXPRESS</h3>
