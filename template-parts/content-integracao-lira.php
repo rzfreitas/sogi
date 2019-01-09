@@ -50,7 +50,7 @@
 						<span>Cortesia: GAIA e PRSSO, Auditoria</span>
 					</div>
 					<div class="pacote-radio">
-						<input type="radio" name="pacoteCheck" id="pacoteChecked" value="158">
+						<input type="radio" name="pacoteCheck" id="pacoteChecked" value="158" checked="checked">
 					</div>
 				</div>
 				<div class="col-pacote">
