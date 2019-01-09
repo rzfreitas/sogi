@@ -1288,7 +1288,7 @@ ul.list-cursos li:last-child{
 .p-t-n{margin-top: -7px;}
 /* / */
 
-@media only screen and (min-width:1025px) {
+@media only screen and (min-width:1025px) and (max-width: 1500px) {
     .dp-flex{
         display: flex;
         display: -ms-flexbox;
@@ -1343,6 +1343,28 @@ ul.list-cursos li:last-child{
         margin: 0;
         width: 20%;
         text-align: center;
+    }
+}
+
+/* EXTRA LARGE SECRENS */
+@media only screen and (min-width:1501px) {
+    #site-video-modulos{
+        height: 624px;
+    }
+    .v-center{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .dp-flex{
+        display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+    }
+    .flex-wrap{
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 }
 

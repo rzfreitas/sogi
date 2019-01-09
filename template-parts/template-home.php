@@ -112,7 +112,7 @@ get_header(); ?>
 	<div class="dp-flex">
 		<div class="w-40">
 			<div class="box-blue">
-				<div class="v-center">
+				<div class="v-center text-center">
 					<h2>Várias funcionalidades <br> em uma plataforma*</h2>
 					<div class="text-right p-t-15">
 						<a class="btn-def btn-yellow" href="">Contrate o SOGI</a>
@@ -128,6 +128,7 @@ get_header(); ?>
 	        </div>
 	        <div class="bg-marinho">
 				<div class="container text-right p-t-15 p-b-15 p-t-n">
+					<a class="f-w p-r-25" href=""><i class="fa fa-podcast"></i>  Baixar como podcast</a>
 					<a class="f-w" href="<?php echo $cbanner['video_youtube']; ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
 				</div>		
 			</div>
