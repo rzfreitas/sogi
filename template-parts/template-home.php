@@ -236,6 +236,46 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/content' , 'app'); ?>
 
+<section>
+	<div class="bg-royal" id="diagonal-border-w">
+		<div class="container p-t-50 p-b-50">
+			<div class="row dp-flex">
+				<div class="col-12 col-md-6">
+					<div class="p-t-50 p-b-50 b-r-r v-center">
+						<h2>Igual ao SOGI, <br> não tem! Veja <br> seus diferenciais:</h2>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="box-lira-dif d-flex">
+						<div>
+							<span>1</span>
+						</div>
+						<div>
+							<p class="v-center">Versão corporativa para controle de várias unidades em apenas um lugar.</p>
+						</div>
+					</div>
+					<div class="box-lira-dif d-flex">
+						<div>
+							<span>2</span>
+						</div>
+						<div>
+							<p class="v-center">Foco em resultados e indicadores de Governança, Risco e Compliance Sustentável.</p>
+						</div>
+					</div>
+					<div class="box-lira-dif d-flex">
+						<div>
+							<span>3</span>
+						</div>
+						<div>
+							<p class="v-center">Gestão integrada de diversas áreas, como meio ambiente e saúde e segurança ocupacional.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- <section>	
 	<div class="container p-b-50">
 		<?php if( have_rows('depoimentos') ): ?>
