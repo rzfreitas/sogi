@@ -143,7 +143,7 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="container p-t-100 p-b-50">
+	<div class="container p-t-25 p-b-50">
 		<div class="dp-flex">
 			<div class="col-12 col-md-3 b-r-w text-center">
 				<?php if( get_field('modulo') == 'lira' ): ?>
