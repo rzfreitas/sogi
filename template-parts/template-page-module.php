@@ -92,6 +92,8 @@ get_header(); ?>
 
 <section>
 	<div class="p-relative">
+		<?php $content_m = get_field('infos_modulo');
+			if( $content_m ): ?>
 		<div class="container p-t-100">
 			<?php if( get_field('modulo') == 'lira' ): ?>
 				<h2 class="t-lira p-l-30">
@@ -116,13 +118,11 @@ get_header(); ?>
 				<?php endif ?>
 					<?php echo $content_m['t_modulo']; ?>		
 			</h2>
-			<div class="row p-t-25">
-				<?php $content_m = get_field('infos_modulo');
-				if( $content_m ): ?>
+			<div class="row p-t-50">
 					<div class="col-md-6">
-						<p class="p-t-25"><?php echo $content_m['coluna_1']; ?></p>
+						<p><?php echo $content_m['coluna_1']; ?></p>
 					</div>
-					<div class="col-md-6 p-t-70">
+					<div class="col-md-6">
 						<p><?php echo $content_m['coluna_2']; ?></p>
 					</div>
 				<?php endif; ?>
