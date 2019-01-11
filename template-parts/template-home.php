@@ -148,7 +148,7 @@ get_header(); ?>
 	        </div>
 	        <div class="bg-marinho">
 				<div class="container text-right p-t-15 p-b-15 p-t-n">
-					<a class="f-w p-r-25" href=""><i class="fa fa-podcast"></i>  Baixar como podcast</a>
+					<a class="f-w p-r-25" href="<?php echo get_template_directory_uri(); ?>/assets/audios/podcast-sogi.mp3" download><i class="fa fa-podcast"></i>  Baixar como podcast</a>
 					<a class="f-w" href="<?php the_field('l_youtube'); ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
 				</div>		
 			</div>
