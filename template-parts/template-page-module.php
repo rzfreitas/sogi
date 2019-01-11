@@ -205,7 +205,7 @@ get_header(); ?>
 		if( $diferenciais ): ?>
 		<div class="container p-t-50 p-b-50">
 			<div class="row dp-flex">
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-5 m-r-4p">
 					<div class="p-t-50 p-b-50 b-r-r v-center">
 						<h2><?php echo $diferenciais['t_dif']; ?></h2>
 					</div>
@@ -247,7 +247,7 @@ get_header(); ?>
 <?php } ?>
 
 <?php if( get_field('modulo') == 'lira' ) {
-	get_template_part('template-parts/content' , 'integracao-lira');
+	//get_template_part('template-parts/content' , 'integracao-lira');
 } else {
 	get_template_part('template-parts/content' , 'integracao');
 } ?>

@@ -193,6 +193,7 @@ table {
 .p-b-75{padding-bottom: 75px;}
 .p-t-100{padding-top: 100px;}
 .p-l-10{padding-left: 10px;}
+.p-l-30{padding-left: 30px;}
 .p-r-25{padding-right: 25px;}
 .p-b-100{padding-bottom: 100px;}
 .p-relative{position: relative;}
@@ -361,10 +362,23 @@ ul.clientes{
     width: 100%;
     padding: 0;
     margin: 0;
-    padding: 30px 0;
+    padding: 10px 0;
 }
 ul.clientes li{
     margin: 0 15px;
+}
+.i-load-more:before, .swap-icon:before{
+    font-family: "FontAwesome";
+    content: "\f078";
+    display: inline-block;   
+    vertical-align: middle;
+    font-weight: 900;
+    padding: 0 0 25px 0;
+    color: #000;
+    cursor: pointer;
+}
+.swap-icon:before{
+    content: "\f077";
 }
 .bg-marinho{
     background: #292E3D;
@@ -600,6 +614,8 @@ ul.mod-list li:last-child{margin-right: 0px}
     font-size: 80px;
     padding-right: 15px;
 }
+.m-r-4p{margin-right: 4%;}
+.m-r-4p h2{padding-right: 4%;}
 /* / */
 
 /* VANTAGENS */
@@ -711,9 +727,14 @@ ul.vantagens li img{padding-right: 15px;}
 .btn-lg{
     padding: 18px 36px;
 }
+.btn-verde{
+    background-color: #6FCF97;
+    border-radius: 50px;
+}
+.btn-verde:hover{background-color: #51976E;}
 a.btn-white{color: #2089C2;}
 a.btn-leia-mais{color: #2F80ED;}
-a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow, a.btn-yellow-h, .btn-red a, a.btn-roxo{color: #fff!important;}
+a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow, a.btn-yellow-h, .btn-red a, a.btn-roxo, a.btn-verde{color: #fff!important;}
 /* / */
 
 /* TABS */
@@ -920,7 +941,7 @@ color:#dcdcdc
 }
 
 .custom-pagination span.current {
-background-color:#00748d;
+background-color:#0079BA;
 color:#fff
 }
 /* / */
@@ -1163,21 +1184,6 @@ background-color:#fff
     text-align: center;
     border: 1px solid #FFAB00;
 }
-.form-field{
-    margin-bottom: 20px;
-}
-.form-field label{
-    width: 10%;
-    padding-top: 10px;
-    font-weight: bold;
-}
-.form-field input{
-    background: #FFFFFF;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 90%;
-    height: 41px;
-    text-indent: 15px;
-}
 /* / */
 
 /* MODAL */
@@ -1220,6 +1226,9 @@ background-color:#fff
 .box-cian{
     background-color: #40A3C1;
     padding: 50px;
+    height: 100%;
+    color: #fff;
+}
 }
 ul.list-cursos, ul.list-cursos2{
     margin: 0;
@@ -1268,10 +1277,18 @@ ul.list-cursos li:last-child{
     background: rgba(41, 46, 61, 0.7);
     padding: 100px 50px;
 }
+.bg-verde-l{
+    background-color: #C9F4DB;
+}
+.legend-c{
+    width: 280px;
+    margin: auto;
+    font-size: 12px
+}
 /* / */
 
 /* SITE VIDEO */
-#site-video video{
+#site-video video, #site-video-cursos video{
     width: 100%;
 }
 #site-video-modulos{
@@ -1284,6 +1301,9 @@ ul.list-cursos li:last-child{
 }
 #site-video-modulos video{
     width: 100%;
+}
+#site-video-cursos{
+    margin-bottom: -8px;
 }
 .p-t-n{margin-top: -7px;}
 /* / */
@@ -1339,6 +1359,7 @@ ul.list-cursos li:last-child{
         width: 582px;
         height: 307px;
     }
+    ul.clientes{flex-wrap: wrap;}
     ul.clientes li{
         margin: 0;
         width: 20%;

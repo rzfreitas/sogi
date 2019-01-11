@@ -11,12 +11,12 @@
 
 	<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 		<article class="first-post"" id="post-<?php the_ID(); ?>" <?php post_class( 'book' ); ?>>		<div class="row">
-				<div class="col-md-5 text-center">			
-					<?php if ( has_post_thumbnail() ) { ?>				
-						<a href="<?php the_permalink(); ?>">				
-							<?php the_post_thumbnail();	?>			
-						</a>				
-					<?php }?>				
+				<div class="col-md-5 text-center">
+					<?php if ( has_post_thumbnail() ) {
+						    the_post_thumbnail();
+						} else {
+						    echo '<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/404.png" alt="<?php the_title(); ?>" />';
+					} ?>			
 				</div>
 				
 				<div class="col-md-7">
@@ -33,7 +33,7 @@
   	<?php wp_reset_postdata(); ?>  
 	<?php } ?>
 
-	<div class="m-t-50">
+	<div class="p-t-25">
 		<?php $args = array(
 		'post_type' => 'post',
 		'posts_per_page' => 4,
@@ -46,11 +46,11 @@
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 				<div class="col text-center old-posts">
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'book' ); ?>>
-						<?php if ( has_post_thumbnail() ) { ?>
-							<a href="<?php the_permalink(); ?>">
-								<?php the_post_thumbnail();	?>
-							</a>
-						<?php }?>
+						<?php if ( has_post_thumbnail() ) {
+						    the_post_thumbnail();
+						} else { ?>
+						    <img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/404.png" alt="<?php the_title(); ?>" />
+						<?php } ?>
 						
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<!-- <div class="date-post"><i class="fa fa-clock-o"></i><?php $post_date = get_the_date( 'F j, Y' ); echo $post_date; ?></div> -->

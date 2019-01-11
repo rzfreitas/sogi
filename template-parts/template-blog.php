@@ -24,7 +24,13 @@
 				<article class="row blog-box">
 					<div class="col-3 b-r-blue text-center">
 						<span class="color-rand"><?php the_terms( $post->ID, 'grupos' ); ?></span>
-						<a href="<?php the_permalink();?>"><?php the_post_thumbnail('', array( 'class' => 'img-responsive img-circle' , 'alt' => get_the_title(), 'title' => get_the_title() ) ); ?></a>
+
+						<?php if ( has_post_thumbnail() ) { ?>
+						    <a href="<?php the_permalink();?>"><?php the_post_thumbnail('', array( 'class' => 'img-responsive img-circle' , 'alt' => get_the_title(), 'title' => get_the_title() ) ); ?></a>
+						<?php } else { ?>
+						    <img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/404.png" alt="<?php the_title(); ?>" />
+						<?php } ?>
+
 					</div>
 					<div class="col-9">
 						<div class="titulo-post">
@@ -39,7 +45,7 @@
 			<!-- end of the loop -->
 
 			<!-- pagination here -->
-			<div class="p-t-25 p-b-25">
+			<div class="p-t-25 p-b-50">
 				<?php custom_pagination($custom_query->max_num_pages,"",$paged); ?>
 			</div>
 

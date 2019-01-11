@@ -61,7 +61,7 @@
 							</div>
 						</div>
 						<div>
-							<a class="btn-def btn-azul-h">Sou cliente</a>
+							<a class="btn-def btn-azul-h" href="https://sogi8.sogi.com.br/login.aspx">Login</a>
 						</div>
 						<div>
 							<a class="btn-def btn-yellow-h" data-toggle="modal" data-target="#SogiContato">Contato</a>

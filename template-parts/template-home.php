@@ -32,16 +32,36 @@ get_header(); ?>
 		<ul class="clientes dp-flex">
 		<?php while( have_rows('clientes') ): the_row(); 
 			// vars
-			$imagecliente = get_sub_field('logo_cliente');
-			?>
-
+			$imagecliente = get_sub_field('logo_cliente'); ?>
 			<li class="cliente">
 				<img src="<?php echo $imagecliente['url']; ?>" alt="<?php echo $imagecliente['alt'] ?>" />
 			</li>
 		<?php endwhile; ?>
 		</ul>
 		<?php endif; ?>
-	</div>	
+		<div class="text-center i-load-more"></div>
+	</div>
+	<div class="container more-clientes p-t-50 p-b-50 d-none">
+		<?php 
+		$imagesMore = get_field('more_clientes');
+		$size = 'full'; // (thumbnail, medium, large, full or custom size)
+
+		if( $imagesMore ): ?>
+		    <ul class="clientes dp-flex">
+		        <?php foreach( $imagesMore as $imagesMore ): ?>
+		            <li class="cliente">
+		            	<?php echo wp_get_attachment_image( $imagesMore['ID'], $size ); ?>
+		            </li>
+		        <?php endforeach; ?>
+		    </ul>
+		<?php endif; ?>
+		<script>
+			$(".i-load-more").click(function(){
+				$(".more-clientes").toggleClass('d-none');
+				$(".i-load-more").toggleClass('swap-icon')
+			});
+		</script>
+	</div>
 </section>
 
 <section>

@@ -26,22 +26,22 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="bg-marinho">
-		<div class="container p-t-100 p-b-100">
-			<div class="row dp-flex">
-				<div class="col-md-6 box-cian">
+	<div class="dp-flex">
+		<div class="w-40">
+			<div class="box-cian">
+				<div class="v-center text-center">
 					<p>Entenda como é importante para você conhecer o SOGI. Uma ferramenta totalmente pensada para simplificar o monitoramento da legislação aplicável e da gestão integrada dos processos nas empresas.</p>
-				</div>
-				<div class="col-md-6">
-					<div id="site-video">
-			            <video poster="" playsinline="" autoplay="" muted="" loop="">
-			                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/Plataforma-EAD-Verde-Ghaia.mp4" type="video/mp4">
-			            </video>
-			        </div>
-				</div>
+				</div>				
 			</div>
 		</div>
-	</div>
+		<div class="w-60">
+			<div id="site-video-cursos">
+	            <video poster="" playsinline="" autoplay="" muted="" loop="">
+			        <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/Plataforma-EAD-Verde-Ghaia.mp4" type="video/mp4">
+			    </video>
+	        </div>
+		</div>
+	</div>	
 </section>
 
 <section>
@@ -108,21 +108,25 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="container p-t-100 p-b-100">
-		<div class="row">
-			<div class="col-md-5">
-				<h2>APRENDA COM OS MELHORES</h2>
-				<p>Os materiais didáticos do curso EAD SOGI são elaborados pela equipe de Suporte da Verde Ghaia, especialistas que lidam diretamente com o sistema em seu dia-a-dia no atendimento ao cliente. Além disso, os professores atuam como tutores durante todo o curso, acompanhando os alunos durante todo o processo de aprendizagem.</p>
+<div class="bg-verde-l">
+	<div class="container p-t-50 p-b-50">
+		<div class="dp-flex">
+			<div class="col-md-6">
+				<div class="v-center">
+					<h2>APRENDA COM OS MELHORES</h2>
+					<p>Os materiais didáticos do curso EAD SOGI são elaborados pela equipe de Suporte da Verde Ghaia, especialistas que lidam diretamente com o sistema em seu dia-a-dia no atendimento ao cliente. Além disso, os professores atuam como tutores durante todo o curso, acompanhando os alunos durante todo o processo de aprendizagem.</p>
+				</div>
 			</div>
-			<div class="col-md-3 text-center">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/cursos-outsourcing/foto.png" alt="">
-			</div>
-			<div class="col-md-4">
-				<h5 class="p-t-50">Viviane Mara Diniz</h5>
-				<p>Gestora de Projetos, Coordenadora do Departamento de Suporte ao cliente e responsável pelo conteúdo programático do curso SOGI.</p>
+			<div class="col-md-6 text-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/cursos-outsourcing/viviane.png" alt="viviane mara diniz">
+				<div class="legend-c">
+					<p class="p-t-25"><strong>Viviane Mara Diniz</strong> <br>
+					Gestora de Projetos, Coordenadora do Departamento de Suporte ao cliente e responsável pelo conteúdo programático do curso SOGI.</p>
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </section>
 
 <section>
@@ -132,7 +136,8 @@ get_header(); ?>
 				<div class="col-md-6 bg-opacity">
 					<h2>APRENDA DE <br> FORMA DINÂMICA <br> E INTERATIVA</h2>
 					<p class="p-t-50 p-b-50">Os materiais, que vão de apostilas teóricas a videoaulas e tutorias, apresentam o sistema de forma dinâmica e interativa. Assim, o usuário terá facilidade na hora de utilizar a plataforma e saberá tudo o que precisa para tirar o melhor proveito de suas inúmeras funcionalidades. </p>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>lira"><h4>QUER APRENDER APENAS O MÓDULO LIRA? CLIQUE AQUI.</h4></a>
+					<h4 class="p-b-25">QUER APRENDER APENAS O MÓDULO LIRA?</h4>
+					<a class="btn-def btn-yellow" href="<?php echo esc_url( home_url( '/' ) ); ?>lira">Aprender agora!</a>
 				</div>
 				<div class="col-md-6 text-center">
 					<div class="v-center">

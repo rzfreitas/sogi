@@ -9,31 +9,13 @@
 				<i class="fa fa-caret-down"></i>
 			</div>
 		</div>
-		<div class="block-integration-body">
+		<div class="block-integration-body text-center">
 			<h3>Digite seus dados para continuar</h3>
 			<?php echo do_shortcode('[contact-form-7 id="473" title="Formulario cadastro"]'); ?>
-			<!-- <form class="p-t-25" action="">
-				<div class="form-field">
-					<label class="w-10">Nome:</label>
-					<input class="w-90" type="text" name="nome">	
-				</div>
-				<div class="form-field">
-					<label class="w-10">E-mail:</label>
-					<input class="w-90" type="text" name="email">
-				</div>
-				<div class="form-field">
-					<label class="w-10">Empresa:</label>
-					<input class="w-90" type="text" name="empresa">
-				</div>
-				<div class="form-field">
-					<label class="w-10">CNPJ:</label>
-					<input class="w-90" type="text" name="" id="maskCnpj">
-				</div>
-			</form> -->
 		</div>
 	</div>
 
-	<div class="block-integration m-t-15">
+	<div class="block-integration">
 		<div class="block-integration-header">
 			<p>2 - Comprar</p>
 			<div class="float-right">
