@@ -1361,7 +1361,7 @@ ul.list-cursos li:last-child{
         width: 582px;
         height: 307px;
     }
-    ul.clientes{flex-wrap: wrap;}
+    ul.clientes{}
     ul.clientes li{
         margin: 0;
         width: 20%;

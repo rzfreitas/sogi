@@ -27,7 +27,7 @@ get_header(); ?>
 </section>
 
 <section>	
-	<div class="container">
+	<div class="container p-t-25">
 		<?php if( have_rows('clientes') ): ?>
 		<ul class="clientes dp-flex">
 		<?php while( have_rows('clientes') ): the_row(); 
