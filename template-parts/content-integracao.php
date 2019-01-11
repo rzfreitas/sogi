@@ -52,15 +52,15 @@
 				<?php elseif ( get_field('modulo') == 'gaia' ): ?>
 					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(50);">Comprar</a>
 				<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja();">Comprar</a>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(113);">Comprar</a>
 				<?php elseif ( get_field('modulo') == 'tnc' ): ?>
 					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(116);">Comprar</a>
 				<?php elseif ( get_field('modulo') == 'rl' ): ?>
 					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja();">Comprar</a>
 				<?php elseif ( get_field('modulo') == 'rn' ): ?>
-					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja();">Comprar</a>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(146);">Comprar</a>
 				<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja();">Comprar</a>
+					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(145);">Comprar</a>
 				<?php elseif ( get_field('modulo') == 'doc' ): ?>
 					<a class="btn-def btn-yellow" onclick="javascript:redirect_loja(52);">Comprar</a>
 				<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
@@ -92,7 +92,15 @@
 		}, false);
 		</script>
 	<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-	
+		<script>
+		$('#anuidades').bind('keyup mouseup', function(){
+			var valorAnuidade = $(this).val();			
+			getProductDetails(113, valorAnuidade);
+		});
+		document.addEventListener('DOMContentLoaded', function() {
+		    getProductDetails(113, 1);
+		}, false);
+		</script>
 	<?php elseif ( get_field('modulo') == 'tnc' ): ?>
 		<script>
 		$('#anuidades').bind('keyup mouseup', function(){
@@ -106,9 +114,25 @@
 	<?php elseif ( get_field('modulo') == 'rl' ): ?>
 	
 	<?php elseif ( get_field('modulo') == 'rn' ): ?>
-	
+		<script>
+		$('#anuidades').bind('keyup mouseup', function(){
+			var valorAnuidade = $(this).val();			
+			getProductDetails(146, valorAnuidade);
+		});
+		document.addEventListener('DOMContentLoaded', function() {
+		    getProductDetails(146, 1);
+		}, false);
+		</script>
 	<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-	
+		<script>
+		$('#anuidades').bind('keyup mouseup', function(){
+			var valorAnuidade = $(this).val();			
+			getProductDetails(145, valorAnuidade);
+		});
+		document.addEventListener('DOMContentLoaded', function() {
+		    getProductDetails(145, 1);
+		}, false);
+		</script>
 	<?php elseif ( get_field('modulo') == 'doc' ): ?>
 		<script>
 		$('#anuidades').bind('keyup mouseup', function(){
