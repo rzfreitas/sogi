@@ -11,7 +11,9 @@
 		</div>
 		<div class="block-integration-body text-center">
 			<h3>Digite seus dados para continuar</h3>
-			<?php echo do_shortcode('[contact-form-7 id="473" title="Formulario cadastro"]'); ?>
+			<div class="p-t-25">
+				<?php echo do_shortcode('[contact-form-7 id="473" title="Formulario cadastro"]'); ?>
+			</div>			
 		</div>
 	</div>
 

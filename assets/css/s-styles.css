@@ -656,7 +656,7 @@ ul.vantagens li img{padding-right: 15px;}
 /* / */
 
 /* Buttons */
-.btn-def{
+.btn-def, input[type="submit"]{
     display: inline-block;
     padding: 15px 20px;
     cursor: pointer;
@@ -728,10 +728,12 @@ ul.vantagens li img{padding-right: 15px;}
     padding: 18px 36px;
 }
 .btn-verde{
-    background-color: #6FCF97;
-    border-radius: 50px;
+    background: #6FCF97!important;
+    border-radius: 50px!important;
+    color: #fff!important;
+    border: 0!important;
 }
-.btn-verde:hover{background-color: #51976E;}
+.btn-verde:hover{background-color: #51976E!important;}
 a.btn-white{color: #2089C2;}
 a.btn-leia-mais{color: #2F80ED;}
 a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow, a.btn-yellow-h, .btn-red a, a.btn-roxo, a.btn-verde{color: #fff!important;}
