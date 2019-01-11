@@ -93,33 +93,33 @@ get_header(); ?>
 <section>
 	<div class="p-relative">
 		<div class="container p-t-100">
-			<div class="row">
+			<?php if( get_field('modulo') == 'lira' ): ?>
+				<h2 class="t-lira p-l-30">
+				<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
+				<h2 class="t-aud p-l-30">
+				<?php elseif ( get_field('modulo') == 'gaia' ): ?>
+				<h2 class="t-gaia p-l-30">
+				<?php elseif ( get_field('modulo') == 'prsst' ): ?>
+				<h2 class="t-prsst p-l-30">
+				<?php elseif ( get_field('modulo') == 'tnc' ): ?>
+				<h2 class="t-tnc p-l-30">
+				<?php elseif ( get_field('modulo') == 'rl' ): ?>
+				<h2 class="t-rl p-l-30">
+				<?php elseif ( get_field('modulo') == 'rn' ): ?>
+				<h2 class="t-rn p-l-30">
+				<?php elseif ( get_field('modulo') == 'licencas' ): ?>
+				<h2 class="t-licencas p-l-30">
+				<?php elseif ( get_field('modulo') == 'doc' ): ?>
+				<h2 class="t-doc p-l-30">
+				<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
+				<h2 class="t-liracorp p-l-30">
+				<?php endif ?>
+					<?php echo $content_m['t_modulo']; ?>		
+			</h2>
+			<div class="row p-t-25">
 				<?php $content_m = get_field('infos_modulo');
 				if( $content_m ): ?>
 					<div class="col-md-6">
-						<?php if( get_field('modulo') == 'lira' ): ?>
-						<h2 class="t-lira">
-						<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
-						<h2 class="t-aud">
-						<?php elseif ( get_field('modulo') == 'gaia' ): ?>
-						<h2 class="t-gaia">
-						<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-						<h2 class="t-prsst">
-						<?php elseif ( get_field('modulo') == 'tnc' ): ?>
-						<h2 class="t-tnc">
-						<?php elseif ( get_field('modulo') == 'rl' ): ?>
-						<h2 class="t-rl">
-						<?php elseif ( get_field('modulo') == 'rn' ): ?>
-						<h2 class="t-rn">
-						<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-						<h2 class="t-licencas">
-						<?php elseif ( get_field('modulo') == 'doc' ): ?>
-						<h2 class="t-doc">
-						<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-						<h2 class="t-liracorp">
-						<?php endif ?>
-							<?php echo $content_m['t_modulo']; ?>		
-						</h2>
 						<p class="p-t-25"><?php echo $content_m['coluna_1']; ?></p>
 					</div>
 					<div class="col-md-6 p-t-70">
@@ -246,9 +246,13 @@ get_header(); ?>
 	<?php get_template_part('template-parts/content' , 'app'); ?>
 <?php } ?>
 
-<?php if( get_field('modulo') == 'lira' ) {
-	//get_template_part('template-parts/content' , 'integracao-lira');
+<!-- <?php if( get_field('modulo') == 'lira' ) {
+	get_template_part('template-parts/content' , 'integracao-lira');
 } else {
+	get_template_part('template-parts/content' , 'integracao');
+} ?> -->
+
+<?php if( get_field('modulo') != 'liracorp' && get_field('modulo') != 'lira' ) {
 	get_template_part('template-parts/content' , 'integracao');
 } ?>
 

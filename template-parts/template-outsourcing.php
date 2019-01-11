@@ -74,10 +74,10 @@ get_header(); ?>
 
 <section>
 	<div class="bg-d-gray">
-		<div class="container p-t-70 p-b-70">
-			<div class="row">
+		<div class="container p-t-50 p-b-50">
+			<div class="row dp-flex">
 				<div class="col-md-8">
-					<h2>Fale agora com nosso Consultor Comercial</h2>
+					<h2 class="v-center">Fale agora com nosso Consultor Comercial</h2>
 				</div>
 				<div class="col-md-4">
 					<a href="https://ead.verdeghaia.com.br/register" class="btn-def btn-roxo btn-lg">CONTRATE AGORA!</a>

@@ -2,7 +2,17 @@
 
 <?php get_header(); ?>
 
-<div class="container m-t-145 title-blog text-center">
+<section>
+<div class="container m-t-145 text-center">
+	<?php
+	$imageBB = get_field('img_banner');
+	if( !empty($imageBB) ): ?>
+		<a href="<?php the_field('link_banner'); ?>" target="_blank"><img src="<?php echo $imageBB['url']; ?>" alt="<?php echo $imageBB['alt']; ?>" /></a>
+	<?php endif; ?>
+</div>
+</section>
+
+<div class="container p-t-70 title-blog text-center">
 	<h1>BLOG SOGI</h1>
 </div>
 

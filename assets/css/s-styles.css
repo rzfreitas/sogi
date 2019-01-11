@@ -1308,7 +1308,7 @@ ul.list-cursos li:last-child{
 .p-t-n{margin-top: -7px;}
 /* / */
 
-@media only screen and (min-width:1025px) and (max-width: 1500px) {
+@media only screen and (min-width:1024px){
     .dp-flex{
         display: flex;
         display: -ms-flexbox;
@@ -1364,6 +1364,16 @@ ul.list-cursos li:last-child{
         margin: 0;
         width: 20%;
         text-align: center;
+    }
+    .s-menu ul ul {
+        column-count: 2;
+        padding: 15px 5px;
+        column-gap: 15px;
+        column-span: all;
+        width: 400px;
+    }
+    .s-menu ul ul li:nth-child(6){
+        padding-top: 0;
     }
 }
 
