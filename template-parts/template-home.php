@@ -142,7 +142,7 @@ get_header(); ?>
 		</div>
 		<div class="w-60">
 			<div id="site-video">
-	            <video poster="" playsinline="" autoplay="" muted="" loop="">
+	            <video poster="" playsinline="" autoplay="" muted="" loop="" controls>
 	                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/SOGI.mp4" type="video/mp4">
 	            </video>
 	        </div>
