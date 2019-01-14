@@ -81,7 +81,11 @@ get_header(); ?>
 				<div class="w-80">							
 					<h1><?php echo $cbanner['titulo_banner']; ?></h1>
 					<p><?php echo $cbanner['descricao_banner']; ?></p>
-					<a class="btn-def btn-yellow" onclick="scrollToElement('#conversionRow', -100)">Quero comprar</a>		
+					<?php if( get_field('modulo') == 'lira' ) { ?>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>	
+					<?php } else { ?>
+						<a class="btn-def btn-yellow" onclick="scrollToElement('#conversionRow', -100)">Quero comprar</a>
+					<?php } ?>
 				</div>
 			</div>
 		</div>

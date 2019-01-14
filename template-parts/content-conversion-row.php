@@ -52,7 +52,7 @@
 				</div>
 				<div class="col-md-6 border-yllw">
 					<?php if( get_field('modulo') == 'lira' ): ?>
-						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O LIRA</a>
+						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#SogiContato">CONTRATE O LIRA</a>
 					<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
 						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O AUDITORIA</a>
 					<?php elseif ( get_field('modulo') == 'gaia' ): ?>
@@ -70,7 +70,7 @@
 					<?php elseif ( get_field('modulo') == 'doc' ): ?>
 						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O DOCUMENTOS</a>
 					<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O LIRA CORPORATIVO</a>
+						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#SogiContato">CONTRATE AGORA</a>
 					<?php endif ?>
 				</div>
 			</div>
