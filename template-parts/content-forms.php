@@ -92,7 +92,7 @@
 </div>
 <?php } ?>
 
-<?php if(is_page('PRSST')) { ?>
+<?php if(is_page('PRSSO')) { ?>
 <!-- APRESENTAÇÃO prsso -->
 <div class="modal fade" id="ApresentacaoPRSSO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -204,6 +204,54 @@
         <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
         <script type="text/javascript">
           new RDStationForms('botao-baixar-apresentacao-licencas-a07f114a5bb023383d8a-html', 'UA-106310839-1').createForm();
+        </script>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+<?php } ?>
+
+<?php if(is_page('GRC')) { ?>
+<!-- APRESENTAÇÃO grc -->
+<div class="modal fade" id="ApresentacaoGRC" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Apresentação do GRC</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div role="main" id="botao-baixar-apresentacao-grc-6bc163ec414154cde25e"></div>
+        <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+        <script type="text/javascript">
+          new RDStationForms('botao-baixar-apresentacao-grc-6bc163ec414154cde25e-html', 'UA-106310839-1').createForm();
+        </script>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+<?php } ?>
+
+<?php if(is_page('Corporativo')) { ?>
+<!-- APRESENTAÇÃO corporativo -->
+<div class="modal fade" id="ApresentacaoCorp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Apresentação do Corporativo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div role="main" id="botao-baixar-apresentacao-corporativo-86a94d99b2ba63a5a359"></div> 
+        <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+        <script type="text/javascript">
+        new RDStationForms('botao-baixar-apresentacao-corporativo-86a94d99b2ba63a5a359-html', 'UA-106310839-1').createForm();
         </script>
       </div>
       <div class="modal-footer"></div>

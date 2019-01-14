@@ -18,7 +18,7 @@ get_header(); ?>
 				<h1><?php the_field('titulo_banner'); ?></h1>
 				<p><?php the_field('texto_banner'); ?></p>
 				<div class="p-t-25">
-					<a class="btn-def btn-yellow">Contrate o sogi</a>
+					<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Contrate o sogi</a>
 				</div>
 			</div>
 		</div>
@@ -29,7 +29,7 @@ get_header(); ?>
 <section>	
 	<div class="container p-t-25">
 		<?php if( have_rows('clientes') ): ?>
-		<ul class="clientes dp-flex">
+		<ul class="clientes dp-flex flex">
 		<?php while( have_rows('clientes') ): the_row(); 
 			// vars
 			$imagecliente = get_sub_field('logo_cliente'); ?>
@@ -47,7 +47,7 @@ get_header(); ?>
 		$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 		if( $imagesMore ): ?>
-		    <ul class="clientes dp-flex">
+		    <ul class="clientes dp-flex flex-wrap">
 		        <?php foreach( $imagesMore as $imagesMore ): ?>
 		            <li class="cliente">
 		            	<?php echo wp_get_attachment_image( $imagesMore['ID'], $size ); ?>

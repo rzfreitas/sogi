@@ -36,13 +36,13 @@
 					<?php elseif ( get_field('modulo') == 'rl' ): ?>
 					<a data-toggle="modal" data-target="#ApresentacaoLIRA">
 					<?php elseif ( get_field('modulo') == 'rn' ): ?>
-					<a data-toggle="modal" data-target="#ApresentacaoLIRA">
+					<a data-toggle="modal" data-target="#ApresentacaoGRC">
 					<?php elseif ( get_field('modulo') == 'licencas' ): ?>
 					<a data-toggle="modal" data-target="#ApresentacaoLic">
 					<?php elseif ( get_field('modulo') == 'doc' ): ?>
 					<a data-toggle="modal" data-target="#ApresentacaoDoc">
 					<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-					<a data-toggle="modal" data-target="#ApresentacaoLIRA">
+					<a data-toggle="modal" data-target="#ApresentacaoCorp">
 					<?php endif ?>
 					<div class="pointer">
 						<img class="p-b-15" src="<?php echo get_template_directory_uri(); ?>/assets/imagens/download-arrow.png" alt="baixar apresentação"><br>

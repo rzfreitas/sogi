@@ -13,7 +13,7 @@ get_header(); ?>
 					<h1>Está sem tempo? <br> Converse com a gente!</h1>
 					<p>Mantenha seu módulo Lira sempre atualizado. Requisitos legais, obrigações, evidências e muito mais, tudo do jeitinho que tem que ser.</p>
 					<div class="p-t-25">
-						<a href="" class="btn-def btn-roxo">Contratar Agora!</a>
+						<a href="" class="btn-def btn-roxo" data-toggle="modal" data-target="#SogiContato">Contratar Agora!</a>
 					</div>
 				</div>
 			</div>

@@ -380,6 +380,9 @@ ul.clientes li{
 .swap-icon:before{
     content: "\f077";
 }
+.more-clientes ul.clientes li{
+    margin: 15px 0;
+}
 .bg-marinho{
     background: #292E3D;
     color: #fff;

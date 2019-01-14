@@ -14,9 +14,9 @@
 				<div class="col-md-5 text-center">
 					<?php if ( has_post_thumbnail() ) {
 						    the_post_thumbnail();
-						} else {
-						    echo '<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/404.png" alt="<?php the_title(); ?>" />';
-					} ?>			
+						} else { ?>
+						    <img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/404.png" alt="<?php the_title(); ?>" />
+						<?php } ?>
 				</div>
 				
 				<div class="col-md-7">
@@ -62,7 +62,7 @@
 		</div>
 	</div>
 	<div class="p-t-50 text-center">
-		<a class="btn-def btn-white" href="">Leia mais...</a>
+		<a class="btn-def btn-white" href="<?php echo esc_url( home_url( '/' ) ); ?>blog">Leia mais...</a>
 	</div>
 </div>
 </section>
