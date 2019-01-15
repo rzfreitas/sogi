@@ -367,10 +367,12 @@ ul.clientes{
     padding: 0;
     margin: 0;
     padding: 10px 0;
+    display: inline-block;
 }
 ul.clientes li{
-    margin: 0 15px;
     display: inline-block;
+    float: left;
+    width: 50%;
 }
 .i-load-more:before, .swap-icon:before{
     font-family: "FontAwesome";
@@ -739,7 +741,7 @@ a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow, a.btn-yellow-h, .btn-red a, 
     color: #fff;
 }
 .s-tabs .nav-tabs{
-    display: block;
+    display: inline-block;
     border-bottom: 0;
 }
 .s-tabs .nav-tabs .nav-link{
@@ -1352,7 +1354,9 @@ ul.list-cursos li:last-child{
         width: 582px;
         height: 307px;
     }
-    ul.clientes{}
+    ul.clientes{
+        
+    }
     ul.clientes li{
         margin: 0;
         width: 20%;
@@ -1406,6 +1410,9 @@ ul.list-cursos li:last-child{
     }
     #site-video-modulos{
         height: 450px;
+    }
+    .s-tabs .nav-tabs{
+        display: block;
     }
 }
 
