@@ -100,25 +100,25 @@ get_header(); ?>
 			if( $content_m ): ?>
 		<div class="container p-t-100">
 			<?php if( get_field('modulo') == 'lira' ): ?>
-				<h2 class="t-lira p-l-30">
+				<h2 class="t-lira">
 				<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
-				<h2 class="t-aud p-l-30">
+				<h2 class="t-aud">
 				<?php elseif ( get_field('modulo') == 'gaia' ): ?>
-				<h2 class="t-gaia p-l-30">
+				<h2 class="t-gaia">
 				<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-				<h2 class="t-prsst p-l-30">
+				<h2 class="t-prsst">
 				<?php elseif ( get_field('modulo') == 'tnc' ): ?>
-				<h2 class="t-tnc p-l-30">
+				<h2 class="t-tnc">
 				<?php elseif ( get_field('modulo') == 'rl' ): ?>
-				<h2 class="t-rl p-l-30">
+				<h2 class="t-rl">
 				<?php elseif ( get_field('modulo') == 'rn' ): ?>
-				<h2 class="t-rn p-l-30">
+				<h2 class="t-rn">
 				<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-				<h2 class="t-licencas p-l-30">
+				<h2 class="t-licencas">
 				<?php elseif ( get_field('modulo') == 'doc' ): ?>
-				<h2 class="t-doc p-l-30">
+				<h2 class="t-doc">
 				<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-				<h2 class="t-liracorp p-l-30">
+				<h2 class="t-liracorp">
 				<?php endif ?>
 					<?php echo $content_m['t_modulo']; ?>		
 			</h2>

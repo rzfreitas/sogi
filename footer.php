@@ -51,7 +51,7 @@
 					</ul>
 				</div>
 
-				<div class="col links">
+				<div class="col links p-t-c">
 					<ul>
 						<h3 class="p-b-15"><strong>Certificações</strong></h3>
 						<li><a href="http://www.consultoriaiso.org/iso-9001/o-que-e-iso-9001/" target="_blank">ISO 9001</a></li>
@@ -62,7 +62,7 @@
 					</ul>
 				</div>
 
-				<div class="col links">
+				<div class="col links p-t-c">
 					<ul>
 						<h3 class="p-b-15"><strong>Regionais</strong></h3>
 						<li>Norte Fluminense - RJ</li>

@@ -2,8 +2,8 @@
 	<div class="bg-tabs s-tabs">
 		<div class="container p-t-100 p-b-100">
 			<h2 class="text-center f-normal p-b-50">Conheça os <strong>módulos</strong> e as principais funcionalidades da <br> plataforma de Soluções para Gestão Integrada, soGi</h2>
-			<div class="d-flex p-t-50 b-top-w">
-				<div class="col-3">
+			<div class="dp-flex p-t-50 b-top-w">
+				<div class="col-12 col-md-3">
 					<nav>
 					  <div class="nav nav-tabs" id="nav-tab" role="tablist">
 					    <a class="nav-item nav-link active" id="nav-lira-tab" data-toggle="tab" href="#nav-lira" role="tab" aria-controls="nav-lira" aria-selected="true">LIRA</a>
@@ -26,7 +26,7 @@
 					  </div>
 					</nav>
 				</div>
-				<div class="tab-content col-9" id="nav-tabContent">
+				<div class="tab-content col-12 col-md-9 p-t-c" id="nav-tabContent">
 				  <div class="tab-pane fade show active" id="nav-lira" role="tabpanel" aria-labelledby="nav-lira-tab">
 				  	<div class="text-center">
 				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/LIRA.png" alt="LIRA">
