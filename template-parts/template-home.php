@@ -4,20 +4,20 @@ get_header(); ?>
 
 <section>
 <?php $image = get_field('img_banner'); if( !empty($image) ): ?>
-<div style="background: url(<?php echo $image['url']; ?>) no-repeat center center fixed;   
+<div style="background: url(<?php echo $image['url']; ?>) no-repeat center center;   
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: calc(100vh);">
+	min-height: 100vh;">
 <?php endif; ?>
-	<div class="container v-center text-banner">
+	<div class="container v-center-p text-banner">
 		<div class="dp-flex">
 			<div class="col-7 d-none d-sm-block"></div>
 			<div class="col-md-5 col-12 p-t-c-100">
 				<h1><?php the_field('titulo_banner'); ?></h1>
 				<p><?php the_field('texto_banner'); ?></p>
-				<div class="p-t-25">
+				<div class="p-t-25 p-b-c">
 					<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Contrate o sogi</a>
 				</div>
 			</div>
