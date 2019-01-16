@@ -2,10 +2,10 @@
 	<div class="bg-cinza">
 		<div class="container p-t-50 p-b-50">
 			<div class="row d-flex">
-				<div class="col-4 b-r-g">
+				<div class="col-12 col-md-4 b-r-g">
 					<h2 class="title-blue v-center">Conheça os outros <br> módulos do SOGI</h2>
 				</div>
-				<div class="col-8">
+				<div class="col-12 col-md-8">
 					<ul class="mod-list d-flex flex-wrap">
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>lira"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/lira-icon.png" alt="lira" title="Módulo Lira"></a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>auditoria"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/auditoria-icon.png" alt="auditoria" title="Módulo Auditoria"></a></li>

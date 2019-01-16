@@ -421,7 +421,7 @@ ul.facilidades li{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 999999999;
     top: 0;
     left: 0;
     background-color: #111;
@@ -478,7 +478,7 @@ ul.facilidades li{
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-    height: 100vh;
+    height: auto;
 }
 .empty-banner{
     height: calc(100vh - 63px);
@@ -553,6 +553,10 @@ a.link-vid{
 
 /* BOX MODULOS */
 .bg-modulos{background-color: #F2F2F2;}
+ul.mod-list{
+    margin: 0;
+    padding: 0;
+}
 ul.mod-list li{
     padding: 10px 0;
     text-align: center;
@@ -1303,6 +1307,22 @@ ul.list-cursos li:last-child{
 .p-t-n{margin-top: -7px;}
 /* / */
 
+/* click whatsapp */
+.click-wpp{
+    position: fixed;
+    width: 200px;
+    right: 15px;
+    bottom: 15px;
+    font-size: 12px;
+    background: #f2f2f2;
+    border: 1px solid #dcdcdc;
+    padding: 3px;
+    border-radius: 30px;
+    z-index: 999;
+    cursor: pointer;
+}
+/* / */
+
 @media only screen and (min-width:1024px){
     .dp-flex{
         display: flex;
@@ -1419,6 +1439,9 @@ ul.list-cursos li:last-child{
     .s-tabs .nav-tabs{
         display: block;
     }
+    .bg-modulos{
+        height: 100vh;
+    }
 }
 
 /* EXTRA LARGE SECRENS */
@@ -1453,4 +1476,5 @@ ul.list-cursos li:last-child{
     .p-t-c{padding-top: 50px;}
     .p-b-c{padding-bottom: 50px;}
     .p-t-c-100{padding-top: 100px;}
+    .m-b-c{margin-bottom: 25px;}
 }

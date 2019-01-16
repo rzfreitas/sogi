@@ -46,7 +46,7 @@ get_header(); ?>
 					<?php endif ?>
 	            </video>
 	        </div>
-	        <div class="bg-marinho text-right p-t-15 p-b-15">
+	        <div class="bg-marinho text-right p-t-15 p-b-15 m-b-c">
 				<div class="container">
 					<a class="link-vid" href="<?php echo $cbanner['video_youtube']; ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
 				</div>

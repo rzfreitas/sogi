@@ -159,16 +159,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-/* slick assets */
-function slick_assets() {
-	if( is_page_template( 'template-parts/template-page-module.php' ) ) {
-		wp_enqueue_style( 'slick-def-css', get_template_directory_uri() . '/assets/css/slick.css', array(), '', 'all');
-		wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/assets/css/slick-theme.css', array(), '', 'all');
-
-		wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.min.js', array(), '', true );
-	}
-}add_action( 'wp_enqueue_scripts', 'slick_assets' );
-
 function add_theme_styles_scripts() {
  
 	wp_register_style( 'font', 'https://fonts.googleapis.com/css?family=Montserrat', all );
@@ -189,16 +179,15 @@ function add_theme_styles_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_styles_scripts' );
 
-/**
- * Filter the except length to 20 words.
- *
- * @param int $length Excerpt length.
- * @return int (Maybe) modified excerpt length.
- */
-function wpdocs_custom_excerpt_length( $length ) {
-    return 20;
-}
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+/* slick assets */
+function slick_assets() {
+	if( is_page_template( 'template-parts/template-page-module.php' ) ) {
+		wp_enqueue_style( 'slick-def-css', get_template_directory_uri() . '/assets/css/slick.css', array(), '', 'all');
+		wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/assets/css/slick-theme.css', array(), '', 'all');
+
+		wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.min.js', array(), '', true );
+	}
+}add_action( 'wp_enqueue_scripts', 'slick_assets' );
 
 /* LIRA SCRIPTS */
 function lira_scripts() {
@@ -282,3 +271,14 @@ function setPostViews($postID) {
         update_post_meta($postID, $countKey, $count);
     }
 }
+
+/**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

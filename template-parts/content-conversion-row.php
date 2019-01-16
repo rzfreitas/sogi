@@ -50,7 +50,7 @@
 					</div>
 					</a>
 				</div>
-				<div class="col-md-6 border-yllw">
+				<div class="col-md-6 p-t-c">
 					<?php if( get_field('modulo') == 'lira' ): ?>
 						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#SogiContato">CONTRATE O LIRA</a>
 					<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
