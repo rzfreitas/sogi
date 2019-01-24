@@ -38,8 +38,10 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="pointer text-center">
-			<img class="p-b-15" src="<?php echo get_template_directory_uri(); ?>/assets/imagens/download-arrow.png" alt="baixar apresentação"><br>
-			<span>BAIXE A APRESENTAÇÃO</span>
+			<a href="https://normaiso.verdeghaia.com.br/ga-outsourcing">
+				<img class="p-b-15" src="<?php echo get_template_directory_uri(); ?>/assets/imagens/download-arrow.png" alt="baixar apresentação"><br>
+				<span>BAIXE A APRESENTAÇÃO</span>
+			</a>
 		</div>
 	</div>
 </section>
@@ -80,7 +82,7 @@ get_header(); ?>
 					<h2 class="v-center">Fale agora com nosso Consultor Comercial</h2>
 				</div>
 				<div class="col-md-4">
-					<a href="https://ead.verdeghaia.com.br/register" class="btn-def btn-roxo btn-lg">CONTRATE AGORA!</a>
+					<a href="https://normaiso.verdeghaia.com.br/ga-outsourcing" class="btn-def btn-roxo btn-lg">CONTRATE AGORA!</a>
 				</div>
 			</div>
 		</div>

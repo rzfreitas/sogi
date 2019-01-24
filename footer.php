@@ -29,7 +29,7 @@
 				<div class="col links">
 					<ul>
 						<h3 class="p-b-15"><strong>Links úteis</strong></h3>
-						<li><a href="<?php echo get_home_url(); ?>/biblioteca" target="_blank"> Biblioteca VG </a></li>
+						<li><a href="https://www.verdeghaia.com.br/biblioteca/" target="_blank"> Biblioteca VG </a></li>
 						<li><a href="http://www.abnt.org.br/ " target="_blank"> ABNT </a></li>
 						<li><a href="http://www.iso.org/iso/home.html" target="_blank"> ISO </a></li>
 						<li><a href="https://sogi8.sogi.com.br/" target="_blank"> soGI8 </a></li>
@@ -87,7 +87,7 @@
 			<div class="social-footer text-right m-center">							
 				<ul class="icons-social">
 					<li><a href="https://www.facebook.com/verdeghaia" target="_blank"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://www.linkedin.com/company-beta/1959430/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://www.linkedin.com/company/verde-ghaia/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 					<li><a href="https://twitter.com/verdeghaia" target="_blank"><i class="fa fa-twitter"></i></a></li>
 					<li><a href="https://plus.google.com/103021621222845476497" target="_blank"><i class="fa fa-google-plus"></i></a></li>
 					<li><a href="https://www.youtube.com/user/canalverdegaia?sub_confirmation=1" target="_blank"><i class="fa fa-youtube"></i></a></li>

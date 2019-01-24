@@ -78,7 +78,7 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/balance.png" alt="leis aplicáveis negócio">
 						</div>
 						<div class="w-80 p-l-10">
-							<p>Identifica e interpreta leis aplicáveis ao seu negócio.</p>
+							<p>Identifica e interpreta leis aplicáveis ao negócio.</p>
 						</div>
 					</li>
 					<li class="col-md-4 d-flex">
@@ -86,7 +86,7 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/alertas.png" alt="Monitora alertas">
 						</div>
 						<div class="w-80 p-l-10">
-							<p>Monitora e dá alertas para seu cumprimento</p>
+							<p>Monitora e dá alertas para seu cumprimento.</p>
 						</div>
 					</li>
 					<li class="col-md-4 d-flex">
@@ -94,7 +94,7 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/guia.png" alt="guia Compliance">
 						</div>
 						<div class="w-80 p-l-10">
-							<p>Cria um guia específico para Compliance em sustentabilidade</p>
+							<p>Cria um guia específico para Compliance em Sustentabilidade.</p>
 						</div>
 					</li>
 					<li class="col-md-4 d-flex">
@@ -102,7 +102,7 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/multas.png" alt="Reduz multas">
 						</div>
 						<div class="w-80 p-l-10">
-							<p>Reduz riscos com multas</p>
+							<p>Diminui riscos com multas e outras penalidades.</p>
 						</div>
 					</li>
 					<li class="col-md-4 d-flex">
@@ -110,7 +110,7 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/balance.png" alt="reduz custos auditorias">
 						</div>
 						<div class="w-80 p-l-10">
-							<p>Reduz 90% dos custos com Auditorias anuais de Due Delligence Ambiental</p>
+							<p>Reduz 90% dos custos com Auditorias anuais de Due Delligence Ambiental.</p>
 						</div>
 					</li>
 					<li class="col-md-4 d-flex">
@@ -118,7 +118,7 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/home/leis.png" alt="banco dados leis">
 						</div>
 						<div class="w-80 p-l-10">
-							<p>Banco de dados com + de 110 mil leis</p>
+							<p>Banco de dados com + de 110 mil leis.</p>
 						</div>
 					</li>
 				</ul>
@@ -135,7 +135,7 @@ get_header(); ?>
 				<div class="v-center text-center">
 					<h2>Várias funcionalidades <br> em uma plataforma*</h2>
 					<div class="text-right p-t-15">
-						<a class="btn-def btn-yellow" href="">Contrate o SOGI</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Contrate o SOGI</a>
 					</div>
 				</div>				
 			</div>
@@ -149,7 +149,7 @@ get_header(); ?>
 	        <div class="bg-marinho">
 				<div class="container text-right p-t-15 p-b-15 p-t-n">
 					<a class="f-w p-r-25" href="<?php echo get_template_directory_uri(); ?>/assets/audios/podcast-sogi.mp3" download><i class="fa fa-podcast"></i>  Baixar como podcast</a>
-					<a class="f-w" href="<?php the_field('l_youtube'); ?>"><i class="fa fa-play"></i>  Ver vídeo completo</a>
+					<a class="f-w" href="<?php the_field('l_youtube'); ?>" target="_blank"><i class="fa fa-play"></i>  Ver vídeo completo</a>
 				</div>		
 			</div>
 		</div>
@@ -184,7 +184,7 @@ get_header(); ?>
 							<td>
 								<h3>Relatórios</h3>
 								<ul>
-									<li>Geração de relatórios em PDF com posicionamento sobre auditorias, tratamento de não conformidade e de pendência</li>
+									<li>Geração de relatórios em PDF para download, com posicionamento sobre auditorias, tratamento de não conformidade e de pendências.</li>
 								</ul>
 							</td>
 						</tr>
@@ -199,7 +199,7 @@ get_header(); ?>
 							<td>
 								<h3>Indicadores</h3>
 								<ul>
-									<li>Acompanhe as estatísticas da sua conformidade legal através de gráficos gerados automaticamente pelo módulo soGi Indicadores</li>
+									<li>Fornecimento de estatísticas da conformidade legal para acompanhamento, apresentadas através de gráficos gerados pelo Módulo SOGI Indicadores.</li>
 								</ul>
 							</td>
 						</tr>
@@ -218,7 +218,7 @@ get_header(); ?>
 							<td>
 								<h3>Apresentações</h3>
 								<ul>
-									<li>Gráficos de tratamento de não conformidade, auditoria de conformidade legal, estatística de atendimento à conformidade legal </li>
+									<li>Apresentação de gráficos estatísticos de atendimento à conformidade legal e de auditoria e tratamento de não conformidade.</li>
 								</ul>
 							</td>
 						</tr>
@@ -233,7 +233,7 @@ get_header(); ?>
 							<td>
 								<h3>Segurança</h3>
 								<ul>
-									<li>Controle de acesso dos usuários, controle de visualização e impressão dos relatórios, permissões dos grupos de usuário</li>
+									<li>Possibilidade de controle do acesso dos usuários e de visualização e impressão dos relatórios, além de definição de permissões para grupos de usuários.</li>
 								</ul>
 							</td>
 						</tr>
@@ -248,7 +248,7 @@ get_header(); ?>
 							<td>
 								<h3>Filtros</h3>
 								<ul>
-									<li>Disponibilização de auto-filtros em todo o soGi, facilitando e tornando sua busca ainda mais personalizada</li>
+									<li>Disponibilização de auto-filtros em todo o SOGI, permitindo a realização de buscas personalizadas e refinadas.</li>
 								</ul>
 							</td>
 						</tr>

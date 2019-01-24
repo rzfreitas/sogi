@@ -52,25 +52,25 @@
 				</div>
 				<div class="col-md-6 p-t-c">
 					<?php if( get_field('modulo') == 'lira' ): ?>
-						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#SogiContato">CONTRATE O LIRA</a>
+						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#ApresentacaoLIRA">CONTRATE O LIRA</a>
 					<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
-						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O AUDITORIA</a>
+						<a class="btn-def btn-yellow v-center"  data-toggle="modal" data-target="#ApresentacaoAud">CONTRATE O AUDITORIA</a>
 					<?php elseif ( get_field('modulo') == 'gaia' ): ?>
-						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O GAIA</a>
+						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#ApresentacaoGaia">CONTRATE O GAIA</a>
 					<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O PRSSO</a>
+						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#ApresentacaoPRSSO">CONTRATE O PRSSO</a>
 					<?php elseif ( get_field('modulo') == 'tnc' ): ?>
-						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O TNC</a>
+						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#ApresentacaoTNC">CONTRATE O TNC</a>
 					<?php elseif ( get_field('modulo') == 'rl' ): ?>
 						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O RISCO LEGAL</a>
 					<?php elseif ( get_field('modulo') == 'rn' ): ?>
 						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O RISCO DO NEGÓCIO</a>
 					<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O LICENÇAS</a>
+						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#ApresentacaoLic">CONTRATE O LICENÇAS</a>
 					<?php elseif ( get_field('modulo') == 'doc' ): ?>
-						<a class="btn-def btn-yellow v-center" onclick="scrollToElement('#conversionRow', -100)">CONTRATE O DOCUMENTOS</a>
+						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#ApresentacaoDoc">CONTRATE O DOCUMENTOS</a>
 					<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#SogiContato">CONTRATE AGORA</a>
+						<a class="btn-def btn-yellow v-center" data-toggle="modal" data-target="#ApresentacaoCorp">CONTRATE AGORA</a>
 					<?php endif ?>
 				</div>
 			</div>
