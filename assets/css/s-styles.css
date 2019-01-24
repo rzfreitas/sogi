@@ -79,7 +79,7 @@ table {
     z-index: 99999;
     background-color: #fff;
     width: 300px;
-    display: none; /* Added */
+    display: none;
     margin-left: 0;
     transition: .3s;
 }
