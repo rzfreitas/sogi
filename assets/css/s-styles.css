@@ -1323,6 +1323,12 @@ ul.list-cursos li:last-child{
 }
 /* / */
 
+/* SLICK EDIT */
+.slick-next:before, .slick-prev:before{
+    color: #000!important;
+}
+/* / */
+
 @media only screen and (min-width:1024px){
     .dp-flex{
         display: flex;
