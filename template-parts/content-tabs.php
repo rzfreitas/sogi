@@ -22,7 +22,7 @@
 
 					    <a class="nav-item nav-link" id="nav-lic-tab" data-toggle="tab" href="#nav-lic" role="tab" aria-controls="nav-lic" aria-selected="false">Licenças</a>
 
-					    <a class="nav-item nav-link" id="nav-adm-tab" data-toggle="tab" href="#nav-adm" role="tab" aria-controls="nav-adm" aria-selected="false">Documentos</a>
+					    <!-- <a class="nav-item nav-link" id="nav-adm-tab" data-toggle="tab" href="#nav-adm" role="tab" aria-controls="nav-adm" aria-selected="false">Documentos</a> -->
 					  </div>
 					</nav>
 				</div>
@@ -102,7 +102,7 @@
 						<a class="btn-def btn-yellow" href="<?php echo esc_url( home_url( '/' ) ); ?>licencas">Contrate o Licenças</a>
 					</div>
 				  </div>
-				  <div class="tab-pane fade" id="nav-adm" role="tabpanel" aria-labelledby="nav-adm">
+				  <!-- <div class="tab-pane fade" id="nav-adm" role="tabpanel" aria-labelledby="nav-adm">
 				  	<div class="text-center">
 				  		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/documentos.png" alt="módulo documentos">
 				  	</div>
@@ -110,7 +110,7 @@
 				  	<div class="p-t-25 text-center">
 						<a class="btn-def btn-yellow" href="<?php echo esc_url( home_url( '/' ) ); ?>documentos">Contrate o Documentos</a>
 					</div>
-				  </div>
+				  </div> -->
 				</div>
 			</div>			
 		</div>

@@ -161,7 +161,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 function add_theme_styles_scripts() {
  
-	wp_register_style( 'font', 'https://fonts.googleapis.com/css?family=Montserrat', all );
+	wp_register_style( 'font', 'https://fonts.googleapis.com/css?family=Montserrat');
 	wp_enqueue_style('font');
 
 	wp_enqueue_style( 'bootstrap4', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '', 'all');
@@ -273,8 +273,8 @@ function setPostViews($postID) {
  *
  * @param int $length Excerpt length.
  * @return int (Maybe) modified excerpt length.
- */
+
 function wpdocs_custom_excerpt_length( $length ) {
     return 20;
 }
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );  */

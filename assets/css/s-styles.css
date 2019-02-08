@@ -792,6 +792,7 @@ a.btn-pink, a.btn-azul, a.btn-azul-h, a.btn-yellow, a.btn-yellow-h, .btn-red a, 
 .old-posts h2{
     font-weight: 400;
     font-size: 18px;
+    padding-top: 20px;
 }
 h2.t-noticias{
     background: #2089C2;
