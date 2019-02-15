@@ -25,7 +25,7 @@
 				sogi_posted_on();
 				sogi_posted_by();
 				?>
-			</div><!-- .entry-meta -->
+			</div>.entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
@@ -34,7 +34,7 @@
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'sogi' ),
+				__( 'Continue lendo<span class="screen-reader-text"> "%s"</span>', 'sogi' ),
 				array(
 					'span' => array(
 						'class' => array(),
@@ -51,7 +51,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<!--<footer class="entry-footer">
 		<?php sogi_entry_footer(); ?>
-	</footer> <!-- .entry-footer -->
+	</footer>  .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -99,6 +99,12 @@
 				<div class="g-ytsubscribe" data-channel="canalverdegaia" data-layout="full" data-count="default"></div>
 			</div>
 
+			<div class="sidebar-item p-t-50 p-b-50">
+				<!-- InstaWidget -->
+				<a href="https://instawidget.net/v/user/verdeghaia" id="link-08d41fcc5583ae889f2dfc6a177e8d5d5941ea150b3901e8b8e7f1b1b0bac0f9">@verdeghaia</a>
+				<script src="https://instawidget.net/js/instawidget.js?u=08d41fcc5583ae889f2dfc6a177e8d5d5941ea150b3901e8b8e7f1b1b0bac0f9&width=300px"></script>
+			</div>
+
 		</div>
 	</div> <!-- row -->
 </div> <!-- container -->
