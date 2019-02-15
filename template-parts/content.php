@@ -25,7 +25,7 @@
 				sogi_posted_on();
 				sogi_posted_by();
 				?>
-			</div>.entry-meta -->
+			</div>.entry-meta
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
