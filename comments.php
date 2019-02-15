@@ -26,7 +26,7 @@ if ( post_password_required() ) {
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
 		?>
-		<h2 class="comments-title">
+		<h6 class="comments-title">
 			<?php
 			$sogi_comment_count = get_comments_number();
 			if ( '1' === $sogi_comment_count ) {
@@ -44,7 +44,7 @@ if ( post_password_required() ) {
 				);
 			}
 			?>
-		</h2><!-- .comments-title -->
+		</h6><!-- .comments-title -->
 
 		<?php the_comments_navigation(); ?>
 
