@@ -14,7 +14,7 @@
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>tnc"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/tnc-icon.png" alt="tnc" title="Módulo TNC"></a></li>
 						<!-- <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/rl-icon.png" alt="risco legal"></a></li> -->
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>grc"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/rn-icon.png" alt="gestão riscos" title="Módulo GRC"></a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>documentos"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/documentos-icon.png" alt="documentos" title="Módulo Documentos"></a></li>
+						<!-- <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>documentos"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/documentos-icon.png" alt="documentos" title="Módulo Documentos"></a></li> -->
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>licencas"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/licencas-icon.png" alt="licenças" title="Módulo Licenças"></a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>corporativo"><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/modulos/adm-icon.png" alt="administativo" title="Módulo Corporativo"></a></li>
 					</ul>
