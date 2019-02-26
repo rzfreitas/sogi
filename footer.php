@@ -107,12 +107,13 @@
 		
 	</footer> <!-- end .footer -->
 
-	<a href="https://api.whatsapp.com/send?phone=5531984218970&text=">
-		<div class="click-wpp">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/whatsapp-logo-32x32.png" alt="click to chat">
-			<span>Vendas por WhatsApp</span>
-		</div>
-	</a>
+	<div class="hidden-xs">
+		<a href="https://web.whatsapp.com/send?phone=5531984218970&text=" class="click-wpp" title="Tire suas dúvidas pelo nosso WhatsApp"></a>
+	</div>
+
+	<div class="visible-sm visible-xs">
+		<a href="https://web.whatsapp.com/send?phone=5531984218970&text=" class="click-wpp"></a>
+	</div>
 	
 </div><!-- #page -->
 
