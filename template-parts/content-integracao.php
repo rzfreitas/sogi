@@ -17,7 +17,7 @@
 		</div>
 	</div>
 
-	<div class="block-integration">
+	<!-- <div class="block-integration">
 		<div class="block-integration-header">
 			<p>2 - Comprar</p>
 			<div class="float-right">
@@ -68,10 +68,10 @@
 			</div>
 			
 		</div>
-	</div>
+	</div> -->
 </div>
 	
-	<?php if ( get_field('modulo') == 'auditoria' ): ?>
+	<!-- <?php if ( get_field('modulo') == 'auditoria' ): ?>
 		<script>
 		$('#anuidades').bind('keyup mouseup', function(){
 			var valorAnuidade = $(this).val();			
@@ -181,4 +181,4 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
     $('#block-2').removeClass('d-none');
 }, false );
 
-</script>
+</script> -->

@@ -14,7 +14,7 @@
 			<?php echo do_shortcode('[contact-form-7 id="473" title="Formulario cadastro"]'); ?>
 		</div>
 	</div>
-	<div class="block-integration m-t-15">
+	<!-- <div class="block-integration m-t-15">
 		<div class="block-integration-header">
 			<p>2 - Pacotes</p>
 			<div class="float-right">
@@ -74,10 +74,10 @@
 				<a class="btn-def btn-yellow" onclick="redirect_loja();">Comprar</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </div>
 
-<?php $idModulo = "116"; ?>
+<!-- <?php $idModulo = "116"; ?>
 
 <script>
 jQuery.ajax({
@@ -108,4 +108,4 @@ function redirect_loja(){
 	var url  = 'http://loja.sgionline.com.br/produto/'+ planProd;
 	window.location.replace(url);
 }
-</script>
+</script> -->

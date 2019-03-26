@@ -51,12 +51,12 @@
 												<p>Consultoria Online</p>
 											</div></a>
 									</li>
-									<li>
+									<!-- <li>
 										<a href="https://loja.sgionline.com.br/">
 											<div><img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/logos/loja-vg.png" alt="loja verde ghaia">
 												<p>Loja</p>
 											</div></a>										
-									</li>
+									</li> -->
 								</ul>									
 							</div>
 						</div>
