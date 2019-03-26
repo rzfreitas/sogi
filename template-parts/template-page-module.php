@@ -268,11 +268,11 @@ get_header(); ?>
 	<?php get_template_part('template-parts/content' , 'app'); ?>
 <?php } ?>
 
-<!-- <?php if( get_field('modulo') == 'lira' ) {
+<?php if( get_field('modulo') == 'lira' ) {
 	get_template_part('template-parts/content' , 'integracao-lira');
 } else {
 	get_template_part('template-parts/content' , 'integracao');
-} ?> -->
+} ?>
 
 <?php if( get_field('modulo') != 'liracorp' && get_field('modulo') != 'lira' ) {
 	get_template_part('template-parts/content' , 'integracao');
