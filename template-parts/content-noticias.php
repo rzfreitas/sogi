@@ -4,7 +4,8 @@
 
 	<?php $f_args = array(
 	'post_type' => 'post',
-	'showposts' => 1
+	'showposts' => 1,
+	'ignore_sticky_posts' => 1
 	);
 	$f_query = new WP_query ( $f_args );
 	if ( $f_query->have_posts() ) { ?>
