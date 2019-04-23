@@ -151,24 +151,24 @@ table {
     color: #fff;
 }
 .search-top .search-field {
-    height: 32px;
+    height: 40px;
     border-radius: 0px!important;
     background: rgba(220,220,220,.5);
     border: 0;
-    color: #fff;
-    max-width: 180px;
+    color: #333;
     text-indent: 10px;
     padding-right: 30px;
     margin-top: 2px;
     position: relative;
+    border: 1px solid #dcdcdc;
 }
+.search-top form{position: relative;}
 .icon-search {
     padding-right: 9px;
     position: absolute;
-    top: 9px;
+    top: 14px;
     right: 0;
-    z-index: 2;
-    color: rgba(238,238,238,.4);
+    z-index: #333;
 }
 .search-top i.fa.fa-search:before {
     font-family: FontAwesome!important;
@@ -1412,7 +1412,7 @@ ul.list-cursos li:last-child{
         height: 307px;
     }
     ul.clientes{
-
+        display: block;
     }
     ul.clientes li{
         margin: 0;
@@ -1420,6 +1420,7 @@ ul.list-cursos li:last-child{
         text-align: center;
         display: block;
     }
+    .flex-one{flex: 1;}
     .s-menu ul ul {
         column-count: 2;
         padding: 15px 5px;

@@ -2,15 +2,16 @@
 <div class="container p-b-100 p-t-100" id="noticias">
 	<h2 class="t-noticias">Blog SOGI</h2>
 
-	<?php $args = array(
+	<?php $f_args = array(
 	'post_type' => 'post',
-	'posts_per_page' => 1
+	'showposts' => 1
 	);
-	$query = new WP_query ( $args );
-	if ( $query->have_posts() ) { ?>
+	$f_query = new WP_query ( $f_args );
+	if ( $f_query->have_posts() ) { ?>
 
-	<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-		<article class="first-post"" id="post-<?php the_ID(); ?>" <?php post_class( 'book' ); ?>>		<div class="row">
+	<?php while ( $f_query->have_posts() ) : $f_query->the_post(); ?>
+		<article class="first-post" id="post-<?php the_ID(); ?>">
+			<div class="row">
 				<div class="col-md-5 text-center">
 					<?php if ( has_post_thumbnail() ) {
 						    the_post_thumbnail();

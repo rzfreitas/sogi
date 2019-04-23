@@ -33,6 +33,7 @@ function scrollToElement(selector, offset){
     scrollTop: jQuery(selector).offset().top + offset + 'px'
   }, 'slow');
 }
+//onclick="scrollToElement('#conversionRow', -100)"
 
 $('.app-slideshow').slick({
   autoplay: true,

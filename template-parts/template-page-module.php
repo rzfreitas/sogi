@@ -83,25 +83,25 @@ get_header(); ?>
 					<p><?php echo $cbanner['descricao_banner']; ?></p>
 
 					<?php if( get_field('modulo') == 'lira' ): ?>
-						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#ApresentacaoLIRA">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php elseif ( get_field('modulo') == 'auditoria' ): ?>
-						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#ApresentacaoAud">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php elseif ( get_field('modulo') == 'gaia' ): ?>
-						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#ApresentacaoGaia">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php elseif ( get_field('modulo') == 'prsst' ): ?>
-						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#ApresentacaoPRSSO">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php elseif ( get_field('modulo') == 'tnc' ): ?>
-						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#ApresentacaoTNC">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php elseif ( get_field('modulo') == 'rl' ): ?>
-						<a class="btn-def btn-yellow" onclick="scrollToElement('#conversionRow', -100)">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php elseif ( get_field('modulo') == 'rn' ): ?>
-						<a class="btn-def btn-yellow" onclick="scrollToElement('#conversionRow', -100)">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php elseif ( get_field('modulo') == 'licencas' ): ?>
-						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#ApresentacaoLic">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php elseif ( get_field('modulo') == 'doc' ): ?>
-						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#ApresentacaoDoc">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php elseif ( get_field('modulo') == 'liracorp' ): ?>
-						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#ApresentacaoCorp">Quero comprar</a>
+						<a class="btn-def btn-yellow" data-toggle="modal" data-target="#SogiContato">Quero comprar</a>
 					<?php endif ?>
 
 				</div>
@@ -268,7 +268,8 @@ get_header(); ?>
 	<?php get_template_part('template-parts/content' , 'app'); ?>
 <?php } ?>
 
-<?php if( get_field('modulo') == 'lira' ) {
+
+<?php /* if( get_field('modulo') == 'lira' ) {
 	get_template_part('template-parts/content' , 'integracao-lira');
 } else {
 	get_template_part('template-parts/content' , 'integracao');
@@ -276,7 +277,7 @@ get_header(); ?>
 
 <?php if( get_field('modulo') != 'liracorp' && get_field('modulo') != 'lira' ) {
 	get_template_part('template-parts/content' , 'integracao');
-} ?>
+} */ ?> 
 
 <?php get_template_part('template-parts/content' , 'modulos'); ?>
 

@@ -67,7 +67,9 @@
 		</div>
 
 		<div class="col-md-4 sidebar-blog">
-			<div class="mais-lidas">
+			<?php get_template_part('search-form'); ?>
+
+			<div class="mais-lidas p-t-25">
 				<h2 class="text-center">Mais Lidos</h2>
 				<div class="p-t-20">
 					<?php query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=5'); ?>

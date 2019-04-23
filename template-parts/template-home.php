@@ -29,11 +29,11 @@ get_header(); ?>
 <section>	
 	<div class="container p-t-25">
 		<?php if( have_rows('clientes') ): ?>
-		<ul class="clientes dp-flex flex">
+		<ul class="clientes dp-flex flex-wrap">
 		<?php while( have_rows('clientes') ): the_row(); 
 			// vars
 			$imagecliente = get_sub_field('logo_cliente'); ?>
-			<li class="cliente">
+			<li class="cliente flex-one">
 				<img src="<?php echo $imagecliente['url']; ?>" alt="<?php echo $imagecliente['alt'] ?>" />
 			</li>
 		<?php endwhile; ?>
