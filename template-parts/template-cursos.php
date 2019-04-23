@@ -93,7 +93,47 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="p-t-70 text-center">
-			<a href="https://ead.verdeghaia.com.br/register" class="btn-def btn-roxo">VEJA O CONTEÚDO</a>
+			<a class="btn-def load-more btn-roxo">VEJA O CONTEÚDO</a>
+		</div>
+	</div>
+	<div class="box-gray more-content d-none">
+		<div class="container p-t-50 p-b-50 p-t-c p-b-c">
+			<div class="row">
+				<div class="col-4 col-md-3">
+					<h4>AULA 01</h4>
+					<p>Visão Geral do Sistema</p>
+				</div>
+				<div class="col-4 col-md-3">
+					<h4>AULA 02</h4>
+					<p>Módulo Administrativo</p>
+				</div>
+				<div class="col-4 col-md-3">
+					<h4>AULA 03</h4>
+					<p>Módulo LIRA</p>
+				</div>
+				<div class="col-4 col-md-3">
+					<h4>AULA 04</h4>
+					<p>Módulo GAIA</p>
+				</div>
+			</div>
+			<div class="row p-t-50">
+				<div class="col-4 col-md-3">
+					<h4>AULA 05</h4>
+					<p>Módulo PRSSO</p>
+				</div>
+				<div class="col-4 col-md-3">
+					<h4>AULA 06</h4>
+					<p>Módulo TNC</p>
+				</div>
+				<div class="col-4 col-md-3">
+					<h4>AULA 07</h4>
+					<p>Módulo Auditoria</p>
+				</div>
+				<div class="col-4 col-md-3">
+					<h4>AULA 08</h4>
+					<p>Módulo Licenças</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -148,5 +188,12 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+
+<script>
+$(".load-more").click(function(){
+	$(".more-content").toggleClass('d-none');
+	$(".load-more").toggleClass('btn-yellow');
+});
+</script>
 
 <?php get_footer(); ?>

@@ -663,11 +663,11 @@ ul.vantagens li img{padding-right: 15px;}
     letter-spacing: 1px;
 }
 .btn-yellow, .btn-yellow-h{
-    background-color: #FFAB00;
+    background-color: #FFAB00!important;
     border-radius: 50px;
 }
 .btn-yellow:hover, .btn-yellow-h:hover{
-    background-color: #BA7D00;
+    background-color: #BA7D00!important;
     text-decoration: none;
 }
 .btn-pink{
