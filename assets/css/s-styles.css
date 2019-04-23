@@ -583,7 +583,6 @@ ul.mod-list li:last-child{margin-right: 0px}
 /* LIRA */
 .box-gray{
     background-color: #F2F2F2;
-    padding: 80px
 }
 .bar-grad{
     background: linear-gradient(90deg, #0079BA 1.41%, #50A3CF 100%);
@@ -1473,6 +1472,7 @@ ul.list-cursos li:last-child{
     .bg-modulos{
         height: 100vh;
     }
+    .box-gray{padding: 80px}
 }
 
 /* EXTRA LARGE SECRENS */

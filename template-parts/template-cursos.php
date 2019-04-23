@@ -99,37 +99,37 @@ get_header(); ?>
 	<div class="box-gray more-content d-none">
 		<div class="container p-t-50 p-b-50 p-t-c p-b-c">
 			<div class="row">
-				<div class="col-4 col-md-3">
+				<div class="col-6 col-md-3">
 					<h4>AULA 01</h4>
 					<p>Visão Geral do Sistema</p>
 				</div>
-				<div class="col-4 col-md-3">
+				<div class="col-6 col-md-3">
 					<h4>AULA 02</h4>
 					<p>Módulo Administrativo</p>
 				</div>
-				<div class="col-4 col-md-3">
+				<div class="col-6 col-md-3">
 					<h4>AULA 03</h4>
 					<p>Módulo LIRA</p>
 				</div>
-				<div class="col-4 col-md-3">
+				<div class="col-6 col-md-3">
 					<h4>AULA 04</h4>
 					<p>Módulo GAIA</p>
 				</div>
 			</div>
 			<div class="row p-t-50">
-				<div class="col-4 col-md-3">
+				<div class="col-6 col-md-3">
 					<h4>AULA 05</h4>
 					<p>Módulo PRSSO</p>
 				</div>
-				<div class="col-4 col-md-3">
+				<div class="col-6 col-md-3">
 					<h4>AULA 06</h4>
 					<p>Módulo TNC</p>
 				</div>
-				<div class="col-4 col-md-3">
+				<div class="col-6 col-md-3">
 					<h4>AULA 07</h4>
 					<p>Módulo Auditoria</p>
 				</div>
-				<div class="col-4 col-md-3">
+				<div class="col-6 col-md-3">
 					<h4>AULA 08</h4>
 					<p>Módulo Licenças</p>
 				</div>
