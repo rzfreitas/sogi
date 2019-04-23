@@ -1357,9 +1357,9 @@ ul.list-cursos li:last-child{
 
 @media only screen and (min-width:1024px){
     .dp-flex{
-        display: flex;
-        display: -ms-flexbox;
-        display: -webkit-flex;
+        display: flex!important;
+        display: -ms-flexbox!important;
+        display: -webkit-flex!important;
     }
     .p-a-p ol{
         display: flex;
