@@ -25,7 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sogi' ); ?></a>
 
-	<?php if(!is_singular( 'post' ) && !is_page('Blog')) {
+	<?php if(!is_singular( 'post' ) && !is_page('Blog') && !is_search() ) {
 	 get_template_part('template-parts/content' , 'header-transition');
 	} else {
 	 get_template_part('template-parts/content' , 'header-black');
